@@ -1,0 +1,22 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1023995335	PeopleWalk			\Default Work Unit\PeopleWalk	
+	1389954868	UIDrop			\Default Work Unit\UIDrop	
+	1673655846	OutdoorAmb_loop			\Default Work Unit\OutdoorAmb_loop	
+	2623792584	PeopleSad			\Default Work Unit\PeopleSad	
+	3293427131	PeopleUh			\Default Work Unit\PeopleUh	
+	3379585205	UIGrab			\Default Work Unit\UIGrab	
+	3573189912	PeoplePray			\Default Work Unit\PeoplePray	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	10234216	VP_People_Sad_2	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_People_Sad_2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\PEOPLE\VP_People_Sad\VP_People_Sad_2		60992
+	194802731	VP_People_FS_1	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_People_FS_1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\PEOPLE\VP_People_FS\VP_People_FS_1		25540
+	301034461	VP_People_Praying_1	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_People_Praying_1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\PEOPLE\VP_People_Praying\VP_People_Praying_1		145472
+	371271959	VP_UI_Drop	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_UI_Drop_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\VP_UI_Drop		24512
+	466414173	VP_Amb_Outdoor	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_Amb_Outdoor_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\VP_Amb_Outdoor		15597632
+	568544124	VP_People_Uh_2	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_People_Uh_2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\PEOPLE\VP_People_Uh\VP_People_Uh_2		21568
+	569060656	VP_People_Uh_1	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_People_Uh_1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\PEOPLE\VP_People_Uh\VP_People_Uh_1		22848
+	569595219	VP_People_Praying_2	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_People_Praying_2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\PEOPLE\VP_People_Praying\VP_People_Praying_2		124992
+	617340143	VP_UI_Grab	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_UI_Grab_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\VP_UI_Grab		20032
+	910893991	VP_People_FS_2	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_People_FS_2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\PEOPLE\VP_People_FS\VP_People_FS_2		22270
+	981818366	VP_People_Sad_1	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_People_Sad_1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\PEOPLE\VP_People_Sad\VP_People_Sad_1		51264
+

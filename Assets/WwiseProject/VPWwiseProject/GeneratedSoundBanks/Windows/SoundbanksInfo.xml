@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="10" SoundbankVersion="113">
+	<RootPaths>
+		<ProjectRoot>/Users/Work/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/VirtualPaper/Assets/WwiseProject/VPWwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/Work/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/VirtualPaper/Assets/WwiseProject/VPWwiseProject/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/Work/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/VirtualPaper/Assets/WwiseProject/VPWwiseProject/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/Work/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/VirtualPaper/Assets/WwiseProject/VPWwiseProject/GeneratedSoundBanks/Windows/</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2676280715" Language="SFX">
+			<ShortName>VPMainSoundBank</ShortName>
+			<Path>VPMainSoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1673655846" Name="OutdoorAmb_loop"/>
+				<Event Id="3573189912" Name="PeoplePray"/>
+				<Event Id="2623792584" Name="PeopleSad"/>
+				<Event Id="3293427131" Name="PeopleUh"/>
+				<Event Id="1023995335" Name="PeopleWalk"/>
+				<Event Id="1389954868" Name="UIDrop"/>
+				<Event Id="3379585205" Name="UIGrab"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="10234216" Language="SFX">
+					<ShortName>VP_People_Sad_2.wav</ShortName>
+					<Path>SFX/VP_People_Sad_2_9E69E797.wem</Path>
+				</File>
+				<File Id="194802731" Language="SFX">
+					<ShortName>VP_People_FS_1.wav</ShortName>
+					<Path>SFX/VP_People_FS_1_9E69E797.wem</Path>
+				</File>
+				<File Id="301034461" Language="SFX">
+					<ShortName>VP_People_Praying_1.wav</ShortName>
+					<Path>SFX/VP_People_Praying_1_9E69E797.wem</Path>
+				</File>
+				<File Id="371271959" Language="SFX">
+					<ShortName>VP_UI_Drop.wav</ShortName>
+					<Path>SFX/VP_UI_Drop_9E69E797.wem</Path>
+				</File>
+				<File Id="466414173" Language="SFX">
+					<ShortName>VP_Amb_Outdoor.wav</ShortName>
+					<Path>SFX/VP_Amb_Outdoor_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="568544124" Language="SFX">
+					<ShortName>VP_People_Uh_2.wav</ShortName>
+					<Path>SFX/VP_People_Uh_2_9E69E797.wem</Path>
+				</File>
+				<File Id="569060656" Language="SFX">
+					<ShortName>VP_People_Uh_1.wav</ShortName>
+					<Path>SFX/VP_People_Uh_1_9E69E797.wem</Path>
+				</File>
+				<File Id="569595219" Language="SFX">
+					<ShortName>VP_People_Praying_2.wav</ShortName>
+					<Path>SFX/VP_People_Praying_2_9E69E797.wem</Path>
+				</File>
+				<File Id="617340143" Language="SFX">
+					<ShortName>VP_UI_Grab.wav</ShortName>
+					<Path>SFX/VP_UI_Grab_9E69E797.wem</Path>
+				</File>
+				<File Id="910893991" Language="SFX">
+					<ShortName>VP_People_FS_2.wav</ShortName>
+					<Path>SFX/VP_People_FS_2_9E69E797.wem</Path>
+				</File>
+				<File Id="981818366" Language="SFX">
+					<ShortName>VP_People_Sad_1.wav</ShortName>
+					<Path>SFX/VP_People_Sad_1_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

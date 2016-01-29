@@ -1,0 +1,14 @@
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	
+	1117531639	AMB			\Default Work Unit\Master Audio Bus\AMB	
+	1417401084	PEOPLE			\Default Work Unit\Master Audio Bus\PEOPLE	
+	1551306167	UI			\Default Work Unit\Master Audio Bus\UI	
+	1695690031	OBJECTS			\Default Work Unit\Master Audio Bus\OBJECTS	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	694004599	RoomRev			\Default Work Unit\Master Audio Bus\RoomRev	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1551236760	Small_Wooden_Room1	Wwise Matrix Reverb			
+
