@@ -1,0 +1,41 @@
+#if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY || UNITY_WP8) // Disable under unsupported platforms.
+//////////////////////////////////////////////////////////////////////
+//
+// Copyright (c) 2014 Audiokinetic Inc. / All Rights Reserved
+//
+//////////////////////////////////////////////////////////////////////
+
+using UnityEngine;
+
+/// Known Unity events used to trigger actions from Wwise components.
+public enum ActivateEventOn
+{
+    Awake,
+    Start,
+    Destroy,
+    Enable,
+    Disable,
+    TriggerEnter,
+    TriggerExit,
+    CollisionEnter,
+    CollisionExit,
+    MouseUp,
+    MouseDown,    
+    MouseEnter,
+    MouseExit,
+};
+
+public abstract class AkUnityEventHandler : MonoBehaviour 
+{
+	/// Select the Unity event that will trigger the action.
+    public ActivateEventOn activateEventOn = ActivateEventOn.Start;
+	
+	/// This property is usefull only when used with colliders.  When enabled, the target of the action will be the other colliding object.  When disabled, it will be the current object.
+    public bool useOtherObject = true;
+
+    public abstract void HandleEvent(GameObject gameObject);
+
+	public virtual void Migrate(){}
+	
+}
+#endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY || UNITY_WP8) // Disable under unsupported platforms.

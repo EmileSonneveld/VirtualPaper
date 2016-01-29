@@ -1,0 +1,59 @@
+#if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY || UNITY_WP8) // Disable under unsupported platforms.
+//////////////////////////////////////////////////////////////////////
+//
+// Copyright (c) 2014 Audiokinetic Inc. / All Rights Reserved
+//
+//////////////////////////////////////////////////////////////////////
+
+using UnityEngine;
+using System;
+using System.Collections.Generic;
+using System.Reflection;
+
+public enum AkUnsupportedCallbackType
+{
+	AK_SpeakerVolumeMatrix				= 0x0010,
+	AK_MusicSyncAll 					= 0x7f00,
+	AK_CallbackBits 					= 0xfffff,
+	AK_EnableGetSourcePlayPosition 		= 0x100000,
+	AK_EnableGetMusicPlayPosition 		= 0x200000,
+	AK_EnableGetSourceStreamBuffering 	= 0x400000,
+	AK_Monitoring 						= 0x20000000,
+	AK_Bank 							= 0x40000000,
+	AK_AudioInterruption				= 0x22000000
+}
+
+
+public class AkEvent : AkUnityEventHandler 
+{
+	//2013.2.8
+    public string eventName = "";
+	
+	//Shared
+    public int eventID = 0;
+	public GameObject soundEmitterObject = null;
+    public bool enableActionOnEvent = false;
+    public AkActionOnEventType actionOnEventType = AkActionOnEventType.AkActionOnEventType_Stop;
+    public AkCurveInterpolation curveInterpolation = AkCurveInterpolation.AkCurveInterpolation_Linear;
+    public float transitionDuration = 0.0f;
+    
+	//2014.1
+	public byte[] valueGuid = new byte[16];
+	public AkEventCallbackData m_callbackData = null;
+	
+	public override void HandleEvent(GameObject in_gameObject){}
+	
+	public override void Migrate()
+	{
+		base.Migrate();
+	
+		Type projectInfoType = 	Type.GetType("AkWwiseProjectInfo, Assembly-CSharp-Editor");
+		FieldInfo projectDataInfo = projectInfoType.GetField("m_Data", BindingFlags.Public | BindingFlags.Static);		
+		MethodInfo getGuidInfo = projectDataInfo.FieldType.GetMethod("GetEventGuidById", BindingFlags.Public | BindingFlags.Instance);
+		valueGuid = (byte[])getGuidInfo.Invoke(projectDataInfo.GetValue(null), new System.Object[]{eventID});
+		
+		if(valueGuid == null) 
+			valueGuid = Guid.Empty.ToByteArray();
+	}
+}
+#endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY || UNITY_WP8) // Disable under unsupported platforms.

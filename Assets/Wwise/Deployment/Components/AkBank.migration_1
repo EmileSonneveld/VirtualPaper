@@ -1,0 +1,38 @@
+#if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
+//////////////////////////////////////////////////////////////////////
+//
+// Copyright (c) 2014 Audiokinetic Inc. / All Rights Reserved
+//
+//////////////////////////////////////////////////////////////////////
+
+using UnityEngine;
+using System.Collections.Generic;
+using System;
+using System.Reflection;
+
+
+public class AkBank : AkUnityEventHandler 
+{
+	//Shared
+	public string bankName = "";
+	public bool loadAsynchronous = false;
+
+	//2014.1
+	public byte[] valueGuid = new byte[16];
+	
+	public override void HandleEvent(GameObject in_gameObject){}
+
+	public override void Migrate()
+	{
+		base.Migrate();
+	
+		Type projectInfoType = 	Type.GetType("AkWwiseProjectInfo, Assembly-CSharp-Editor");
+		FieldInfo projectDataInfo = projectInfoType.GetField("m_Data", BindingFlags.Public | BindingFlags.Static);		
+		MethodInfo getGuidInfo = projectDataInfo.FieldType.GetMethod("GetBankGuidByName", BindingFlags.Public | BindingFlags.Instance);
+		valueGuid = (byte[])getGuidInfo.Invoke(projectDataInfo.GetValue(null), new System.Object[]{bankName});
+		
+		if(valueGuid == null) 
+			valueGuid = Guid.Empty.ToByteArray();
+	}
+}
+#endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.

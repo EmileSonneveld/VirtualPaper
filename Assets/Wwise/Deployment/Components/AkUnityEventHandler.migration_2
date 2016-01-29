@@ -1,0 +1,102 @@
+#if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY || UNITY_WP8) // Disable under unsupported platforms.
+//////////////////////////////////////////////////////////////////////
+//
+// Copyright (c) 2014 Audiokinetic Inc. / All Rights Reserved
+//
+//////////////////////////////////////////////////////////////////////
+
+using UnityEngine;
+
+/// Known Unity events used to trigger actions from Wwise components.
+public enum ActivateEventOn
+{
+    Awake,
+    Start,
+    Destroy,
+    Enable,
+    Disable,
+    TriggerEnter,
+    TriggerExit,
+    CollisionEnter,
+    CollisionExit,
+    MouseUp,
+    MouseDown,    
+    MouseEnter,
+    MouseExit,
+};
+
+[ExecuteInEditMode]
+public abstract class AkUnityEventHandler : MonoBehaviour 
+{
+	//2013.2.8 
+    public ActivateEventOn activateEventOn = ActivateEventOn.Start;
+	
+	//Shared 
+    public bool useOtherObject = true;
+	
+	//2014.1
+	public int triggerMask;
+	
+	//Used by AkUnityEventHandlerInspector
+	public const int AWAKE_TRIGGER_BIT		= 1;
+	public const int START_TRIGGER_BIT		= 2;
+	public const int DESTROY_TRIGGER_BIT	= 4;
+	public const int RESERVED_BITS			= 3;	
+	public const int MAX_NB_TRIGGERS		= 32;	
+
+	//Needed  for AkAmbient
+	public virtual void HandleEvent(GameObject in_gameObject){}
+	protected virtual void OnDestroy(){}
+	protected virtual void Awake() {}
+	protected virtual void Start() {}
+	protected void RegisterTriggers(int in_triggerMask, AkTriggerBase.Trigger in_delegate) {}
+	protected void UnregisterTriggers(int in_triggerMask, AkTriggerBase.Trigger in_delegate) {}
+
+	
+	public virtual void Migrate()
+	{
+		switch(activateEventOn)
+		{
+			case ActivateEventOn.Awake:
+				triggerMask |= (1 << 0);
+				break;
+			case ActivateEventOn.Start:
+				triggerMask |= (1 << 1);
+				break;
+			case ActivateEventOn.Destroy:
+				triggerMask |= (1 << 2);
+				break;
+			case ActivateEventOn.Enable:
+				triggerMask |= (1 << 6);
+				break;
+			case ActivateEventOn.Disable:
+				triggerMask |= (1 << 5);
+				break;
+			case ActivateEventOn.TriggerEnter:
+				triggerMask |= (1 << 7);
+				break;
+			case ActivateEventOn.TriggerExit:
+				triggerMask |= (1 << 8);
+				break;
+			case ActivateEventOn.CollisionEnter:
+				triggerMask |= (1 << 3);
+				break;
+			case ActivateEventOn.CollisionExit:
+				triggerMask |= (1 << 4);
+				break;
+			case ActivateEventOn.MouseUp:
+				triggerMask |= (1 << 12);
+				break;
+			case ActivateEventOn.MouseDown:
+				triggerMask |= (1 << 9);
+				break;
+			case ActivateEventOn.MouseEnter:
+				triggerMask |= (1 << 10);
+				break;
+			case ActivateEventOn.MouseExit:
+				triggerMask |= (1 << 11	);
+				break;
+		}
+	}
+}
+#endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY || UNITY_WP8) // Disable under unsupported platforms.

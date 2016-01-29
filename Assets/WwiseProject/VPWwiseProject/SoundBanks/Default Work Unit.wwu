@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{AE64D10A-2AB2-4A4A-A7F6-10E55BFD7791}" SchemaVersion="70">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{AE64D10A-2AB2-4A4A-A7F6-10E55BFD7791}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{AE64D10A-2AB2-4A4A-A7F6-10E55BFD7791}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="VPMainSoundBank" ID="{988E5AD7-39CA-4193-9096-E2391489DA96}">
+					<ObjectInclusionList>
+						<ObjectRef Name="PeopleWalk" ID="{9D46660C-3104-4FD6-B2A1-201F801B55CC}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="UIDrop" ID="{8B5B3824-70EE-4496-9FD3-4703CCE152AC}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="PeoplePray" ID="{7393AE48-29D9-4BF6-BD73-268C5E7F168B}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="OutdoorAmb_loop" ID="{69630AB3-201E-4FCD-9970-69346688FD75}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="UIGrab" ID="{A86AE7C6-D8D4-4307-9D85-45B73250F0A4}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="PeopleSad" ID="{012233CF-1196-4602-BDEB-FFC48B6764A1}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="PeopleUh" ID="{3D8663F2-135D-4E34-8017-A0D626A931DF}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

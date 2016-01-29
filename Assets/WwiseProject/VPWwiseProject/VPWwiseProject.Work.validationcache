@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="70">
-	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3304291584" DateHigh="30497471"/>
+	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="535468928" DateHigh="30497507"/>
 	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="2053746432" DateHigh="30483083"/>
 	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="2053746432" DateHigh="30483083"/>
-	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\Attenuations\Default Work Unit.wwu" DateLow="3304291584" DateHigh="30497471"/>
+	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\Attenuations\Default Work Unit.wwu" DateLow="535468928" DateHigh="30497507"/>
 	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="3304291584" DateHigh="30497471"/>
 	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="3304291584" DateHigh="30497471"/>
 	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="2033746432" DateHigh="30483083"/>
@@ -14,21 +14,21 @@
 	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\Effects\Factory Convolution Reverb Effects.wwu" DateLow="2053746432" DateHigh="30483083"/>
 	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\Effects\Factory Effects.wwu" DateLow="2033746432" DateHigh="30483083"/>
 	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\Effects\Factory McDSP Effects.wwu" DateLow="2053746432" DateHigh="30483083"/>
-	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\Events\Default Work Unit.wwu" DateLow="3304291584" DateHigh="30497471"/>
+	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\Events\Default Work Unit.wwu" DateLow="535468928" DateHigh="30497507"/>
 	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="3304291584" DateHigh="30497471"/>
 	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="2053746432" DateHigh="30483083"/>
 	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="3304291584" DateHigh="30497471"/>
-	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3304291584" DateHigh="30497471"/>
+	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="535468928" DateHigh="30497507"/>
 	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="3304291584" DateHigh="30497471"/>
 	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\Modulators\Default Work Unit.wwu" DateLow="3304291584" DateHigh="30497471"/>
 	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\Presets\Default Work Unit.wwu" DateLow="3304291584" DateHigh="30497471"/>
 	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\Queries\Default Work Unit.wwu" DateLow="3304291584" DateHigh="30497471"/>
 	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\Queries\Factory Queries.wwu" DateLow="2033746432" DateHigh="30483083"/>
-	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="3304291584" DateHigh="30497471"/>
+	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="535468928" DateHigh="30497507"/>
 	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="3304291584" DateHigh="30497471"/>
 	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\States\Default Work Unit.wwu" DateLow="3304291584" DateHigh="30497471"/>
 	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\Switches\Default Work Unit.wwu" DateLow="3304291584" DateHigh="30497471"/>
 	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\Triggers\Default Work Unit.wwu" DateLow="3304291584" DateHigh="30497471"/>
-	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\VPWwiseProject.Work.wsettings" DateLow="2434422400" DateHigh="30497475"/>
+	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\VPWwiseProject.Work.wsettings" DateLow="3315468928" DateHigh="30497507"/>
 	<ValidationCacheItem File="Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\VPWwiseProject.wproj" DateLow="4059389696" DateHigh="30497474"/>
 </ValidationCache>

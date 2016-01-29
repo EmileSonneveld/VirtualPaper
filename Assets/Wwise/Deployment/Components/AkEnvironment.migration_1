@@ -1,0 +1,52 @@
+#if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
+//////////////////////////////////////////////////////////////////////
+//
+// Copyright (c) 2014 Audiokinetic Inc. / All Rights Reserved
+//
+//////////////////////////////////////////////////////////////////////
+
+using UnityEngine;
+using System;
+using System.Reflection;
+using System.Collections.Generic;
+
+[ExecuteInEditMode]
+public class AkEnvironment : MonoBehaviour
+{
+	//2013.2.8
+	public string auxBusName;
+	
+	//Shared
+	[SerializeField] private int m_auxBusID;	//declared as uint in 2013.2.8 so it won't be serialized
+	
+	//2014.1
+	public byte[] valueGuid = new byte[16];
+	public int priority = 0;	
+	public bool isDefault = false;
+	public bool excludeOthers = false;
+
+	//Used by AkEnvironmentInspector
+	public uint GetAuxBusID(){return 0;}
+	public void SetAuxBusID(int in_auxBusID){}
+	
+	public void Migrate()
+	{	
+		if(rigidbody == null)
+		{
+			gameObject.AddComponent<Rigidbody> ();
+		}
+
+		rigidbody.useGravity = false;
+		rigidbody.isKinematic = true;
+		rigidbody.collisionDetectionMode = CollisionDetectionMode.Continuous;	
+	
+		Type projectInfoType = 	Type.GetType("AkWwiseProjectInfo, Assembly-CSharp-Editor");
+		FieldInfo projectDataInfo = projectInfoType.GetField("m_Data", BindingFlags.Public | BindingFlags.Static);		
+		MethodInfo getGuidInfo = projectDataInfo.FieldType.GetMethod("GetEnvironmentGuidByName", BindingFlags.Public | BindingFlags.Instance);
+		valueGuid = (byte[])getGuidInfo.Invoke(projectDataInfo.GetValue(null), new System.Object[]{auxBusName});
+		
+		if(valueGuid == null) 
+			valueGuid = Guid.Empty.ToByteArray();
+	}
+}
+#endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.

@@ -1,0 +1,56 @@
+#if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
+//////////////////////////////////////////////////////////////////////
+//
+// Copyright (c) 2014 Audiokinetic Inc. / All Rights Reserved
+//
+//////////////////////////////////////////////////////////////////////
+
+using UnityEngine;
+using System;
+using System.Collections;
+using System.Reflection;
+
+[ExecuteInEditMode]
+public class AkState : AkUnityEventHandler
+{
+	//2013.2.8
+	public string value;
+	public string group;
+
+	//Shared
+	//Declared as uint in 2013.2.8 so they won't be serialized
+	public int groupID;
+    public int valueID;
+
+	//2014.1
+	public byte[] groupGuid = new byte[16];
+	public byte[] valueGuid = new byte[16];
+
+	public override void HandleEvent(GameObject in_gameObject){}
+	
+	public override void Migrate()
+	{
+		base.Migrate();
+		
+		Type projectInfoType = 	Type.GetType("AkWwiseProjectInfo, Assembly-CSharp-Editor");
+		FieldInfo projectDataInfo = projectInfoType.GetField("m_Data", BindingFlags.Public | BindingFlags.Static);		
+		MethodInfo getGuidInfo = projectDataInfo.FieldType.GetMethod("GetStateGuidByName", BindingFlags.Public | BindingFlags.Instance);
+		byte[][] guids = (byte[][])getGuidInfo.Invoke(projectDataInfo.GetValue(null), new System.Object[]{group, value});
+		
+		if(guids != null)
+		{
+			groupGuid = guids[0];
+			valueGuid = guids[1];
+		}
+		else
+		{
+			groupGuid = Guid.Empty.ToByteArray();
+			valueGuid = Guid.Empty.ToByteArray();
+		}
+		
+		// Update IDs as well
+		groupID = (int)AkUtilities.ShortIDGenerator.Compute(group);
+		valueID = (int)AkUtilities.ShortIDGenerator.Compute(value);
+	}
+}
+#endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.

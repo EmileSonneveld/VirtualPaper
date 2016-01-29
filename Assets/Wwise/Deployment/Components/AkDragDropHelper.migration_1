@@ -1,0 +1,24 @@
+#if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
+#if UNITY_EDITOR
+using System;
+using UnityEngine;
+using UnityEditor;
+using UnityEditor.Callbacks;
+
+/// <summary>
+///  @brief This class is used to perform DragAndDrop operations from the AkWwisePicker to any GameObject.
+///  We found out that DragAndDrop operations in Unity do not transfer components, but only scripts. This
+///  prevented us to set the name and ID of our components before performing the drag and drop. To fix this,
+///  the DragAndDrop operation always transfers a AkDragDropHelper component that gets instantiated on the 
+///  target GameObject. On its first Update() call, it will parse the DragAndDrop structure, which contains
+///  all necessary information to instantiate the correct component, with the correct information
+/// </summary>
+[ExecuteInEditMode]
+public class AkDragDropHelper : MonoBehaviour
+{
+	public void Migrate()
+	{
+	}
+}
+#endif // UNITY_EDITOR
+#endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.

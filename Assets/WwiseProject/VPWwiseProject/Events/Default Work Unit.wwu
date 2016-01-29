@@ -1,6 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{11ACF6D0-1759-459D-9125-555F172497CC}" SchemaVersion="70">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{11ACF6D0-1759-459D-9125-555F172497CC}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{11ACF6D0-1759-459D-9125-555F172497CC}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="OutdoorAmb_loop" ID="{69630AB3-201E-4FCD-9970-69346688FD75}">
+					<ChildrenList>
+						<Action Name="Play" ID="{2F951C71-414C-4796-887B-616F9EEB189A}" ShortID="12228737" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{052C4589-E6D9-48ED-9D2A-B6461BAB2A40}" Global="false">
+									<ObjectRef Name="VP_Amb_Outdoor" ID="{9F5B4684-219E-4C40-8AA9-4E82CD3EB9CB}" WorkUnitID="{57809540-3525-4039-BB1C-8AD7FFFFA13F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PeopleWalk" ID="{9D46660C-3104-4FD6-B2A1-201F801B55CC}">
+					<ChildrenList>
+						<Action Name="Play" ID="{AE3AE8E6-EA32-4433-86A9-16A8544333CE}" ShortID="328362442" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{8329BBA5-C11E-480E-AD1B-CC00D79FE357}" Global="false">
+									<ObjectRef Name="VP_People_FS" ID="{1EB73FC6-A2C9-4B26-852C-F54F73F27ABC}" WorkUnitID="{57809540-3525-4039-BB1C-8AD7FFFFA13F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PeoplePray" ID="{7393AE48-29D9-4BF6-BD73-268C5E7F168B}">
+					<ChildrenList>
+						<Action Name="Play" ID="{DA164BD2-034E-4256-A215-F7B3A038924E}" ShortID="803908997" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{AB3284E9-4086-4FBF-899A-DB50A5119840}" Global="false">
+									<ObjectRef Name="VP_People_Praying" ID="{B12C35B0-613E-4D2E-BA61-0D4E5206824D}" WorkUnitID="{57809540-3525-4039-BB1C-8AD7FFFFA13F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PeopleSad" ID="{012233CF-1196-4602-BDEB-FFC48B6764A1}">
+					<ChildrenList>
+						<Action Name="Play" ID="{01028CC7-4A1C-47FA-8FC9-DA319D6D6401}" ShortID="538989751" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{E7A88814-BBDC-4CC0-874D-29ACC1456855}" Global="false">
+									<ObjectRef Name="VP_People_Sad" ID="{D00AE497-9322-43B5-A060-598095275879}" WorkUnitID="{57809540-3525-4039-BB1C-8AD7FFFFA13F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PeopleUh" ID="{3D8663F2-135D-4E34-8017-A0D626A931DF}">
+					<ChildrenList>
+						<Action Name="Play" ID="{381B0282-DE9C-4460-BA3D-B5CE2B0F47E4}" ShortID="529147141" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{5E72AE59-8928-49EB-B0D4-F1A8B9181DC3}" Global="false">
+									<ObjectRef Name="VP_People_Uh" ID="{DD06CEAA-9A1E-4A69-BD9B-6805C27A5369}" WorkUnitID="{57809540-3525-4039-BB1C-8AD7FFFFA13F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UIGrab" ID="{A86AE7C6-D8D4-4307-9D85-45B73250F0A4}">
+					<ChildrenList>
+						<Action Name="Play" ID="{28904F06-4AE8-40B4-8C74-87056B760CF7}" ShortID="695405652" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{C12AF22D-301B-47FB-A99B-7B50E91B4890}" Global="false">
+									<ObjectRef Name="VP_UI_Grab" ID="{C6880795-5F90-4A1D-9E19-69323E46073D}" WorkUnitID="{57809540-3525-4039-BB1C-8AD7FFFFA13F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UIDrop" ID="{8B5B3824-70EE-4496-9FD3-4703CCE152AC}">
+					<ChildrenList>
+						<Action Name="Play" ID="{1653C7F6-8FC1-4BB5-AB78-462208E7C606}" ShortID="248324856" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{D9DC4C05-6414-48E2-9395-4BE523A0F424}" Global="false">
+									<ObjectRef Name="VP_UI_Drop" ID="{5501423D-B086-43DB-9E40-DE80D8CEBAC9}" WorkUnitID="{57809540-3525-4039-BB1C-8AD7FFFFA13F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
