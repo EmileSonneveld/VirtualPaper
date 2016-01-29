@@ -1,5 +1,5 @@
-UNITY TEMPLATE PROJECT
-======================
+VIRTUAL PAPER
+=============
 
 
 This project contains default settings and assets that are needed for all games you will make.
