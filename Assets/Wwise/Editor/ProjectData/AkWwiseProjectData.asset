@@ -16,9 +16,29 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{11ACF6D0-1759-459D-9125-555F172497CC}'
-    m_lastTimePsrt1: 1852989630
-    m_lastTimePart2: -1999427215
+    m_lastTimePsrt1: 1756152430
+    m_lastTimePart2: -1999427160
     List:
+    - Name: CutTree
+      Path: Default Work Unit\CutTree
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CutTree
+        ObjectType: 3
+      ID: -1821759785
+      Guid: 564fff1e27473942bbbfd85a43b51e67
+      maxAttenuation: 0
+    - Name: DeadToTree
+      Path: Default Work Unit\DeadToTree
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: DeadToTree
+        ObjectType: 3
+      ID: -749043296
+      Guid: 00598fc64dc1b2479b90c3fb7253a480
+      maxAttenuation: 0
     - Name: ObjectLamp_Off
       Path: Default Work Unit\ObjectLamp_Off
       PathAndIcons:
@@ -89,6 +109,36 @@ MonoBehaviour:
       ID: 1023995335
       Guid: 0c66469d0431d64fb2a1201f801b55cc
       maxAttenuation: 0
+    - Name: Sacrifice
+      Path: Default Work Unit\Sacrifice
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Sacrifice
+        ObjectType: 3
+      ID: 621005312
+      Guid: 9411e93c9cc8f846b6046d4342b5c127
+      maxAttenuation: 0
+    - Name: ThrowPeople
+      Path: Default Work Unit\ThrowPeople
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ThrowPeople
+        ObjectType: 3
+      ID: 1137489086
+      Guid: bd499ca0c37e924d998d5ec14d6aa884
+      maxAttenuation: 0
+    - Name: Treefall
+      Path: Default Work Unit\Treefall
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Treefall
+        ObjectType: 3
+      ID: -1129729042
+      Guid: 3c8de3eabe91a7429d2aaca9d32ead99
+      maxAttenuation: 0
     - Name: UIDrop
       Path: Default Work Unit\UIDrop
       PathAndIcons:
@@ -113,8 +163,8 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{E95E3857-58C1-44ED-82DF-432A2E7AACA6}'
-    m_lastTimePsrt1: 1856339822
-    m_lastTimePart2: -1999427215
+    m_lastTimePsrt1: 1757634951
+    m_lastTimePart2: -1999427160
     List:
     - Name: RoomRev
       Path: Default Work Unit\Master Audio Bus\RoomRev
@@ -145,8 +195,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{AE64D10A-2AB2-4A4A-A7F6-10E55BFD7791}'
-    m_lastTimePsrt1: 1856479830
-    m_lastTimePart2: -1999427215
+    m_lastTimePsrt1: 1758261387
+    m_lastTimePart2: -1999427160
     List:
     - Name: VPMainSoundBank
       Path: Default Work Unit\VPMainSoundBank
