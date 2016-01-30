@@ -1,0 +1,370 @@
+fileFormatVersion: 2
+guid: de193921fd36f47dbbbb0a189f9cd44d
+timeCreated: 1454189080
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SpritesheetSacrifierViolet_0
+    21300002: SpritesheetSacrifierViolet_1
+    21300004: SpritesheetSacrifierViolet_2
+    21300006: SpritesheetSacrifierViolet_3
+    21300008: SpritesheetSacrifierViolet_4
+    21300010: SpritesheetSacrifierViolet_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: SpritesheetSacrifierViolet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 69, y: -171}
+        - {x: 78, y: -145}
+        - {x: 82, y: -51}
+        - {x: 144, y: -52}
+        - {x: 183, y: -44}
+        - {x: 184, y: -37}
+        - {x: 184, y: -5}
+        - {x: 179, y: 3}
+        - {x: 129, y: 25}
+        - {x: 158, y: 39}
+        - {x: 176, y: 70}
+        - {x: 176, y: 78}
+        - {x: 163, y: 123}
+        - {x: 138, y: 130}
+        - {x: 129, y: 193}
+        - {x: 120, y: 207}
+        - {x: 133, y: 222}
+        - {x: 124, y: 245}
+        - {x: 85, y: 252}
+        - {x: 72, y: 256}
+        - {x: 46, y: 256}
+        - {x: 37, y: 250}
+        - {x: 21, y: 255}
+        - {x: -26, y: 247}
+        - {x: -80, y: 194}
+        - {x: -99, y: 152}
+        - {x: -135, y: 105}
+        - {x: -135, y: 94}
+        - {x: -133, y: 71}
+        - {x: -118, y: 46}
+        - {x: -86, y: 41}
+        - {x: -82, y: 32}
+        - {x: -147, y: 20}
+        - {x: -153, y: 13}
+        - {x: -154, y: 3}
+        - {x: -154, y: -31}
+        - {x: -152, y: -34}
+        - {x: -102, y: -90}
+        - {x: -89, y: -116}
+        - {x: -92, y: -156}
+        - {x: -98, y: -183}
+        - {x: -131, y: -202}
+        - {x: -130, y: -233}
+        - {x: -127, y: -256}
+        - {x: 119, y: -256}
+        - {x: 120, y: -248}
+        - {x: 115, y: -201}
+        - {x: 70, y: -188}
+    - name: SpritesheetSacrifierViolet_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 72, y: -146}
+        - {x: 75, y: -98}
+        - {x: 90, y: -69}
+        - {x: 141, y: -72}
+        - {x: 166, y: -51}
+        - {x: 159, y: -20}
+        - {x: 141, y: -8}
+        - {x: 151, y: 38}
+        - {x: 170, y: 69}
+        - {x: 170, y: 84}
+        - {x: 162, y: 121}
+        - {x: 143, y: 128}
+        - {x: 131, y: 143}
+        - {x: 124, y: 194}
+        - {x: 127, y: 223}
+        - {x: 124, y: 240}
+        - {x: 67, y: 256}
+        - {x: 50, y: 256}
+        - {x: 26, y: 253}
+        - {x: -26, y: 250}
+        - {x: -79, y: 199}
+        - {x: -85, y: 190}
+        - {x: -106, y: 134}
+        - {x: -118, y: 128}
+        - {x: -136, y: 107}
+        - {x: -136, y: 73}
+        - {x: -126, y: 51}
+        - {x: -87, y: 29}
+        - {x: -127, y: 12}
+        - {x: -134, y: 6}
+        - {x: -136, y: -7}
+        - {x: -136, y: -26}
+        - {x: -110, y: -73}
+        - {x: -123, y: -83}
+        - {x: -115, y: -119}
+        - {x: -104, y: -138}
+        - {x: -93, y: -155}
+        - {x: -102, y: -187}
+        - {x: -132, y: -197}
+        - {x: -133, y: -235}
+        - {x: -129, y: -256}
+        - {x: 116, y: -256}
+        - {x: 113, y: -201}
+        - {x: 100, y: -195}
+        - {x: 68, y: -186}
+    - name: SpritesheetSacrifierViolet_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 67, y: -171}
+        - {x: 76, y: -145}
+        - {x: 78, y: -96}
+        - {x: 121, y: -93}
+        - {x: 146, y: -66}
+        - {x: 147, y: -58}
+        - {x: 107, y: 13}
+        - {x: 156, y: 40}
+        - {x: 172, y: 68}
+        - {x: 172, y: 82}
+        - {x: 161, y: 123}
+        - {x: 136, y: 130}
+        - {x: 127, y: 193}
+        - {x: 118, y: 207}
+        - {x: 128, y: 222}
+        - {x: 126, y: 233}
+        - {x: 120, y: 242}
+        - {x: 83, y: 252}
+        - {x: 70, y: 256}
+        - {x: 44, y: 256}
+        - {x: 35, y: 250}
+        - {x: 19, y: 255}
+        - {x: -28, y: 247}
+        - {x: -82, y: 194}
+        - {x: -101, y: 152}
+        - {x: -137, y: 105}
+        - {x: -137, y: 94}
+        - {x: -135, y: 71}
+        - {x: -120, y: 46}
+        - {x: -89, y: 41}
+        - {x: -84, y: 28}
+        - {x: -79, y: 18}
+        - {x: -147, y: -15}
+        - {x: -152, y: -19}
+        - {x: -152, y: -41}
+        - {x: -137, y: -89}
+        - {x: -140, y: -124}
+        - {x: -112, y: -155}
+        - {x: -92, y: -160}
+        - {x: -98, y: -176}
+        - {x: -133, y: -202}
+        - {x: -132, y: -233}
+        - {x: -129, y: -256}
+        - {x: 117, y: -256}
+        - {x: 118, y: -248}
+        - {x: 113, y: -201}
+        - {x: 68, y: -188}
+    - name: SpritesheetSacrifierViolet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 71, y: -187}
+        - {x: 77, y: -159}
+        - {x: 87, y: -86}
+        - {x: 116, y: -83}
+        - {x: 137, y: -64}
+        - {x: 133, y: -50}
+        - {x: 105, y: 13}
+        - {x: 153, y: 33}
+        - {x: 176, y: 64}
+        - {x: 176, y: 88}
+        - {x: 165, y: 125}
+        - {x: 140, y: 132}
+        - {x: 131, y: 195}
+        - {x: 122, y: 209}
+        - {x: 135, y: 224}
+        - {x: 125, y: 247}
+        - {x: 84, y: 249}
+        - {x: 117, y: 252}
+        - {x: 119, y: 254}
+        - {x: 119, y: 256}
+        - {x: -127, y: 256}
+        - {x: -127, y: 254}
+        - {x: -125, y: 252}
+        - {x: -24, y: 249}
+        - {x: -78, y: 196}
+        - {x: -97, y: 154}
+        - {x: -133, y: 107}
+        - {x: -133, y: 96}
+        - {x: -131, y: 72}
+        - {x: -116, y: 49}
+        - {x: -82, y: 36}
+        - {x: -78, y: 28}
+        - {x: -160, y: -15}
+        - {x: -160, y: -31}
+        - {x: -136, y: -68}
+        - {x: -150, y: -79}
+        - {x: -150, y: -114}
+        - {x: -135, y: -136}
+        - {x: -120, y: -146}
+        - {x: -88, y: -147}
+        - {x: -95, y: -182}
+        - {x: -130, y: -200}
+        - {x: -126, y: -256}
+        - {x: 122, y: -256}
+        - {x: 121, y: -227}
+        - {x: 116, y: -200}
+        - {x: 111, y: -198}
+    - name: SpritesheetSacrifierViolet_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 67, y: -187}
+        - {x: 67, y: -168}
+        - {x: 76, y: -143}
+        - {x: 78, y: -109}
+        - {x: 95, y: -104}
+        - {x: 133, y: -64}
+        - {x: 129, y: -50}
+        - {x: 101, y: 13}
+        - {x: 147, y: 37}
+        - {x: 155, y: 42}
+        - {x: 172, y: 70}
+        - {x: 172, y: 84}
+        - {x: 161, y: 125}
+        - {x: 136, y: 132}
+        - {x: 127, y: 195}
+        - {x: 118, y: 209}
+        - {x: 131, y: 224}
+        - {x: 121, y: 247}
+        - {x: 81, y: 249}
+        - {x: 72, y: 256}
+        - {x: 18, y: 256}
+        - {x: -28, y: 249}
+        - {x: -82, y: 196}
+        - {x: -101, y: 154}
+        - {x: -138, y: 108}
+        - {x: -136, y: 72}
+        - {x: -120, y: 49}
+        - {x: -86, y: 36}
+        - {x: -82, y: 28}
+        - {x: -169, y: -19}
+        - {x: -162, y: -60}
+        - {x: -177, y: -67}
+        - {x: -174, y: -86}
+        - {x: -186, y: -95}
+        - {x: -186, y: -106}
+        - {x: -185, y: -111}
+        - {x: -168, y: -133}
+        - {x: -144, y: -153}
+        - {x: -135, y: -153}
+        - {x: -102, y: -129}
+        - {x: -91, y: -152}
+        - {x: -133, y: -200}
+        - {x: -132, y: -231}
+        - {x: -129, y: -256}
+        - {x: 118, y: -256}
+        - {x: 117, y: -227}
+        - {x: 112, y: -200}
+        - {x: 107, y: -198}
+    - name: SpritesheetSacrifierViolet_5
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -129, y: 256}
+        - {x: -129, y: 254}
+        - {x: -127, y: 252}
+        - {x: 115, y: 252}
+        - {x: 117, y: 254}
+        - {x: 117, y: 256}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
