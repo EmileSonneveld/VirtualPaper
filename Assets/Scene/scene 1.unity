@@ -307,6 +307,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nPeople: 0
   deplacing: 0
+  houseFood: 0
+  BHomOnHome: 0
 --- !u!208 &523986935
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -478,7 +480,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
 --- !u!1 &793386570
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,10 +516,19 @@ MonoBehaviour:
   treeList: {fileID: 2121924594}
   prayer: {fileID: 866819076}
   believe: 0
+  scale: 0.2
+  movingBefore: 0
+  walktToHouse: 1
+  walkToTree: 0
+  walkToTemple: 0
   maxTarget: 3
-  tree: {fileID: 0}
-  house: {fileID: 0}
-  time: 3
+  transportingFood: 0
+  nFoodToChild: 3
+  maxTime: 1
+  time: 1
+  dontMove: 0
+  timerScale: 11
+  test: 0
 --- !u!195 &793386572
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -590,11 +601,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 793386570}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.42, y: 0.11, z: 5.33}
-  m_LocalScale: {x: 0.18327922, y: 0.23841803, z: 0.18327917}
+  m_LocalPosition: {x: 2.4362197, y: 2.7611392, z: 0.9251151}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 902383138}
+  m_RootOrder: 0
 --- !u!1 &866819075
 GameObject:
   m_ObjectHideFlags: 0
@@ -686,6 +697,35 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 866819075}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &902383137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 902383138}
+  m_Layer: 0
+  m_Name: ListBHom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &902383138
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 902383137}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.85622, y: -2.6511393, z: 4.404885}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 793386576}
+  - {fileID: 1289698894}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
 --- !u!1 &1079843377
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,6 +767,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nPeople: 0
   deplacing: 0
+  houseFood: 0
+  BHomOnHome: 0
 --- !u!1 &1161353137
 GameObject:
   m_ObjectHideFlags: 0
@@ -833,6 +875,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nPeople: 2
   deplacing: 0
+  houseFood: 0
+  BHomOnHome: 0
 --- !u!1 &1190113981
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,6 +1009,131 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1290630043}
   m_RootOrder: 0
+--- !u!1 &1289698893
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1289698894}
+  - 33: {fileID: 1289698899}
+  - 65: {fileID: 1289698898}
+  - 23: {fileID: 1289698897}
+  - 195: {fileID: 1289698896}
+  - 114: {fileID: 1289698895}
+  m_Layer: 0
+  m_Name: BHom (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1289698894
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1289698893}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.33, y: 2.7611392, z: -0.27}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_Children: []
+  m_Father: {fileID: 902383138}
+  m_RootOrder: 1
+--- !u!114 &1289698895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1289698893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a424cf5343cd3a347ad28f17b924f2b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  houseList: {fileID: 1048957}
+  treeList: {fileID: 2121924594}
+  prayer: {fileID: 866819076}
+  believe: 0
+  scale: 0.2
+  movingBefore: 0
+  walktToHouse: 1
+  walkToTree: 0
+  walkToTemple: 0
+  maxTarget: 3
+  transportingFood: 0
+  nFoodToChild: 3
+  maxTime: 1
+  time: 0
+  dontMove: 0
+  timerScale: 11
+  test: 0
+--- !u!195 &1289698896
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1289698893}
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.99999994
+  m_BaseOffset: 0.49999997
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!23 &1289698897
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1289698893}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 3e7b584ed0fb91a4c803a4d7ed41f49a, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!65 &1289698898
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1289698893}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1289698899
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1289698893}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1290630042
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,7 +1398,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1379013968}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.21, y: 0, z: -14.36}
+  m_LocalPosition: {x: 0.83, y: 0, z: -6.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1883130721}
@@ -1246,8 +1415,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bf0462a494e03c47925c8a3ca02e41c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nPeople: 2
+  nPeople: 0
   deplacing: 0
+  houseFood: 0
+  BHomOnHome: 0
 --- !u!208 &1379013971
 NavMeshObstacle:
   m_ObjectHideFlags: 0
