@@ -1,451 +1,255 @@
-#if UNITY_EDITOR && !UNITY_5
+#if UNITY_EDITOR
 using UnityEngine;
 using UnityEditor;
 using UnityEditor.Callbacks;
 using System;
-using System.Reflection;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
 
-
+// This class gives us the necessary callback to show the wizard window once the package import is done
+// The file will be deleted after the first time setup, to avoid having a callback called each time
+// scripts are reloaded.
 [InitializeOnLoad]
 public class AkWwisePostImportCallback
 {
-    const int INTEGRATION_NUMBER_2013_2_8 = 1;
-    const int INTEGRATION_NUMBER_2014_1_BETA = 2;
-    const int BUILD_NUMBER_2013_2_8 = 4865;
-    const int BUILD_NUMBER_2014_1_BETA = 5073;
-
-    static readonly string POST_IMPORT_CALLBACK_PATH = Application.dataPath + "/Wwise/Editor/WwiseSetupWizard/AkWwisePostImportCallback.cs";
-    private static bool m_SameVersion = false;
-
-
-    [DidReloadScripts]
-    static void PostImportFunction()
+    static AkWwisePostImportCallback()
     {
-        try
-        {
-            // Do nothing in batch mode
-            // This will prevent the script from running when building the unity package
-            string[] arguments = Environment.GetCommandLineArgs();
-            if (Array.IndexOf(arguments, "-nographics") != -1)
-            {
-                return;
-            }
-
-			RemoveOldMetro();
-
-            //We check if an integration is already installed or if this is a first installation
-            if (File.Exists(Application.dataPath + "/Wwise/Version.txt"))
-            {
-                //We get the Build number of the integration that is currently installed
-				int buildNumber = -1;
-                int integrationNumber = GetIntegrationNumber(Application.dataPath + "/Wwise/Version.txt", out buildNumber);
-				
-				//If the installed integration is older than 2013.2.8
-				if( integrationNumber == -1 )
-				{
-					VeryOldVersion();
-				}
-				else
-				{
-					//We get the Build number of the integration that will be installed
-
-					int newBuildNumber = -1;
-					int newIntegrationNumber = GetIntegrationNumber(Application.dataPath + "/Wwise/NewVersion.txt", out newBuildNumber);
-					
-					//If the build numbers don't match, we need a migration
-					if (integrationNumber < newIntegrationNumber && integrationNumber > 0)
-					{
-						Debug.Log("WwiseUnity: Preparing migration...");
-						Migrate();
-					}
-					//Same build number so no migration is needed
-					else
-					{
-						if (buildNumber == newBuildNumber)
-						{
-							SameWwiseVersion();
-						}
-						else
-						{
-							DifferentWwiseVersion();
-						}
-
-						SameUnityVersion();
-						m_SameVersion = true;
-					}
-
-				}
-            }
-			else if( Directory.Exists(Application.dataPath + Path.DirectorySeparatorChar + "Wwise" + Path.DirectorySeparatorChar + "Deployment" + Path.DirectorySeparatorChar + "Examples") )
-			{
-				VeryOldVersion();
-			}
-            else
-            {
-                FirstInstallation();
-            }
-
-            //Refresh the assets database to trigger a recompilation
-            if (m_SameVersion)
-            {
-                Debug.Log("WwiseUnity: New Wwise Unity Integration package imported successfully.");
-            }
-            else
-            {
-                Debug.Log("WwiseUnity: Compile scripts...");
-            }
-
-			
-			AssetDatabase.DeleteAsset("Assets/Wwise/Editor/WwiseSetupWizard/AkWwiseFirstImportCallback.cs");
-			AssetDatabase.Refresh();
-        }
-        catch (Exception e)
-        {
-            Debug.Log(e.ToString());
-        }
+        EditorApplication.hierarchyWindowChanged += CheckWwiseGlobalExistance;
     }
 
-	
-	static void RemoveOldMetro()
+	[DidReloadScripts(100000000)]
+	static void RefreshCallback()
 	{
-		if(Directory.Exists(Application.dataPath + "/Wwise/Deployment/Plugins/WSA_New"))
-		{
-			string[] MetroPaths = {
-				Application.dataPath + "/Wwise/Deployment/API/Generated/Metro",
-				Application.dataPath + "/Wwise/Deployment/Plugins/Metro",
-				Application.dataPath + "/Wwise/Editor/WwiseMenu/Metro"
-			};
-				
-			foreach(string PathToDelete in MetroPaths)
-			{
-				if( Directory.Exists(PathToDelete) )
-				{
-					Directory.Delete(PathToDelete, true);
-				}
-			}
-		}
-	}
-
-	static void VeryOldVersion()
-	{
-		DeleteScripts(new DirectoryInfo(Application.dataPath + "/Wwise/Deployment/API"), "*.cs");
-
-		DirectoryInfo[] platformPluginFolders = new DirectoryInfo(Application.dataPath + "/Wwise/Deployment/Plugins").GetDirectories();
-		foreach (DirectoryInfo folder in platformPluginFolders)
-		{
-			if (!folder.Name.Contains("_new"))
-				folder.Delete(true);
-		}
-
-		FirstInstallation();
+		PostImportFunction();
+		RefreshPlugins();
 	}
 	
-
-    static void Migrate()
+	static void PostImportFunction()
     {
-        try
+		EditorApplication.hierarchyWindowChanged += CheckWwiseGlobalExistance;
+	
+        if (EditorApplication.isPlayingOrWillChangePlaymode || EditorApplication.isCompiling)
         {
-            Debug.Log("WwiseUnity: Import migration scripts...");
-
-            //Rename scripts needed for the migration so they can be recompiled by unity
-            Debug.Log("WwiseUnity: Import: " + POST_IMPORT_CALLBACK_PATH);
-            RenameFile(Application.dataPath + "/Wwise/Editor/WwiseSetupWizard/AkWwisePostImportCallback.migration_setup", POST_IMPORT_CALLBACK_PATH);
-
-            string migrationWindowPath = Application.dataPath + "/Wwise/Editor/WwiseSetupWizard/AkWwiseMigrationWindow.cs";
-            Debug.Log("WwiseUnity: Import: " + migrationWindowPath);
-            RenameFile(Application.dataPath + "/Wwise/Editor/WwiseSetupWizard/AkWwiseMigrationWindow.migration_setup", migrationWindowPath);
+            return;
         }
-        catch (Exception e)
-        {
-            Debug.Log(e.ToString());
-        }
-    }
 
-    static void SameWwiseVersion()
-    {
-        try
-        {
-            Debug.Log("WwiseUnity: Integration already installed.");
-            Debug.Log("WwiseUnity: Deleting all imported files...");
-
-            //Check if a new platform was added in the Wwise/Deployment/API/Generated folder. 
-            CheckForNewPlatforms("Wwise/Deployment/API/Generated");
-
-            //Check if a new platform was added in the /Wwise/Editor/WwiseMenu folder. 
-            CheckForNewPlatforms("Wwise/Editor/WwiseMenu");
-
-            DirectoryInfo[] platformPluginFolders = new DirectoryInfo(Application.dataPath + "/Wwise/Deployment/Plugins").GetDirectories();
-            foreach (DirectoryInfo folder in platformPluginFolders)
-            {
-                //If the platform folder was just imported...
-                if (folder.Name.Contains("_new"))
-                {
-                    //if the platform folder was already there...
-                    if (Directory.Exists(folder.FullName.Remove(folder.FullName.Length - 4)))
-                    {
-                        //we delete the newly imported platform folder
-                        AssetDatabase.DeleteAsset("Assets" + folder.FullName.Substring(Application.dataPath.Length));
-                    }
-                    //if the platform folder wasn't there...
-                    else
-                    {
-                        //Rename the platform folder by removing "_new"
-                        Directory.Move(folder.FullName, folder.FullName.Remove(folder.FullName.Length - 4));
-                    }
-                }
-            }
-        }
-        catch (Exception e)
-        {
-            Debug.Log(e.ToString());
-        }
-    }
-
-    static void DifferentWwiseVersion()
-    {
-        try
-        {
-            Debug.Log("WwiseUnity: Installing new Wwise API and plugin...");
-
-            //Check if a new platform was added in the Wwise/Deployment/API/Generated folder. 
-            OverwriteAPI();
-
-            // Delete the old plugins, and keep the new
-            DirectoryInfo[] platformPluginFolders = new DirectoryInfo(Application.dataPath + "/Wwise/Deployment/Plugins").GetDirectories();
-            foreach (DirectoryInfo folder in platformPluginFolders)
-            {
-                //If the platform folder was just imported...
-                if (folder.Name.Contains("_new"))
-                {
-                    //if the platform folder was already there...
-                    if (Directory.Exists(folder.FullName.Remove(folder.FullName.Length - 4)))
-                    {
-                        Directory.Delete(folder.FullName.Remove(folder.FullName.Length - 4), true);
-                    }
-
-                    //Rename the platform folder by removing "_new"
-                    Directory.Move(folder.FullName, folder.FullName.Remove(folder.FullName.Length - 4));
-                }
-            }
-			
-            // Remove the plugins in the plugins folder
-            string pluginsDir = Path.Combine(Application.dataPath, "Plugins");
-            if( Directory.Exists(pluginsDir) )
-            {
-	            string[] foundPlugins = Directory.GetFiles(pluginsDir, "AkSoundEngine*", SearchOption.AllDirectories);
-	            foreach (string plugin in foundPlugins)
-	            {
-	                File.Delete(plugin);
-	            }
-	        }
-			
-        }
-        catch (Exception e)
-        {
-            Debug.Log(e.ToString());
-        }
-    }
-
-    static void SameUnityVersion()
-    {
-        try
-        {
-            DirectoryInfo dirInfo = new DirectoryInfo(Application.dataPath + "/Wwise");
-
-            //Activate all imported editor scripts with the .new extension
-            ActivateNewScripts(dirInfo);
-
-            //Delete the intermediate migration files
-            DeleteScripts(dirInfo, "*.migration_*");
-
-            //Delete the migration setup files
-            File.Delete(Application.dataPath + "/Wwise/Editor/WwiseSetupWizard/AkWwisePostImportCallback.migration_setup");
-            File.Delete(Application.dataPath + "/Wwise/Editor/WwiseSetupWizard/AkWwiseMigrationWindow.migration_setup");
-
-            //Delete NewVersion.txt
-            File.Delete(Application.dataPath + "/Wwise/NewVersion.txt");
-
-            //Rename the setup file so it can be compiled by Unity
-            Debug.Log("WwiseUnity: Import installation script...");
-            Debug.Log("WwiseUnity: Import: " + Application.dataPath + "/Wwise/Editor/WwiseSetupWizard/AkWwisePostImportCallback.cs");
-
-            RenameFile(Application.dataPath + "/Wwise/Editor/WwiseSetupWizard/AkWwisePostImportCallback.setup", POST_IMPORT_CALLBACK_PATH);
-        }
-        catch (Exception e)
-        {
-            Debug.Log(e.ToString());
-        }
-    }
-
-    static void FirstInstallation()
-    {
-        try
-        {
-            Debug.Log("WwiseUnity: Preparing first installation...");
-
-            DirectoryInfo dirInfo = new DirectoryInfo(Application.dataPath + "/Wwise");
-
-            //Changing the extension from .new to .cs so they can get compiled by unity 
-            Debug.Log("WwiseUnity: Importing new scripts...");
-            FileInfo[] files = dirInfo.GetFiles("*.new", SearchOption.AllDirectories);
-            foreach (FileInfo file in files)
-            {
-                RenameFile(file.FullName, Path.ChangeExtension(file.FullName, ".cs"));
-            }
-
-            //Remove the "_new" in the platform plugin folder name
-            DirectoryInfo[] platformPluginFolders = new DirectoryInfo(Application.dataPath + "/Wwise/Deployment/Plugins").GetDirectories();
-            foreach (DirectoryInfo folder in platformPluginFolders)
-            {
-                Directory.Move(folder.FullName, folder.FullName.Remove(folder.FullName.Length - 4));
-            }
-
-            //Delete the intermediate migration files
-            Debug.Log("WwiseUnity: Deleting migration files...");
-            DeleteScripts(dirInfo, "*.migration_*");
-
-            //Delete the migration setup files
-            Debug.Log("WwiseUnity: Deleting migration setup files...");
-            Debug.Log(Application.dataPath + "/Wwise/Editor/WwiseSetupWizard/AkWwisePostImportCallback.migration_setup");
-            File.Delete(Application.dataPath + "/Wwise/Editor/WwiseSetupWizard/AkWwisePostImportCallback.migration_setup");
-            Debug.Log(Application.dataPath + "/Wwise/Editor/WwiseSetupWizard/AkWwiseMigrationWindow.migration_setup");
-            File.Delete(Application.dataPath + "/Wwise/Editor/WwiseSetupWizard/AkWwiseMigrationWindow.migration_setup");
-
-            //Rename the version file to Version.txt
-            RenameFile(Application.dataPath + "/Wwise/NewVersion.txt", Application.dataPath + "/Wwise/Version.txt");
-
-            //Rename the setup file so it can be compiled by Unity
-            Debug.Log("WwiseUnity: Import installation script...");
-            Debug.Log("WwiseUnity: Import: " + POST_IMPORT_CALLBACK_PATH);
-            RenameFile(Application.dataPath + "/Wwise/Editor/WwiseSetupWizard/AkWwisePostImportCallback.setup", POST_IMPORT_CALLBACK_PATH);
-        }
-        catch (Exception e)
-        {
-            Debug.Log(e.ToString());
-        }
-    }
-
-    static void DeleteScripts(DirectoryInfo in_dir, string in_searchPattern)
-    {
-        FileInfo[] files = in_dir.GetFiles(in_searchPattern, SearchOption.AllDirectories);
-        foreach (FileInfo file in files)
-        {
-            file.Delete();
-        }
-    }
-
-    static void ActivateNewScripts(DirectoryInfo in_dir)
-    {
-        FileInfo[] files = in_dir.GetFiles("*.new", SearchOption.AllDirectories);
-        foreach (FileInfo file in files)
-        {
-			RenameFile(file.FullName, Path.ChangeExtension(file.FullName, ".cs"));
-        }
-    }
-
-    static void CheckForNewPlatforms(string in_path)
-    {
-        //Check if a new platform was added in 'in_path' folder. 
-        DirectoryInfo[] platformApiFolders = new DirectoryInfo(Application.dataPath + "/" + in_path).GetDirectories();
-        foreach (DirectoryInfo folder in platformApiFolders)
-        {
-            if (folder.GetFiles("*.cs", SearchOption.AllDirectories).Length == 0)
-            {
-                //A new platform was added so we change the script's extension so they can be compiled
-                FileInfo[] files = folder.GetFiles("*.new", SearchOption.AllDirectories);
-                foreach (FileInfo file in files)
-                {
-                    RenameFile(file.FullName, Path.ChangeExtension(file.FullName, ".cs"));
-                }
-            }
-        }
-    }
-
-    static void OverwriteAPI()
-    {
-        //Check if a new platform was added in 'in_path' folder. 
-        List<DirectoryInfo> ApiFolders = new List<DirectoryInfo>();
-        ApiFolders.AddRange(new DirectoryInfo(Application.dataPath + "/Wwise/Deployment/API/Generated").GetDirectories());
-        ApiFolders.Add(new DirectoryInfo(Application.dataPath + "/Wwise/Deployment/API/Handwritten"));
-        foreach (DirectoryInfo folder in ApiFolders)
-        {
-            if (folder.GetFiles("*.new", SearchOption.AllDirectories).Length != 0)
-            {
-                // Delete the old API
-                FileInfo[] oldFiles = folder.GetFiles("*.cs", SearchOption.AllDirectories);
-                foreach (FileInfo file in oldFiles)
-                {
-                    file.Delete();
-                }
-
-                // Install the new API
-                FileInfo[] newFiles = folder.GetFiles("*.new", SearchOption.AllDirectories);
-                foreach (FileInfo file in newFiles)
-                {
-                    RenameFile(file.FullName, Path.ChangeExtension(file.FullName, ".cs"));
-                }
-            }
-        }
-    }
-
-    static void RenameFile(string in_path, string in_newPath)
-    {
-        File.Delete(in_newPath);
-        File.Move(in_path, in_newPath);
-        File.SetLastWriteTime(in_newPath, DateTime.Now);
-    }
-
-	static int GetIntegrationNumber(string filePath, out int out_buildNumber)
-	{
-		string[] VersionTxtLines;
-		int integrationNumber = -1;
-		out_buildNumber = -1;
-		try
+		// Do nothing in batch mode
+		string[] arguments = Environment.GetCommandLineArgs();
+		if( Array.IndexOf(arguments, "-nographics") != -1 )
 		{
-			VersionTxtLines = System.IO.File.ReadAllLines(filePath);
-			foreach(string line in VersionTxtLines)
-			{
-				if( line.StartsWith("Based on Wwise SDK") )
-				{
-					int IndexOfToken = line.IndexOf("Build ");
-					int NumberStartIndex = IndexOfToken + "Build ".Length;
-					int SubStrLength = line.Length - NumberStartIndex;
-					string integrationBuildNumberString = line.Substring(NumberStartIndex, SubStrLength);
-					out_buildNumber = Convert.ToInt32(integrationBuildNumberString);				
-				}
-				else if( line.StartsWith ("Unity Integration Version:") )
-				{
-					int NumberStartIndex = "Unity Integration Version: ".Length;
-					int SubStrLength = line.Length - NumberStartIndex;
-					string integrationNumberString = line.Substring(NumberStartIndex, SubStrLength);
-					integrationNumber = Convert.ToInt32(integrationNumberString);
-				}
-			}
-		}
-		catch(Exception e)
-		{
-			Debug.LogError ("WwiseUnity: Could not get installed Wwise version. " + e.ToString ());
-			return -1;
+			return;
 		}
 		
-		// Special cases for older integrations that did not have a version number
-		if( integrationNumber == -1 )
-		{
-			if (out_buildNumber == BUILD_NUMBER_2014_1_BETA)
+		try
+		{            
+			if (!File.Exists(Application.dataPath + Path.DirectorySeparatorChar + WwiseSettings.WwiseSettingsFilename))
 			{
-				integrationNumber = INTEGRATION_NUMBER_2014_1_BETA;
+                WwiseSetupWizard.Init();
+				return;
 			}
-			else if (out_buildNumber == BUILD_NUMBER_2013_2_8)
+			else
 			{
-				integrationNumber = INTEGRATION_NUMBER_2013_2_8;
+				WwiseSetupWizard.Settings = WwiseSettings.LoadSettings();
+				AkWwiseProjectInfo.GetData();
+			}
+
+			if( !string.IsNullOrEmpty(WwiseSetupWizard.Settings.WwiseProjectPath))
+			{
+				AkWwiseProjectInfo.Populate();
+				AkWwisePicker.PopulateTreeview();
+				if (AkWwiseProjectInfo.GetData().autoPopulateEnabled )
+				{
+                    AkWwiseWWUBuilder.StartWWUWatcher();
+				}
 			}
 		}
+		catch( Exception e)
+		{
+			Debug.Log(e.ToString());
+		}
 
-		return integrationNumber;
+		//Check if a WwiseGlobal object exists in the current scene	
+		CheckWwiseGlobalExistance();
+		
+		// If demo scene, remove file that should only be there on import
+		string filename = Path.Combine(Path.Combine(Path.Combine(Path.Combine(Application.dataPath, "Wwise"), "Editor"), "WwiseSetupWizard"), "AkWwisePopPicker.cs");
+		if( File.Exists(filename) )
+		{
+			EditorApplication.delayCall += DeletePopPicker;
+		}
 	}
+	
+	static void RefreshPlugins()
+	{
+#if !UNITY_5
+		// Check if there are some new platforms to install.
+		InstallNewPlatforms();
+#else
+		if( string.IsNullOrEmpty(AkWwiseProjectInfo.GetData().CurrentPluginConfig) )
+		{
+			AkWwiseProjectInfo.GetData().CurrentPluginConfig = AkPluginActivator.CONFIG_PROFILE;
+		}
+		AkPluginActivator.RefreshPlugins();
+#endif
+	}
+	
+	static void DeletePopPicker()
+	{
+		string basePath = Path.Combine(Path.Combine(Path.Combine(Application.dataPath, "Wwise"), "Editor"), "WwiseSetupWizard");
+		string filename = Path.Combine(basePath, "AkWwisePopPicker.cs");
+		File.Delete(filename);	
+		AssetDatabase.Refresh();
+	}
+	
+    static void InstallNewPlatforms()
+    {
+        try
+        {
+            // Get a list of installed plugins
+            string pluginsPath = Path.Combine(Application.dataPath, "plugins");
 
+            if (!Directory.Exists(pluginsPath))
+            {
+                Directory.CreateDirectory(pluginsPath);
+            }
+
+            DirectoryInfo pluginsDirectory = new DirectoryInfo(pluginsPath);
+            FileInfo[] foundPlugins = pluginsDirectory.GetFiles("*AkSoundEngine*", SearchOption.AllDirectories);
+            List<string> installedPlugins = new List<string>();
+            string ToAdd = "";
+            foreach (FileInfo plugin in foundPlugins)
+            {
+                if (plugin.DirectoryName.Contains("x86") && plugin.FullName.Contains(".dll"))
+                {
+                    // x86 and x86_64 plus .dll mean Windows
+					ToAdd = "Windows";
+                }
+				else if (plugin.DirectoryName.Contains("x86") && plugin.FullName.Contains(".so"))
+				{
+					// x86 and x86_64 plus .so mean Windows
+					ToAdd = "Linux";
+				}
+				else if (plugin.DirectoryName.Contains("Metro"))
+				{
+					ToAdd = "Metro";
+				}
+				else if (plugin.DirectoryName.Contains("PSVita"))
+				{
+					ToAdd = "Vita";
+				}
+				else if (plugin.FullName.Contains(".bundle"))
+				{
+					ToAdd = "Mac";
+				}
+				else if (plugin.FullName.Contains(".xex"))
+				{
+					ToAdd = "XBox360";
+				}
+				else if (plugin.FullName.Contains (".meta") || plugin.FullName.Contains (".def") || plugin.FullName.Contains (".pdb") )
+				{
+					continue;
+				}
+				else
+                {
+                    ToAdd = Path.GetFileName(plugin.DirectoryName);
+                }
+                
+                if( !installedPlugins.Contains(ToAdd))
+                {
+                	installedPlugins.Add (ToAdd);
+                }
+            }
+
+            // Get the available plugins, and mark the new ones for install
+            pluginsPath = Path.Combine(Path.Combine(Path.Combine(Application.dataPath, "Wwise"), "Deployment"), "Plugins");
+            pluginsDirectory = new DirectoryInfo(pluginsPath);
+            DirectoryInfo[] availablePlatforms = pluginsDirectory.GetDirectories();
+
+
+
+            foreach (DirectoryInfo platform in availablePlatforms)
+            {
+                if (platform.Name == "Common")
+                {
+                    continue;
+                }
+
+                if (!installedPlugins.Contains(platform.Name))
+                {
+					WwiseSetupWizard.InstallPlugin(platform);
+                }
+            }
+        }
+        catch
+        {
+            Debug.Log("WwiseUnity: Unable to install new platform plugins. Please copy them manually to Assets/Plugins");
+        }
+    }
+	
+	static string s_CurrentScene = null;
+	static void CheckWwiseGlobalExistance()
+	{
+        WwiseSettings settings = WwiseSettings.LoadSettings();		
+        if (!settings.OldProject && (String.IsNullOrEmpty(EditorApplication.currentScene) || s_CurrentScene != EditorApplication.currentScene))
+		{			
+			// Look for a game object which has the initializer component
+			AkInitializer[] AkInitializers = UnityEngine.Object.FindObjectsOfType(typeof(AkInitializer)) as AkInitializer[];
+			if (AkInitializers.Length == 0)
+			{
+                if (settings.CreateWwiseGlobal == true)
+                {
+                    //No Wwise object in this scene, create one so that the sound engine is initialized and terminated properly even if the scenes are loaded
+                    //in the wrong order.
+                    GameObject objWwise = new GameObject("WwiseGlobal");
+
+                    //Attach initializer and terminator components
+                    AkInitializer init = objWwise.AddComponent<AkInitializer>();
+                    AkWwiseProjectInfo.GetData().CopyInitSettings(init);
+                }
+			}
+			else
+			{
+                if (settings.CreateWwiseGlobal == false && AkInitializers[0].gameObject.name == "WwiseGlobal")
+                {
+                    GameObject.DestroyImmediate(AkInitializers[0].gameObject);
+                }
+				//All scenes will share the same initializer.  So expose the init settings consistently across scenes.
+				AkWwiseProjectInfo.GetData().CopyInitSettings(AkInitializers[0]);
+			}
+
+			AkAudioListener[] akAudioListeners = UnityEngine.Object.FindObjectsOfType(typeof(AkAudioListener)) as AkAudioListener[];
+            if (akAudioListeners.Length == 0)
+            {
+                // Remove the audio listener script
+                if (Camera.main != null && settings.CreateWwiseListener == true)
+                {
+                    AudioListener listener = Camera.main.gameObject.GetComponent<AudioListener>();
+                    if (listener != null)
+                    {
+                        Component.DestroyImmediate(listener);
+                    }
+
+                    // Add the AkAudioListener script
+                    if (Camera.main.gameObject.GetComponent<AkAudioListener>() == null)
+                    {
+                        Camera.main.gameObject.AddComponent<AkAudioListener>();
+                    }
+                }
+            }
+            else
+            {
+                if (settings.CreateWwiseListener == false)
+                {
+                    Component.DestroyImmediate(akAudioListeners[0]);
+                }
+            }
+
+
+			s_CurrentScene = EditorApplication.currentScene;
+		}
+	}
 }
 
 #endif // UNITY_EDITOR
