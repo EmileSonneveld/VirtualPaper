@@ -8,7 +8,7 @@
 						<ObjectRef Name="PeopleWalk" ID="{9D46660C-3104-4FD6-B2A1-201F801B55CC}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="UIDrop" ID="{8B5B3824-70EE-4496-9FD3-4703CCE152AC}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PeoplePray" ID="{7393AE48-29D9-4BF6-BD73-268C5E7F168B}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="ObjectLamp_loop" ID="{FFE5C693-D093-4D1E-9EA0-91DD88BBCD57}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ObjectLamp_On" ID="{FFE5C693-D093-4D1E-9EA0-91DD88BBCD57}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="OutdoorAmb_loop" ID="{69630AB3-201E-4FCD-9970-69346688FD75}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="UIGrab" ID="{A86AE7C6-D8D4-4307-9D85-45B73250F0A4}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PeopleSad" ID="{012233CF-1196-4602-BDEB-FFC48B6764A1}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>

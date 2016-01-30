@@ -80,11 +80,36 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="ObjectLamp_loop" ID="{FFE5C693-D093-4D1E-9EA0-91DD88BBCD57}">
+				<Event Name="ObjectLamp_On" ID="{FFE5C693-D093-4D1E-9EA0-91DD88BBCD57}">
 					<ChildrenList>
+						<Action Name="Play" ID="{F07B1175-3B73-47A8-930D-9C39396AFE5B}" ShortID="796191566" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{EBCD5AE4-473F-4543-8E53-E4827AAD8492}" Global="false">
+									<ObjectRef Name="VP_Object_Switch" ID="{936E8D36-E300-4555-816B-624AB97075C4}" WorkUnitID="{57809540-3525-4039-BB1C-8AD7FFFFA13F}"/>
+								</Element>
+							</ElementList>
+						</Action>
 						<Action Name="Play" ID="{BA1A5692-25A9-427F-8BB3-7A0C39A31378}" ShortID="986369594" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{39CF4B27-E177-4B3A-8E32-C8D554510019}" Global="false">
+									<ObjectRef Name="VP_Object_Lamp" ID="{45FB88F8-B974-4D93-8465-0DD05230ABEB}" WorkUnitID="{57809540-3525-4039-BB1C-8AD7FFFFA13F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ObjectLamp_Off" ID="{A45FBF76-73F7-4268-90DC-E5A1AD4149D3}">
+					<ChildrenList>
+						<Action Name="Play" ID="{6A608B85-3158-4FD0-9306-656B9A655E7A}" ShortID="357536675" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{8CFCCFF0-3FAB-42BC-8FC4-0F5900D8C4EE}" Global="false">
+									<ObjectRef Name="VP_Object_Switch" ID="{936E8D36-E300-4555-816B-624AB97075C4}" WorkUnitID="{57809540-3525-4039-BB1C-8AD7FFFFA13F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Stop" ID="{D50E26F6-1EFB-4503-BC0F-73B31938ADAC}" ShortID="265435447" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{FBEB9B33-D210-4804-8468-B5400D6D918F}" Global="false">
 									<ObjectRef Name="VP_Object_Lamp" ID="{45FB88F8-B974-4D93-8465-0DD05230ABEB}" WorkUnitID="{57809540-3525-4039-BB1C-8AD7FFFFA13F}"/>
 								</Element>
 							</ElementList>

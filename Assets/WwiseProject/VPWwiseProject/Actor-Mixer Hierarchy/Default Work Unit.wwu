@@ -426,6 +426,28 @@
 								<ActiveSource Name="VP_Object_Lamp" ID="{DE23DC7F-E7A6-4BDB-BFD4-CACB020A1919}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="VP_Object_Switch" ID="{936E8D36-E300-4555-816B-624AB97075C4}" ShortID="56094885" Type="SoundFX">
+							<PropertyList>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5E60A99F-BEFC-4EAB-BC0F-6D1DE8F4755D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="VP_Object_Switch" ID="{4DF07F8B-5DC7-417B-B9EA-262D7417A411}" ShortID="413082198">
+									<Language>SFX</Language>
+									<AudioFile>VP_Object_Switch.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="VP_Object_Switch" ID="{4DF07F8B-5DC7-417B-B9EA-262D7417A411}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
