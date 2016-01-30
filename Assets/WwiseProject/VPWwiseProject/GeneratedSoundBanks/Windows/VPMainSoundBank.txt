@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	130612384	ObjectLamp_Off			\Default Work Unit\ObjectLamp_Off	
 	545104874	ObjectLamp_On			\Default Work Unit\ObjectLamp_On	
 	1023995335	PeopleWalk			\Default Work Unit\PeopleWalk	
 	1389954868	UIDrop			\Default Work Unit\UIDrop	

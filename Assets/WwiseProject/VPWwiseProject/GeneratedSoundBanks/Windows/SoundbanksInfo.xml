@@ -19,6 +19,7 @@
 			<ShortName>VPMainSoundBank</ShortName>
 			<Path>VPMainSoundBank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="130612384" Name="ObjectLamp_Off"/>
 				<Event Id="545104874" Name="ObjectLamp_On"/>
 				<Event Id="1673655846" Name="OutdoorAmb_loop"/>
 				<Event Id="3573189912" Name="PeoplePray"/>
