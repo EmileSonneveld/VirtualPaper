@@ -33,6 +33,7 @@ ModelImporter:
     4300002: Mesh01_MeshPart0
     4300004: Mesh01_MeshPart1
     4300006: Mesh02
+    6400000: Model
   materials:
     importMaterials: 1
     materialName: 0

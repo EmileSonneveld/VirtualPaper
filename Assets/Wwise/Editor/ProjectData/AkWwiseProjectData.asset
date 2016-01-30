@@ -16,9 +16,19 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{11ACF6D0-1759-459D-9125-555F172497CC}'
-    m_lastTimePsrt1: 588450821
-    m_lastTimePart2: -1999427331
+    m_lastTimePsrt1: -1928016466
+    m_lastTimePart2: -1999427284
     List:
+    - Name: ObjectLamp_loop
+      Path: Default Work Unit\ObjectLamp_loop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ObjectLamp_loop
+        ObjectType: 3
+      ID: 1348843787
+      Guid: 93c6e5ff93d01e4d9ea091dd88bbcd57
+      maxAttenuation: 0
     - Name: OutdoorAmb_loop
       Path: Default Work Unit\OutdoorAmb_loop
       PathAndIcons:
@@ -125,8 +135,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{AE64D10A-2AB2-4A4A-A7F6-10E55BFD7791}'
-    m_lastTimePsrt1: 588590967
-    m_lastTimePart2: -1999427331
+    m_lastTimePsrt1: -1926650140
+    m_lastTimePart2: -1999427284
     List:
     - Name: VPMainSoundBank
       Path: Default Work Unit\VPMainSoundBank

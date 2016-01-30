@@ -16,6 +16,7 @@ ModelImporter:
     2300000: Model
     3300000: Model
     4300000: Model
+    6400000: Model
   materials:
     importMaterials: 1
     materialName: 0
@@ -42,7 +43,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
