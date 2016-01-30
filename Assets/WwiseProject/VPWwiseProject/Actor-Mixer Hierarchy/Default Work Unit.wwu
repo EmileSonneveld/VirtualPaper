@@ -401,7 +401,7 @@
 								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-21</Value>
+										<Value>-11</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
