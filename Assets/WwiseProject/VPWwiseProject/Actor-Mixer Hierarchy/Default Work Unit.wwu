@@ -393,7 +393,38 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="OBJECTS" ID="{A05870F9-4224-4360-8E58-7989EA5FFB16}" ShortID="725028096"/>
+				<Folder Name="OBJECTS" ID="{A05870F9-4224-4360-8E58-7989EA5FFB16}" ShortID="725028096">
+					<ChildrenList>
+						<Sound Name="VP_Object_Lamp" ID="{45FB88F8-B974-4D93-8465-0DD05230ABEB}" ShortID="786958572" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-21</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5E60A99F-BEFC-4EAB-BC0F-6D1DE8F4755D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="OBJECTS" ID="{E8505B5E-2E4A-4D4D-A555-53EF4E7F0687}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="VP_Object_Lamp" ID="{DE23DC7F-E7A6-4BDB-BFD4-CACB020A1919}" ShortID="194422785">
+									<Language>SFX</Language>
+									<AudioFile>VP_Object_Lamp.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="VP_Object_Lamp" ID="{DE23DC7F-E7A6-4BDB-BFD4-CACB020A1919}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
