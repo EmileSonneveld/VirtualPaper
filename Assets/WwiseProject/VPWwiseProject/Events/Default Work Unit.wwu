@@ -116,6 +116,78 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="DeadToTree" ID="{C68F5900-C14D-47B2-9B90-C3FB7253A480}">
+					<ChildrenList>
+						<Action Name="Play" ID="{4725E934-07D0-40E5-8B7B-9DC5C6E74EDE}" ShortID="1034953835" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{AB50C87E-14B8-46AB-95F6-986D03BF23AC}" Global="false">
+									<ObjectRef Name="VP_Object_DeadToTree" ID="{B7E62D8C-82F6-4032-A271-7EE1CBD6275D}" WorkUnitID="{57809540-3525-4039-BB1C-8AD7FFFFA13F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="CutTree" ID="{1EFF4F56-4727-4239-BBBF-D85A43B51E67}">
+					<ChildrenList>
+						<Action Name="Play" ID="{C04FCFE6-4D81-47C0-9364-43285AFF90C2}" ShortID="1043534385" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{906C2E98-51DC-4F90-9B91-ABCAC6A7C6D5}" Global="false">
+									<ObjectRef Name="VP_People_CutTree" ID="{3D54AF60-5132-485B-9609-1F56BDD7FE79}" WorkUnitID="{57809540-3525-4039-BB1C-8AD7FFFFA13F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ThrowPeople" ID="{A09C49BD-7EC3-4D92-998D-5EC14D6AA884}">
+					<ChildrenList>
+						<Action Name="Play" ID="{1780BA38-BFCA-4115-9C7E-97ED0E76EEE9}" ShortID="397184111" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{C9671B03-5235-482C-862B-BBEF6C58AFF4}" Global="false">
+									<ObjectRef Name="VP_People_Throw" ID="{6217411B-62FB-48A5-8E98-6F7B7794E7AE}" WorkUnitID="{57809540-3525-4039-BB1C-8AD7FFFFA13F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{F0E8BE9E-0A93-48C4-98F6-FF17CAC50BD9}" ShortID="145169190" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{9046CC8C-DB28-4FA5-AE92-50B624F7060B}" Global="false">
+									<ObjectRef Name="VP_People_Fall" ID="{BAC21F4F-9B18-4B39-969D-B84CC2E05AB9}" WorkUnitID="{57809540-3525-4039-BB1C-8AD7FFFFA13F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Sacrifice" ID="{3CE91194-C89C-46F8-B604-6D4342B5C127}">
+					<ChildrenList>
+						<Action Name="Play" ID="{5B69E90E-3182-42A1-AF9A-92ED79C82E60}" ShortID="170258578" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{35897833-5D7F-475A-8D1E-5074FA3D3487}" Global="false">
+									<ObjectRef Name="VP_People_Sacrificed" ID="{218F4BFA-9725-4582-A0B0-AC91EC6167F2}" WorkUnitID="{57809540-3525-4039-BB1C-8AD7FFFFA13F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{D44E9DF6-61EA-43DB-8B9F-9E9B307FCEF1}" ShortID="986269011" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{6D84B2B2-233B-4FB1-8202-BCDC932935FA}" Global="false">
+									<ObjectRef Name="VP_People_Sacrificing" ID="{906FFE38-33C0-4950-A7DD-F1A979712EFA}" WorkUnitID="{57809540-3525-4039-BB1C-8AD7FFFFA13F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Treefall" ID="{EAE38D3C-91BE-42A7-9D2A-ACA9D32EAD99}">
+					<ChildrenList>
+						<Action Name="Play" ID="{71D69E98-5BC1-49C6-B743-460D378C0D24}" ShortID="1047256162" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{EB860088-E22C-4C00-9227-CF6D28405CAB}" Global="false">
+									<ObjectRef Name="VP_Object_Treefall" ID="{AEF7C34E-4183-4943-9001-69766F9954B9}" WorkUnitID="{57809540-3525-4039-BB1C-8AD7FFFFA13F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

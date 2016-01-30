@@ -19,6 +19,8 @@
 			<ShortName>VPMainSoundBank</ShortName>
 			<Path>VPMainSoundBank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2473207511" Name="CutTree"/>
+				<Event Id="3545924000" Name="DeadToTree"/>
 				<Event Id="130612384" Name="ObjectLamp_Off"/>
 				<Event Id="545104874" Name="ObjectLamp_On"/>
 				<Event Id="1673655846" Name="OutdoorAmb_loop"/>
@@ -26,6 +28,9 @@
 				<Event Id="2623792584" Name="PeopleSad"/>
 				<Event Id="3293427131" Name="PeopleUh"/>
 				<Event Id="1023995335" Name="PeopleWalk"/>
+				<Event Id="621005312" Name="Sacrifice"/>
+				<Event Id="1137489086" Name="ThrowPeople"/>
+				<Event Id="3165238254" Name="Treefall"/>
 				<Event Id="1389954868" Name="UIDrop"/>
 				<Event Id="3379585205" Name="UIGrab"/>
 			</IncludedEvents>
@@ -33,6 +38,10 @@
 				<File Id="10234216" Language="SFX">
 					<ShortName>VP_People_Sad_2.wav</ShortName>
 					<Path>SFX/VP_People_Sad_2_9E69E797.wem</Path>
+				</File>
+				<File Id="62901543" Language="SFX">
+					<ShortName>VP_People_Fall.wav</ShortName>
+					<Path>SFX/VP_People_Fall_9E69E797.wem</Path>
 				</File>
 				<File Id="194422785" Language="SFX">
 					<ShortName>VP_Object_Lamp.wav</ShortName>
@@ -46,6 +55,10 @@
 					<ShortName>VP_People_Praying_1.wav</ShortName>
 					<Path>SFX/VP_People_Praying_1_9E69E797.wem</Path>
 				</File>
+				<File Id="304144823" Language="SFX">
+					<ShortName>VP_Object_DeadToTree.wav</ShortName>
+					<Path>SFX/VP_Object_DeadToTree_9E69E797.wem</Path>
+				</File>
 				<File Id="371271959" Language="SFX">
 					<ShortName>VP_UI_Drop.wav</ShortName>
 					<Path>SFX/VP_UI_Drop_9E69E797.wem</Path>
@@ -57,6 +70,10 @@
 				<File Id="466414173" Language="SFX">
 					<ShortName>VP_Amb_Outdoor.wav</ShortName>
 					<Path>SFX/VP_Amb_Outdoor_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="528988439" Language="SFX">
+					<ShortName>VP_People_CutTree.wav</ShortName>
+					<Path>SFX/VP_People_CutTree_9E69E797.wem</Path>
 				</File>
 				<File Id="568544124" Language="SFX">
 					<ShortName>VP_People_Uh_2.wav</ShortName>
@@ -70,17 +87,33 @@
 					<ShortName>VP_People_Praying_2.wav</ShortName>
 					<Path>SFX/VP_People_Praying_2_9E69E797.wem</Path>
 				</File>
+				<File Id="585570235" Language="SFX">
+					<ShortName>VP_Object_Treefall.wav</ShortName>
+					<Path>SFX/VP_Object_Treefall_9E69E797.wem</Path>
+				</File>
 				<File Id="617340143" Language="SFX">
 					<ShortName>VP_UI_Grab.wav</ShortName>
 					<Path>SFX/VP_UI_Grab_9E69E797.wem</Path>
+				</File>
+				<File Id="659017131" Language="SFX">
+					<ShortName>VP_People_Throw.wav</ShortName>
+					<Path>SFX/VP_People_Throw_9E69E797.wem</Path>
 				</File>
 				<File Id="910893991" Language="SFX">
 					<ShortName>VP_People_FS_2.wav</ShortName>
 					<Path>SFX/VP_People_FS_2_9E69E797.wem</Path>
 				</File>
+				<File Id="912513292" Language="SFX">
+					<ShortName>VP_People_Sacrificing.wav</ShortName>
+					<Path>SFX/VP_People_Sacrificing_9E69E797.wem</Path>
+				</File>
 				<File Id="981818366" Language="SFX">
 					<ShortName>VP_People_Sad_1.wav</ShortName>
 					<Path>SFX/VP_People_Sad_1_9E69E797.wem</Path>
+				</File>
+				<File Id="1071045819" Language="SFX">
+					<ShortName>VP_People_Sacrificed.wav</ShortName>
+					<Path>SFX/VP_People_Sacrificed_9E69E797.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

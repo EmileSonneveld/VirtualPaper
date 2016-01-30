@@ -7,7 +7,21 @@
 					<ChildrenList>
 						<Bus Name="AMB" ID="{BCDAEEC2-FA80-41F3-B2FE-B5B79FAB2E8F}"/>
 						<Bus Name="OBJECTS" ID="{E8505B5E-2E4A-4D4D-A555-53EF4E7F0687}"/>
-						<Bus Name="PEOPLE" ID="{E0E8BCEA-F504-463C-9BA1-AFDE1077FDCE}"/>
+						<Bus Name="PEOPLE" ID="{E0E8BCEA-F504-463C-9BA1-AFDE1077FDCE}">
+							<PropertyList>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideMaxSoundInstance" Type="bool" Value="True"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
 						<Bus Name="UI" ID="{576A8F89-CF6E-4D78-80BF-CB37C1A700C4}">
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">

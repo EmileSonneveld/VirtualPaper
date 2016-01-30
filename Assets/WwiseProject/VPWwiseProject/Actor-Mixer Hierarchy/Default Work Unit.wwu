@@ -189,6 +189,11 @@
 									</ModifierList>
 								</Property>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Priority" Type="int16">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -258,6 +263,11 @@
 									</ModifierList>
 								</Property>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Priority" Type="int16">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -311,6 +321,167 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Sound Name="VP_People_Carry" ID="{9DB6E61F-2358-4420-A36C-203BC7802568}" ShortID="982893650" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5E60A99F-BEFC-4EAB-BC0F-6D1DE8F4755D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="RoomRev" ID="{6B68EF94-2934-4D4C-8D62-DCFA360080CB}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="VP_People_Carry" ID="{234A4C05-AB0F-4CAF-80B8-0AD67A4F7B9B}" ShortID="420159437">
+									<Language>SFX</Language>
+									<AudioFile>VP_People_Carry.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="VP_People_Carry" ID="{234A4C05-AB0F-4CAF-80B8-0AD67A4F7B9B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="VP_People_CutTree" ID="{3D54AF60-5132-485B-9609-1F56BDD7FE79}" ShortID="16469859" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B905C8CC-80CA-4D18-A2FA-D0FB5E10AD22}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5E60A99F-BEFC-4EAB-BC0F-6D1DE8F4755D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="RoomRev" ID="{6B68EF94-2934-4D4C-8D62-DCFA360080CB}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="VP_People_CutTree" ID="{08A989F2-E9DF-4ECB-A47D-A4C7B88AB1E1}" ShortID="528988439">
+									<Language>SFX</Language>
+									<AudioFile>VP_People_CutTree.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="VP_People_CutTree" ID="{08A989F2-E9DF-4ECB-A47D-A4C7B88AB1E1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="VP_People_Fall" ID="{BAC21F4F-9B18-4B39-969D-B84CC2E05AB9}" ShortID="477591751" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5E60A99F-BEFC-4EAB-BC0F-6D1DE8F4755D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="RoomRev" ID="{6B68EF94-2934-4D4C-8D62-DCFA360080CB}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="VP_People_Fall" ID="{28891BD7-22FF-4E51-AF70-F8D0AC209272}" ShortID="62901543">
+									<Language>SFX</Language>
+									<AudioFile>VP_People_Fall.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="VP_People_Fall" ID="{28891BD7-22FF-4E51-AF70-F8D0AC209272}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="VP_People_Sacrificed" ID="{218F4BFA-9725-4582-A0B0-AC91EC6167F2}" ShortID="427564353" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5E60A99F-BEFC-4EAB-BC0F-6D1DE8F4755D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="RoomRev" ID="{6B68EF94-2934-4D4C-8D62-DCFA360080CB}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="VP_People_Sacrificed" ID="{854C02F3-B78E-45D3-81F8-E6C6B1CF4383}" ShortID="1071045819">
+									<Language>SFX</Language>
+									<AudioFile>VP_People_Sacrificed.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="VP_People_Sacrificed" ID="{854C02F3-B78E-45D3-81F8-E6C6B1CF4383}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="VP_People_Sacrificing" ID="{906FFE38-33C0-4950-A7DD-F1A979712EFA}" ShortID="111783054" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5E60A99F-BEFC-4EAB-BC0F-6D1DE8F4755D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="RoomRev" ID="{6B68EF94-2934-4D4C-8D62-DCFA360080CB}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="VP_People_Sacrificing" ID="{5D47A6FC-A50C-4BC6-B313-968964DDEB5B}" ShortID="912513292">
+									<Language>SFX</Language>
+									<AudioFile>VP_People_Sacrificing.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="VP_People_Sacrificing" ID="{5D47A6FC-A50C-4BC6-B313-968964DDEB5B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="VP_People_Throw" ID="{6217411B-62FB-48A5-8E98-6F7B7794E7AE}" ShortID="953260754" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5E60A99F-BEFC-4EAB-BC0F-6D1DE8F4755D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="RoomRev" ID="{6B68EF94-2934-4D4C-8D62-DCFA360080CB}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="VP_People_Throw" ID="{9C1C44FE-DD39-4A1D-8E18-3583971202AB}" ShortID="659017131">
+									<Language>SFX</Language>
+									<AudioFile>VP_People_Throw.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="VP_People_Throw" ID="{9C1C44FE-DD39-4A1D-8E18-3583971202AB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI" ID="{634CFAAE-271E-4D34-865B-6F3DF0DD1183}" ShortID="358017085">
@@ -401,7 +572,7 @@
 								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-20</Value>
+										<Value>-30</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -449,6 +620,69 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="VP_Object_Switch" ID="{4DF07F8B-5DC7-417B-B9EA-262D7417A411}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="VP_Object_DeadToTree" ID="{B7E62D8C-82F6-4032-A271-7EE1CBD6275D}" ShortID="347317095" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5E60A99F-BEFC-4EAB-BC0F-6D1DE8F4755D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="VP_Object_DeadToTree" ID="{3AB74BC3-7DA5-4135-968C-80550CEEC6CE}" ShortID="304144823">
+									<Language>SFX</Language>
+									<AudioFile>VP_Object_DeadToTree.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="VP_Object_DeadToTree" ID="{3AB74BC3-7DA5-4135-968C-80550CEEC6CE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="VP_Object_HouseBuilt" ID="{1EB677A9-1E47-4907-BC53-1F93C1208846}" ShortID="335362683" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5E60A99F-BEFC-4EAB-BC0F-6D1DE8F4755D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="RoomRev" ID="{6B68EF94-2934-4D4C-8D62-DCFA360080CB}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="VP_Object_HouseBuilt" ID="{6AABF235-E0A6-4CA9-A95A-B6A9C75312AD}" ShortID="647545252">
+									<Language>SFX</Language>
+									<AudioFile>VP_Object_HouseBuilt.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="VP_Object_HouseBuilt" ID="{6AABF235-E0A6-4CA9-A95A-B6A9C75312AD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="VP_Object_Treefall" ID="{AEF7C34E-4183-4943-9001-69766F9954B9}" ShortID="1009064686" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5E60A99F-BEFC-4EAB-BC0F-6D1DE8F4755D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="OBJECTS" ID="{E8505B5E-2E4A-4D4D-A555-53EF4E7F0687}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="RoomRev" ID="{6B68EF94-2934-4D4C-8D62-DCFA360080CB}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="VP_Object_Treefall" ID="{FBCA4CAB-B852-4FB3-A91E-E0DC22015B31}" ShortID="585570235">
+									<Language>SFX</Language>
+									<AudioFile>VP_Object_Treefall.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="VP_Object_Treefall" ID="{FBCA4CAB-B852-4FB3-A91E-E0DC22015B31}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

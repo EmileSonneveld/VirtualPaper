@@ -5,12 +5,17 @@
 			<ChildrenList>
 				<SoundBank Name="VPMainSoundBank" ID="{988E5AD7-39CA-4193-9096-E2391489DA96}">
 					<ObjectInclusionList>
+						<ObjectRef Name="DeadToTree" ID="{C68F5900-C14D-47B2-9B90-C3FB7253A480}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PeopleWalk" ID="{9D46660C-3104-4FD6-B2A1-201F801B55CC}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="UIDrop" ID="{8B5B3824-70EE-4496-9FD3-4703CCE152AC}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Treefall" ID="{EAE38D3C-91BE-42A7-9D2A-ACA9D32EAD99}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PeoplePray" ID="{7393AE48-29D9-4BF6-BD73-268C5E7F168B}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="CutTree" ID="{1EFF4F56-4727-4239-BBBF-D85A43B51E67}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ObjectLamp_Off" ID="{A45FBF76-73F7-4268-90DC-E5A1AD4149D3}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ObjectLamp_On" ID="{FFE5C693-D093-4D1E-9EA0-91DD88BBCD57}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Sacrifice" ID="{3CE91194-C89C-46F8-B604-6D4342B5C127}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="OutdoorAmb_loop" ID="{69630AB3-201E-4FCD-9970-69346688FD75}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ThrowPeople" ID="{A09C49BD-7EC3-4D92-998D-5EC14D6AA884}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="UIGrab" ID="{A86AE7C6-D8D4-4307-9D85-45B73250F0A4}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PeopleSad" ID="{012233CF-1196-4602-BDEB-FFC48B6764A1}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PeopleUh" ID="{3D8663F2-135D-4E34-8017-A0D626A931DF}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>

@@ -13,6 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID CUTTREE = 2473207511U;
+        static const AkUniqueID DEADTOTREE = 3545924000U;
         static const AkUniqueID OBJECTLAMP_OFF = 130612384U;
         static const AkUniqueID OBJECTLAMP_ON = 545104874U;
         static const AkUniqueID OUTDOORAMB_LOOP = 1673655846U;
@@ -20,6 +22,9 @@ namespace AK
         static const AkUniqueID PEOPLESAD = 2623792584U;
         static const AkUniqueID PEOPLEUH = 3293427131U;
         static const AkUniqueID PEOPLEWALK = 1023995335U;
+        static const AkUniqueID SACRIFICE = 621005312U;
+        static const AkUniqueID THROWPEOPLE = 1137489086U;
+        static const AkUniqueID TREEFALL = 3165238254U;
         static const AkUniqueID UIDROP = 1389954868U;
         static const AkUniqueID UIGRAB = 3379585205U;
     } // namespace EVENTS
