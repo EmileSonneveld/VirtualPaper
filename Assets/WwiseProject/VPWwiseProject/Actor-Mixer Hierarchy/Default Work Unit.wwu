@@ -401,7 +401,7 @@
 								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-11</Value>
+										<Value>-20</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -436,6 +436,9 @@
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="RoomRev" ID="{6B68EF94-2934-4D4C-8D62-DCFA360080CB}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
