@@ -13,6 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID OBJECTLAMP_OFF = 130612384U;
+        static const AkUniqueID OBJECTLAMP_ON = 545104874U;
         static const AkUniqueID OUTDOORAMB_LOOP = 1673655846U;
         static const AkUniqueID PEOPLEPRAY = 3573189912U;
         static const AkUniqueID PEOPLESAD = 2623792584U;

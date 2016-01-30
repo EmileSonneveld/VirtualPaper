@@ -11,13 +11,156 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6df8ea7e2ae64f439764f5fe71248ce, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  CurrentPluginConfig: 
-  EventWwu: []
-  AuxBusWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  BankWwu: []
-  ExpandedItems: []
+  CurrentPluginConfig: Profile
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{11ACF6D0-1759-459D-9125-555F172497CC}'
+    m_lastTimePsrt1: -1303810977
+    m_lastTimePart2: -1999427233
+    List:
+    - Name: ObjectLamp_Off
+      Path: Default Work Unit\ObjectLamp_Off
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ObjectLamp_Off
+        ObjectType: 3
+      ID: 130612384
+      Guid: 76bf5fa4f773684290dce5a1ad4149d3
+      maxAttenuation: 0
+    - Name: ObjectLamp_On
+      Path: Default Work Unit\ObjectLamp_On
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ObjectLamp_On
+        ObjectType: 3
+      ID: 545104874
+      Guid: 93c6e5ff93d01e4d9ea091dd88bbcd57
+      maxAttenuation: 0
+    - Name: OutdoorAmb_loop
+      Path: Default Work Unit\OutdoorAmb_loop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: OutdoorAmb_loop
+        ObjectType: 3
+      ID: 1673655846
+      Guid: b30a63691e20cd4f997069346688fd75
+      maxAttenuation: 0
+    - Name: PeoplePray
+      Path: Default Work Unit\PeoplePray
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PeoplePray
+        ObjectType: 3
+      ID: -721777384
+      Guid: 48ae9373d929f64bbd73268c5e7f168b
+      maxAttenuation: 0
+    - Name: PeopleSad
+      Path: Default Work Unit\PeopleSad
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PeopleSad
+        ObjectType: 3
+      ID: -1671174712
+      Guid: cf33220196110246bdebffc48b6764a1
+      maxAttenuation: 0
+    - Name: PeopleUh
+      Path: Default Work Unit\PeopleUh
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PeopleUh
+        ObjectType: 3
+      ID: -1001540165
+      Guid: f263863d5d13344e8017a0d626a931df
+      maxAttenuation: 0
+    - Name: PeopleWalk
+      Path: Default Work Unit\PeopleWalk
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PeopleWalk
+        ObjectType: 3
+      ID: 1023995335
+      Guid: 0c66469d0431d64fb2a1201f801b55cc
+      maxAttenuation: 0
+    - Name: UIDrop
+      Path: Default Work Unit\UIDrop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UIDrop
+        ObjectType: 3
+      ID: 1389954868
+      Guid: 24385b8bee7096449fd34703cce152ac
+      maxAttenuation: 0
+    - Name: UIGrab
+      Path: Default Work Unit\UIGrab
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UIGrab
+        ObjectType: 3
+      ID: -915382091
+      Guid: c6e76aa8d4d807439d8545b73250f0a4
+      maxAttenuation: 0
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{E95E3857-58C1-44ED-82DF-432A2E7AACA6}'
+    m_lastTimePsrt1: 920707212
+    m_lastTimePart2: -1999427226
+    List:
+    - Name: RoomRev
+      Path: Default Work Unit\Master Audio Bus\RoomRev
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: RoomRev
+        ObjectType: 1
+      ID: 694004599
+      Guid: 94ef686b34294c4d8d62dcfa360080cb
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{917236FF-65CF-400D-9C16-A8FD82016E72}'
+    m_lastTimePsrt1: -1029078813
+    m_lastTimePart2: -1999427368
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{A74A0377-8C3D-4FAA-BE60-CDD27EDB598B}'
+    m_lastTimePsrt1: -1029078813
+    m_lastTimePart2: -1999427368
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{AE64D10A-2AB2-4A4A-A7F6-10E55BFD7791}'
+    m_lastTimePsrt1: -1513954823
+    m_lastTimePart2: -1999427230
+    List:
+    - Name: VPMainSoundBank
+      Path: Default Work Unit\VPMainSoundBank
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: VPMainSoundBank
+        ObjectType: 7
+      ID: -1618686581
+      Guid: d75a8e98ca3993419096e2391489da96
+  ExpandedItems:
+  - /VPWwiseProject
+  - /VPWwiseProject/Events
+  - /VPWwiseProject/Events/Default Work Unit
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

@@ -1,0 +1,130 @@
+fileFormatVersion: 2
+guid: 5b534490dbdc6c84cabe47e1c465dc8b
+timeCreated: 1454117295
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SpriteSheetCueillette_0
+    21300002: SpriteSheetCueillette_1
+    21300004: SpriteSheetCueillette_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: SpriteSheetCueillette_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 53, y: 25}
+        - {x: 70, y: 29}
+        - {x: 75, y: 62}
+        - {x: 60, y: 128}
+        - {x: -71, y: 128}
+        - {x: -91, y: 83}
+        - {x: -91, y: -75}
+        - {x: -87, y: -76}
+        - {x: -58, y: -73}
+        - {x: -56, y: -70}
+        - {x: -55, y: -66}
+        - {x: -55, y: -68}
+        - {x: -56, y: -69}
+        - {x: -56, y: -74}
+        - {x: -57, y: -74}
+        - {x: -79, y: -100}
+        - {x: -77, y: -128}
+        - {x: 69, y: -128}
+        - {x: 82, y: -95}
+        - {x: 82, y: 14}
+        - {x: 68, y: 27}
+    - name: SpriteSheetCueillette_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 70, y: 124}
+        - {x: 63, y: 128}
+        - {x: -42, y: 128}
+        - {x: -92, y: 72}
+        - {x: -92, y: -89}
+        - {x: -79, y: -128}
+        - {x: 48, y: -128}
+        - {x: 49, y: -103}
+        - {x: 40, y: -97}
+        - {x: 70, y: -70}
+    - name: SpriteSheetCueillette_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -77, y: 128}
+        - {x: -77, y: 126}
+        - {x: -75, y: 124}
+        - {x: 46, y: 124}
+        - {x: 48, y: 126}
+        - {x: 48, y: 128}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

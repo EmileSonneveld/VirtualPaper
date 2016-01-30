@@ -10,5 +10,5 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	694004599	RoomRev			\Default Work Unit\Master Audio Bus\RoomRev	
 
 Effect plug-ins	ID	Name	Type				Notes
-	1551236760	Small_Wooden_Room1	Wwise Matrix Reverb			
+	1904434771	Medium_Room1	Wwise Matrix Reverb			
 
