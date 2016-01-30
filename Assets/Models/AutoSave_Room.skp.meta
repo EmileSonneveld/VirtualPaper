@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 0fa286c35b602c248a57a60b471101e9
-timeCreated: 1454109568
+timeCreated: 1454119668
 licenseType: Free
 SketchUpImporter:
   generateBackFace: 0
@@ -8,7 +8,7 @@ SketchUpImporter:
   selectedNodes: 
   assetHash:
     serializedVersion: 2
-    Hash: 8906d1faae7849fcd4b07fbf7c7fa45b
+    Hash: 27a1a06eb9fcdb185523d2c0f35ecfbf
   longitude: 0
   latitude: 0
   northCorrection: 0

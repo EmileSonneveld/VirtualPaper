@@ -1,0 +1,141 @@
+fileFormatVersion: 2
+guid: ad49955fb3cbc2f4c8b5443c7325a518
+timeCreated: 1454120279
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: "sprite pri\xE8re_0"
+    21300002: "sprite pri\xE8re_1"
+    21300004: "sprite pri\xE8re_2"
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: "sprite pri\xE8re_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 88, y: 42}
+        - {x: 46, y: 66}
+        - {x: 26, y: 66}
+        - {x: -9, y: 63}
+        - {x: -57, y: 28}
+        - {x: -81, y: -19}
+        - {x: -121, y: -63}
+        - {x: -128, y: -77}
+        - {x: -128, y: -111}
+        - {x: -125, y: -125}
+        - {x: -113, y: -128}
+        - {x: 128, y: -128}
+        - {x: 128, y: -76}
+        - {x: 114, y: -61}
+      - - {x: 125, y: 8}
+        - {x: 127, y: 6}
+        - {x: 128, y: 6}
+        - {x: 128, y: 17}
+        - {x: 125, y: 16}
+    - name: "sprite pri\xE8re_1"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 74, y: -90}
+        - {x: 77, y: -76}
+        - {x: 114, y: -61}
+        - {x: 128, y: -35}
+        - {x: 128, y: 67}
+        - {x: 86, y: 102}
+        - {x: -7, y: 102}
+        - {x: -33, y: 100}
+        - {x: -128, y: 21}
+        - {x: -128, y: -28}
+        - {x: -49, y: -128}
+        - {x: 51, y: -128}
+        - {x: 61, y: -127}
+        - {x: 67, y: -114}
+        - {x: 72, y: -99}
+    - name: "sprite pri\xE8re_2"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 119}
+        - {x: -34, y: 109}
+        - {x: -59, y: 61}
+        - {x: -67, y: 32}
+        - {x: -68, y: 17}
+        - {x: -56, y: -5}
+        - {x: -53, y: -10}
+        - {x: -83, y: -49}
+        - {x: -84, y: -60}
+        - {x: -84, y: -112}
+        - {x: 80, y: -112}
+        - {x: 101, y: -88}
+        - {x: 101, y: 92}
+        - {x: 97, y: 119}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
