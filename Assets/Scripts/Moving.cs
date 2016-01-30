@@ -30,13 +30,13 @@ public class Moving : MonoBehaviour
     private Transform house;
     private NavMeshAgent nMA;
     public float maxTime = 3;
-    public float time;
+    private float time;
 
     public bool dontMove;
-
     private bool alrdepositeFruit = true;
-
     public float timerScale = 11;
+
+
 
     void Start()
     {
@@ -65,38 +65,47 @@ public class Moving : MonoBehaviour
         }
         if (house != null)
         {
-            if (!dontMove)
-                if (house.GetComponent<House>().deplacing)
+            if (house != null)
+                if ((house.GetComponent<House>().p1 != null) && (house.GetComponent<House>().p2 != null))
                 {
-                    house.GetComponent<House>().deplacing = false;
-                    house.GetComponent<House>().nPeople = 0;
-                    house = ChoseChild(houseList, transform);
-                    tree = ChoseChild(treeList, house);
-                }
-            if (!dontMove)
-                Move2();
-            else if (house.GetComponent<House>().BHomOnHome >= 2)
-            {
-                dontMove = false;
-                house.GetComponent<House>().houseFood -= 4;
-                house.GetComponent<House>().BHomOnHome = 0;
-                GameObject newBHom;
-                newBHom = Instantiate(transform.parent.GetChild(0).gameObject, house.GetChild(0).position, Quaternion.Euler(0, 0, 0)) as GameObject;
-                newBHom.transform.parent = transform.parent;
-                newBHom.transform.localScale = new Vector3(scale / 4, scale / 4, scale / 4);
-                newBHom.transform.GetComponent<Moving>().house = null;
-                newBHom.transform.GetComponent<Moving>().tree = null;
+                    if (!house.GetComponent<House>().p1.GetComponent<Moving>().dontMove && !house.GetComponent<House>().p2.GetComponent<Moving>().dontMove)
+                        if (house.GetComponent<House>().deplacing)
+                        {
+                            house.GetComponent<House>().deplacing = false;
+                            //house.GetComponent<House>().nPeople = 0;//--------------------
+                            house = ChoseChild(houseList, transform);
+                            tree = ChoseChild(treeList, house);
+                        }
+                    if (!house.GetComponent<House>().p1.GetComponent<Moving>().dontMove && !house.GetComponent<House>().p2.GetComponent<Moving>().dontMove)
+                        Move2();
+                    else if ((house.GetComponent<House>().BHomOnHome >= 2) || ((Vector3.Distance(house.GetComponent<House>().p1.position, house.GetComponent<House>().p2.position)) < 1))
+                    {
+                        house.GetComponent<House>().p1.GetComponent<Moving>().dontMove = false;
+                        house.GetComponent<House>().p2.GetComponent<Moving>().dontMove = false;
+                        house.GetComponent<House>().houseFood -= 4;
+                        house.GetComponent<House>().BHomOnHome = 0;
+                        GameObject newBHom;
+                        newBHom = Instantiate(transform.parent.GetChild(0).gameObject, house.GetChild(0).position, Quaternion.Euler(0, 0, 0)) as GameObject;
+                        newBHom.transform.parent = transform.parent;
+                        newBHom.transform.localScale = new Vector3(scale / 4, scale / 4, scale / 4);
+                        newBHom.transform.GetComponent<Moving>().house = null;
+                        newBHom.transform.GetComponent<Moving>().tree = null;
 
-            }
+                    }
+                }
         }
-        else if (!dontMove)
+        else if ((house != null) && (tree != null))
         {
-            TransformTree();
-        }
+            if ((house.GetComponent<House>().p1 != null) && (house.GetComponent<House>().p2 != null))
+                if ((!house.GetComponent<House>().p1.GetComponent<Moving>().dontMove && !house.GetComponent<House>().p2.GetComponent<Moving>().dontMove))
+                {
+                    TransformTree();
+                }
+        }else TransformTree();
     }
 
-    private void Move()
-    {
+    //private void Move() //----------Old--------
+    /*{
         if (believe && (maxTarget < 4))
             maxTarget = 4;
         else if (!believe && (maxTarget > 3))
@@ -174,13 +183,10 @@ public class Moving : MonoBehaviour
                     alrdepositeFruit = false;
 
         }
-    }
-
-    public float test;
+    }*/
 
     private void Move2()
     {
-        test = nMA.speed;
         if ((Vector3.Distance(transform.position, nMA.destination)) < (nMA.speed / 3))
         {
 
@@ -196,20 +202,25 @@ public class Moving : MonoBehaviour
                 }
                 else if (walkToTree)
                 {
-                    if (tree.gameObject.GetComponent<Tree>().nFruit > 0)
-                        nMA.SetDestination(tree.transform.GetChild(0).position);
-                    else tree = ChoseChild(treeList, house);
-
-                    nMA.SetDestination(tree.GetChild(0).position);
-
+                    if (house.GetComponent<House>().houseFood + 1 < nFoodToChild)
+                    {
+                        if (tree.gameObject.GetComponent<Tree>().nFruit > 0)
+                            nMA.SetDestination(tree.GetChild(0).position);
+                        else
+                        {
+                            tree = ChoseChild(treeList, house);
+                            nMA.SetDestination(tree.GetChild(0).position);
+                        }
+                    }
                     if (transportingFood)
                     {
                         transportingFood = false;
                         house.GetComponent<House>().houseFood++;
 
-                        if (house.GetComponent<House>().houseFood > nFoodToChild)
+                        if ((house.GetComponent<House>().houseFood >= nFoodToChild) && (house.GetComponent<House>().nPeople >=2))
                         {
-                            dontMove = true;
+                            house.GetComponent<House>().p1.GetComponent<Moving>().dontMove = true;
+                            house.GetComponent<House>().p2.GetComponent<Moving>().dontMove = true;
                             house.GetComponent<House>().BHomOnHome++;
                         }
                     }
@@ -284,6 +295,10 @@ public class Moving : MonoBehaviour
             if (elementList.name == "ListHouse")
             {
                 elementList.GetChild(lastelement).GetComponent<House>().nPeople++;
+                if (elementList.GetChild(lastelement).GetComponent<House>().p1 == null)
+                    elementList.GetChild(lastelement).GetComponent<House>().p1 = transform;
+                else if (elementList.GetChild(lastelement).GetComponent<House>().p2 == null)
+                    elementList.GetChild(lastelement).GetComponent<House>().p2 = transform;
             }
             return elementList.GetChild(lastelement);
         }
@@ -292,7 +307,7 @@ public class Moving : MonoBehaviour
     private void TransformTree()
     {
         tree = ChoseChild(treeList, transform);
-        nMA.SetDestination(tree/*.GetChild(0)*/.position);
+        nMA.SetDestination(tree.GetChild(0).position);
 
         if (nMA.velocity != Vector3.zero)
         {

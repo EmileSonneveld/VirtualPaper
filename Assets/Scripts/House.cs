@@ -8,4 +8,10 @@ public class House : MonoBehaviour {
     public int houseFood;
 
     public int BHomOnHome = 0;
+
+    public Transform p1;
+    public Transform p2;
+
+
+
 }
