@@ -13,7 +13,7 @@ public class Moving : MonoBehaviour {
     public int curTarget = 0;
     public int maxTarget = 3;
 
-    private bool test;
+    private bool arldimNFruit;
     public int treeNChild = 0;
     private NavMeshAgent nMA;
     
@@ -32,6 +32,7 @@ public class Moving : MonoBehaviour {
             maxTarget = 4;
         else if (!believe && (maxTarget > 3))
             maxTarget = 3;
+
         if (nMA.velocity == Vector3.zero)
         {
             if (curTarget == target)
@@ -42,7 +43,7 @@ public class Moving : MonoBehaviour {
 
             if (target == 1)
             {
-                test = false;
+                arldimNFruit = false;
                 nMA.SetDestination(house.position);
             }
             else if (target == 2)
@@ -51,12 +52,6 @@ public class Moving : MonoBehaviour {
                 if (treeList.GetChild(treeNChild).gameObject.GetComponent<Tree>().nFruit > 0)
                     nMA.SetDestination(treeList.GetChild(treeNChild).transform.position);
                 else treeNChild = ChoseTree();
-
-                if (!test)
-                {
-                    treeList.GetChild(treeNChild).gameObject.GetComponent<Tree>().nFruit--;
-                    test = true;
-                }
             }
             else if (target == 3)
             {
@@ -69,6 +64,15 @@ public class Moving : MonoBehaviour {
         {
             if (target >= maxTarget)
                 target = 0;
+
+            if (target == 1)
+            {
+                if (!arldimNFruit)
+                {
+                    treeList.GetChild(treeNChild).gameObject.GetComponent<Tree>().nFruit--;
+                    arldimNFruit = true;
+                }
+            }
 
             if (curTarget != target)
                 curTarget = target;
