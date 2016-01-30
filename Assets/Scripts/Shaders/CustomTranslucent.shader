@@ -19,7 +19,7 @@
 	}
 	SubShader {
 		Tags { "RenderType"="Opaque" }
-		LOD 200
+		//LOD 200
 
 		CGPROGRAM
 		#pragma surface surf Translucent
@@ -67,7 +67,7 @@
 			// Add the two together.
 			fixed4 c;
 			c.rgb = diffAlbedo + transAlbedo;
-			c.a = _LightColor0.a * _SpecColor.a * spec * atten;
+			c.a = ( _LightColor0.a * _SpecColor.a * spec * atten ) * 0.5;
 			return c;
 		}
 

@@ -1,0 +1,261 @@
+fileFormatVersion: 2
+guid: 9bc6936ae30846046a4c78b00133a6df
+timeCreated: 1454185983
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: DIFF_0
+    21300002: DIFF_1
+    21300004: DIFF_2
+    21300006: DIFF_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: DIFF_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -84, y: 111}
+        - {x: -126, y: 39}
+        - {x: -128, y: 34}
+        - {x: -128, y: -28}
+        - {x: -66, y: -111}
+        - {x: 51, y: -111}
+        - {x: 51, y: 93}
+        - {x: -1, y: 111}
+      - - {x: -92, y: -69}
+        - {x: -89, y: -68}
+        - {x: -89, y: -65}
+        - {x: -92, y: -64}
+        - {x: -94, y: -66}
+      - - {x: -88, y: -56}
+        - {x: -90, y: -58}
+        - {x: -88, y: -63}
+        - {x: -85, y: -63}
+        - {x: -83, y: -62}
+        - {x: -83, y: -59}
+        - {x: -84, y: -56}
+      - - {x: 40, y: -55}
+        - {x: 39, y: -56}
+        - {x: 39, y: -61}
+        - {x: 46, y: -61}
+        - {x: 46, y: -57}
+        - {x: 45, y: -55}
+      - - {x: 46, y: -40}
+        - {x: 48, y: -42}
+        - {x: 51, y: -41}
+        - {x: 51, y: -38}
+        - {x: 49, y: -36}
+        - {x: 46, y: -37}
+      - - {x: -91, y: -35}
+        - {x: -89, y: -37}
+        - {x: -86, y: -36}
+        - {x: -86, y: -33}
+        - {x: -88, y: -31}
+        - {x: -91, y: -32}
+    - name: DIFF_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 111}
+        - {x: -68, y: 111}
+        - {x: -82, y: 53}
+        - {x: -79, y: 31}
+        - {x: -75, y: 29}
+        - {x: -117, y: -33}
+        - {x: -117, y: -93}
+        - {x: -89, y: -111}
+        - {x: 50, y: -111}
+        - {x: 50, y: 67}
+        - {x: 15, y: 110}
+      - - {x: 39, y: -55}
+        - {x: 38, y: -56}
+        - {x: 38, y: -61}
+        - {x: 45, y: -61}
+        - {x: 45, y: -57}
+        - {x: 44, y: -55}
+      - - {x: 45, y: -40}
+        - {x: 47, y: -42}
+        - {x: 50, y: -41}
+        - {x: 50, y: -38}
+        - {x: 48, y: -36}
+        - {x: 45, y: -37}
+    - name: DIFF_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -47, y: 111}
+        - {x: -71, y: 65}
+        - {x: -71, y: -101}
+        - {x: -68, y: -111}
+        - {x: 52, y: -111}
+        - {x: 59, y: -83}
+        - {x: 59, y: 70}
+        - {x: 32, y: 111}
+      - - {x: -68, y: -56}
+        - {x: -68, y: -62}
+        - {x: -66, y: -63}
+        - {x: -62, y: -63}
+        - {x: -59, y: -62}
+        - {x: -59, y: -58}
+        - {x: -60, y: -56}
+      - - {x: 40, y: -55}
+        - {x: 39, y: -56}
+        - {x: 39, y: -61}
+        - {x: 46, y: -61}
+        - {x: 46, y: -57}
+        - {x: 45, y: -55}
+      - - {x: -56, y: -57}
+        - {x: -53, y: -56}
+        - {x: -53, y: -53}
+        - {x: -56, y: -52}
+        - {x: -58, y: -54}
+      - - {x: -50, y: -35}
+        - {x: -51, y: -36}
+        - {x: -51, y: -38}
+        - {x: -46, y: -43}
+        - {x: -43, y: -43}
+        - {x: -42, y: -41}
+        - {x: -42, y: -37}
+        - {x: -44, y: -35}
+      - - {x: 47, y: -36}
+        - {x: 46, y: -38}
+        - {x: 46, y: -41}
+        - {x: 48, y: -42}
+        - {x: 51, y: -42}
+        - {x: 52, y: -41}
+        - {x: 52, y: -36}
+      - - {x: -51, y: -27}
+        - {x: -52, y: -28}
+        - {x: -52, y: -33}
+        - {x: -47, y: -35}
+        - {x: -43, y: -35}
+        - {x: -41, y: -34}
+        - {x: -41, y: -30}
+        - {x: -45, y: -27}
+      - - {x: -86, y: -26}
+        - {x: -84, y: -28}
+        - {x: -81, y: -27}
+        - {x: -81, y: -24}
+        - {x: -83, y: -22}
+        - {x: -86, y: -23}
+    - name: DIFF_3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 59, y: 112}
+        - {x: -32, y: 112}
+        - {x: -64, y: 74}
+        - {x: -64, y: -111}
+        - {x: 62, y: -111}
+        - {x: 127, y: -85}
+        - {x: 127, y: 11}
+        - {x: 126, y: 18}
+      - - {x: 83, y: -87}
+        - {x: 87, y: -88}
+        - {x: 90, y: -86}
+        - {x: 89, y: -83}
+        - {x: 84, y: -82}
+        - {x: 82, y: -84}
+      - - {x: 107, y: -70}
+        - {x: 110, y: -69}
+        - {x: 110, y: -66}
+        - {x: 107, y: -65}
+        - {x: 105, y: -67}
+      - - {x: -65, y: -38}
+        - {x: -65, y: -42}
+        - {x: -63, y: -44}
+        - {x: -60, y: -44}
+        - {x: -58, y: -42}
+        - {x: -58, y: -38}
+        - {x: -60, y: -36}
+      - - {x: 44, y: -31}
+        - {x: 44, y: -32}
+        - {x: 46, y: -34}
+        - {x: 48, y: -34}
+        - {x: 51, y: -31}
+        - {x: 50, y: -28}
+        - {x: 47, y: -28}
+      - - {x: 51, y: -17}
+        - {x: 48, y: -19}
+        - {x: 48, y: -22}
+        - {x: 50, y: -24}
+        - {x: 51, y: -24}
+        - {x: 54, y: -23}
+        - {x: 54, y: -17}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

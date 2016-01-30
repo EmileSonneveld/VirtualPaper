@@ -6,6 +6,7 @@ public class DragAndDropSprite : MonoBehaviour {
 	public float m_SpaceAboveDragpoint = 0.5f;
 	public float m_Speed = 2f;
 	public float m_TargetScale = 1.2f;
+	public GameObject m_SpawnObject;
 
 	private bool m_PickedUp = false;
 	private Transform m_Camera;
@@ -50,6 +51,8 @@ public class DragAndDropSprite : MonoBehaviour {
 
 	public void Drop(){
 		AkSoundEngine.PostEvent ("UIDrop", gameObject);
-
+		m_FaceCamera.enabled = false;
+		m_PickedUp = false;
+		gameObject.tag = "Untagged";
 	}
 }
