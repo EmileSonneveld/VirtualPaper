@@ -1,0 +1,216 @@
+fileFormatVersion: 2
+guid: ba40276edbb7e144d98c5de1d0921aad
+timeCreated: 1454157282
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SpritesheetMaison_0
+    21300002: SpritesheetMaison_1
+    21300004: SpritesheetMaison_2
+    21300006: SpritesheetMaison_3
+    21300008: SpritesheetMaison_4
+    21300010: SpritesheetMaison_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: SpritesheetMaison_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 104, y: 14}
+        - {x: 35, y: 102}
+        - {x: -3, y: 127}
+        - {x: -9, y: 127}
+        - {x: -108, y: 18}
+        - {x: -108, y: 6}
+        - {x: -92, y: -2}
+        - {x: -90, y: -23}
+        - {x: -80, y: -116}
+        - {x: -78, y: -122}
+        - {x: 88, y: -122}
+        - {x: 77, y: -24}
+        - {x: 105, y: 5}
+        - {x: 105, y: 10}
+    - name: SpritesheetMaison_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 104, y: 12}
+        - {x: 42, y: 92}
+        - {x: 33, y: 103}
+        - {x: -4, y: 127}
+        - {x: -12, y: 127}
+        - {x: -109, y: 21}
+        - {x: -109, y: 7}
+        - {x: -107, y: 1}
+        - {x: -90, y: -34}
+        - {x: -81, y: -117}
+        - {x: -79, y: -122}
+        - {x: 87, y: -122}
+        - {x: 76, y: -24}
+        - {x: 104, y: 6}
+    - name: SpritesheetMaison_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 106, y: 14}
+        - {x: 54, y: 82}
+        - {x: 37, y: 108}
+        - {x: 0, y: 128}
+        - {x: -15, y: 128}
+        - {x: -26, y: 113}
+        - {x: -110, y: 19}
+        - {x: -110, y: 7}
+        - {x: -95, y: -2}
+        - {x: -82, y: -120}
+        - {x: -77, y: -122}
+        - {x: 84, y: -122}
+        - {x: 87, y: -121}
+        - {x: 78, y: -23}
+        - {x: 106, y: 7}
+    - name: SpritesheetMaison_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 102, y: 15}
+        - {x: 31, y: 105}
+        - {x: -7, y: 128}
+        - {x: -11, y: 128}
+        - {x: -29, y: 109}
+        - {x: -110, y: 18}
+        - {x: -110, y: 8}
+        - {x: -104, y: 4}
+        - {x: -91, y: -32}
+        - {x: -82, y: -115}
+        - {x: -79, y: -120}
+        - {x: 82, y: -120}
+        - {x: 83, y: -119}
+        - {x: 76, y: -22}
+        - {x: 102, y: 9}
+    - name: SpritesheetMaison_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 106, y: 6}
+        - {x: 106, y: 13}
+        - {x: 40, y: 101}
+        - {x: 1, y: 127}
+        - {x: -8, y: 127}
+        - {x: -91, y: 49}
+        - {x: -107, y: 17}
+        - {x: -107, y: -2}
+        - {x: -90, y: -11}
+        - {x: -87, y: -121}
+        - {x: -75, y: -122}
+        - {x: 87, y: -122}
+        - {x: 87, y: -121}
+        - {x: 77, y: 0}
+        - {x: 95, y: 0}
+    - name: SpritesheetMaison_5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 103, y: 14}
+        - {x: 37, y: 102}
+        - {x: -2, y: 128}
+        - {x: -12, y: 128}
+        - {x: -110, y: 23}
+        - {x: -110, y: 8}
+        - {x: -108, y: 2}
+        - {x: -92, y: -22}
+        - {x: -83, y: -117}
+        - {x: -80, y: -121}
+        - {x: 86, y: -121}
+        - {x: 74, y: 1}
+        - {x: 92, y: 1}
+        - {x: 103, y: 7}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
