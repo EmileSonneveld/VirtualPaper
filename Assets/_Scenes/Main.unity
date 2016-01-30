@@ -759,7 +759,7 @@ Transform:
   - {fileID: 1949222807}
   - {fileID: 484364216}
   m_Father: {fileID: 1026862312}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!1 &757703868
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,12 +921,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 991721247}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.5, y: 82.54, z: -12.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1189280292}
   - {fileID: 1237954976}
-  m_Father: {fileID: 1026862312}
+  m_Father: {fileID: 1906296558}
   m_RootOrder: 0
 --- !u!1 &1026862311
 GameObject:
@@ -953,7 +953,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children:
-  - {fileID: 991721248}
   - {fileID: 678168753}
   - {fileID: 1893713717}
   - {fileID: 1885700310}
@@ -1726,7 +1725,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1026862312}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!1 &1893713716
 GameObject:
   m_ObjectHideFlags: 0
@@ -1759,7 +1758,35 @@ Transform:
   - {fileID: 2020295457}
   - {fileID: 1477121982}
   m_Father: {fileID: 1026862312}
-  m_RootOrder: 2
+  m_RootOrder: 1
+--- !u!1 &1906296557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1906296558}
+  m_Layer: 0
+  m_Name: Actors
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1906296558
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1906296557}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.824, z: -0.263}
+  m_LocalScale: {x: 0.02, y: 0.02, z: 1}
+  m_Children:
+  - {fileID: 991721248}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
 --- !u!4 &1949222807 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400006, guid: 4dd493af26d26a640839b893d271fee6, type: 3}

@@ -8,6 +8,9 @@ public class LightSwitch : MonoBehaviour {
 	public Renderer m_LampRenderer;
 	public Material m_LightOnMat;
 	public Material m_LightOffMat;
+	void Start (){
+		AkSoundEngine.PostEvent ("ObjectLamp_On", gameObject);
+		}
 	
 	public void OnClick(){
 		m_LightOn = !m_LightOn;
