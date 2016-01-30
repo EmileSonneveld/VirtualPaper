@@ -3,7 +3,7 @@
 	<Platform GUID="{C76B73D0-8985-4265-A42C-EADE64E8B20B}">
 		<Language ID="0">
 			<Bank Name="Init" Hash="2464032329" StreamHash="157587662" Timestamp="130985787930000000"/>
-			<Bank Name="VPMainSoundBank" Hash="2540766879" StreamHash="157587662" Timestamp="130985787930000000"/>
+			<Bank Name="VPMainSoundBank" Hash="2781375568" StreamHash="157587662" Timestamp="130985869040000000"/>
 		</Language>
 	</Platform>
 </IncrementalBankBuild>

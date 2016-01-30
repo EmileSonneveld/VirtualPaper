@@ -11,6 +11,9 @@
 								<Property Name="PositioningType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="AmbAttenuation" ID="{282BA196-3617-46EB-BD78-17EFF27B1A45}" WorkUnitID="{E9408FF2-03FE-4A33-B178-81FCFBAC0673}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5E60A99F-BEFC-4EAB-BC0F-6D1DE8F4755D}"/>
 								</Reference>
