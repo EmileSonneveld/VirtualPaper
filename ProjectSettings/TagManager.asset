@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Interactive
   - Cursor
+  - Pickup
+  - DropZone
   layers:
   - Default
   - TransparentFX
