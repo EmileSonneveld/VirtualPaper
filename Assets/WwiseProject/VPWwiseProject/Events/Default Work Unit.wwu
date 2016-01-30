@@ -80,6 +80,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="ObjectLamp_loop" ID="{FFE5C693-D093-4D1E-9EA0-91DD88BBCD57}">
+					<ChildrenList>
+						<Action Name="Play" ID="{BA1A5692-25A9-427F-8BB3-7A0C39A31378}" ShortID="986369594" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{39CF4B27-E177-4B3A-8E32-C8D554510019}" Global="false">
+									<ObjectRef Name="VP_Object_Lamp" ID="{45FB88F8-B974-4D93-8465-0DD05230ABEB}" WorkUnitID="{57809540-3525-4039-BB1C-8AD7FFFFA13F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -19,6 +19,7 @@
 			<ShortName>VPMainSoundBank</ShortName>
 			<Path>VPMainSoundBank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1348843787" Name="ObjectLamp_loop"/>
 				<Event Id="1673655846" Name="OutdoorAmb_loop"/>
 				<Event Id="3573189912" Name="PeoplePray"/>
 				<Event Id="2623792584" Name="PeopleSad"/>
@@ -31,6 +32,10 @@
 				<File Id="10234216" Language="SFX">
 					<ShortName>VP_People_Sad_2.wav</ShortName>
 					<Path>SFX/VP_People_Sad_2_9E69E797.wem</Path>
+				</File>
+				<File Id="194422785" Language="SFX">
+					<ShortName>VP_Object_Lamp.wav</ShortName>
+					<Path>SFX/VP_Object_Lamp_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="194802731" Language="SFX">
 					<ShortName>VP_People_FS_1.wav</ShortName>
