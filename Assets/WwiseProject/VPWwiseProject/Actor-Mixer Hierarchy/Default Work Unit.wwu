@@ -412,6 +412,9 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="OBJECTS" ID="{E8505B5E-2E4A-4D4D-A555-53EF4E7F0687}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="RoomRev" ID="{6B68EF94-2934-4D4C-8D62-DCFA360080CB}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
+								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="VP_Object_Lamp" ID="{DE23DC7F-E7A6-4BDB-BFD4-CACB020A1919}" ShortID="194422785">
