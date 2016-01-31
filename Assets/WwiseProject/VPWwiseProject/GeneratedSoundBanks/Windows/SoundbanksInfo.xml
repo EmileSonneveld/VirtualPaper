@@ -20,6 +20,8 @@
 			<Path>VPMusic.bnk</Path>
 			<IncludedEvents>
 				<Event Id="1064937105" Name="LaunchMusic"/>
+				<Event Id="3207097637" Name="MusicOff"/>
+				<Event Id="3998479257" Name="MusicOn"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="220857840" Language="SFX">
@@ -53,6 +55,10 @@
 				<File Id="825318859" Language="SFX">
 					<ShortName>Music_Layer_3.wav</ShortName>
 					<Path>SFX/Music_Layer_3_D4FD16BB.wem</Path>
+				</File>
+				<File Id="940091948" Language="SFX">
+					<ShortName>VP_Object_Radio.wav</ShortName>
+					<Path>SFX/VP_Object_Radio_9E69E797.wem</Path>
 				</File>
 				<File Id="1037384218" Language="SFX">
 					<ShortName>Music_Layer_2.wav</ShortName>

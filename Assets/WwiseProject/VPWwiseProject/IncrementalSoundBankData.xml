@@ -4,7 +4,7 @@
 		<Language ID="0">
 			<Bank Name="Init" Hash="2158106824" StreamHash="157587662" Timestamp="130987100800000000"/>
 			<Bank Name="VPMainSoundBank" Hash="615577418" StreamHash="157587662" Timestamp="130987100800000000"/>
-			<Bank Name="VPMusic" Hash="551302655" StreamHash="157587662" Timestamp="130987100800000000"/>
+			<Bank Name="VPMusic" Hash="791519676" StreamHash="157587662" Timestamp="130987149760000000"/>
 		</Language>
 	</Platform>
 </IncrementalBankBuild>

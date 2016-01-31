@@ -199,6 +199,42 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="MusicOff" ID="{662AAA02-1ECF-4581-A7BE-2418AE61DC17}">
+					<ChildrenList>
+						<Action Name="Play" ID="{0FDF177A-A527-445C-A2CD-7CAA5C2B136C}" ShortID="308771929" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{49BF5913-26B2-4909-99E2-C92E672BA9B4}" Global="false">
+									<ObjectRef Name="VP_Object_Radio" ID="{0A3E9AF6-2FA2-4FCE-9CCE-80312B406860}" WorkUnitID="{57809540-3525-4039-BB1C-8AD7FFFFA13F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Mute" ID="{F4B1C76B-5569-4327-9FFD-1184A76D43D7}" ShortID="138656856" Type="Mute" Scope="One" Global="true">
+							<ElementList>
+								<Element ID="{7155F666-B71E-425E-8F2B-39210C6F7BA0}" Global="true">
+									<ObjectRef Name="In-Game Music" ID="{D9EECC20-06A8-4FB5-81E6-5155CB7BBF47}" WorkUnitID="{72CCC21B-389B-4AB6-8014-35F96947D253}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MusicOn" ID="{7EB3C2EC-CC9C-41D6-B423-4729BA1338B1}">
+					<ChildrenList>
+						<Action Name="Play" ID="{120E1DD5-DE37-4A6A-86AF-AB5477323353}" ShortID="90148989" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{773609B0-20C0-4B9F-A9EE-B3D556ACC884}" Global="false">
+									<ObjectRef Name="VP_Object_Radio" ID="{0A3E9AF6-2FA2-4FCE-9CCE-80312B406860}" WorkUnitID="{57809540-3525-4039-BB1C-8AD7FFFFA13F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="UnMute" ID="{0DD54FC4-D079-4AFB-BA76-B11C7D2FBA74}" ShortID="602249718" Type="UnMute" Scope="One" Global="true">
+							<ElementList>
+								<Element ID="{A09816EE-B7CD-4319-B0C1-1A10C890DE03}" Global="true">
+									<ObjectRef Name="In-Game Music" ID="{D9EECC20-06A8-4FB5-81E6-5155CB7BBF47}" WorkUnitID="{72CCC21B-389B-4AB6-8014-35F96947D253}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -16,6 +16,8 @@ namespace AK
         static const AkUniqueID CUTTREE = 2473207511U;
         static const AkUniqueID DEADTOTREE = 3545924000U;
         static const AkUniqueID LAUNCHMUSIC = 1064937105U;
+        static const AkUniqueID MUSICOFF = 3207097637U;
+        static const AkUniqueID MUSICON = 3998479257U;
         static const AkUniqueID OBJECTLAMP_OFF = 130612384U;
         static const AkUniqueID OBJECTLAMP_ON = 545104874U;
         static const AkUniqueID OUTDOORAMB_LOOP = 1673655846U;

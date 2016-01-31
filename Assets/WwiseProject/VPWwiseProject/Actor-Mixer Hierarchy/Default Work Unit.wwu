@@ -685,6 +685,28 @@
 								<ActiveSource Name="VP_Object_Treefall" ID="{FBCA4CAB-B852-4FB3-A91E-E0DC22015B31}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="VP_Object_Radio" ID="{0A3E9AF6-2FA2-4FCE-9CCE-80312B406860}" ShortID="500900128" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5E60A99F-BEFC-4EAB-BC0F-6D1DE8F4755D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="OBJECTS" ID="{E8505B5E-2E4A-4D4D-A555-53EF4E7F0687}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="RoomRev" ID="{6B68EF94-2934-4D4C-8D62-DCFA360080CB}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="VP_Object_Radio" ID="{093C1C95-39A7-46A8-B565-1DDE8B799077}" ShortID="940091948">
+									<Language>SFX</Language>
+									<AudioFile>VP_Object_Radio.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="VP_Object_Radio" ID="{093C1C95-39A7-46A8-B565-1DDE8B799077}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
