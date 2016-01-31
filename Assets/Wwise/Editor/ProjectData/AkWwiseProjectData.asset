@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{11ACF6D0-1759-459D-9125-555F172497CC}'
-    m_lastTimePsrt1: 1756152430
-    m_lastTimePart2: -1999427160
+    m_lastTimePsrt1: 798760491
+    m_lastTimePart2: -1999427104
     List:
     - Name: CutTree
       Path: Default Work Unit\CutTree
@@ -38,6 +38,16 @@ MonoBehaviour:
         ObjectType: 3
       ID: -749043296
       Guid: 00598fc64dc1b2479b90c3fb7253a480
+      maxAttenuation: 0
+    - Name: LaunchMusic
+      Path: Default Work Unit\LaunchMusic
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LaunchMusic
+        ObjectType: 3
+      ID: 1064937105
+      Guid: cd78ddc64ca20a4ba661afa12ae30036
       maxAttenuation: 0
     - Name: ObjectLamp_Off
       Path: Default Work Unit\ObjectLamp_Off
@@ -181,9 +191,42 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{917236FF-65CF-400D-9C16-A8FD82016E72}'
-    m_lastTimePsrt1: 1178682660
-    m_lastTimePart2: -1999427367
-    List: []
+    m_lastTimePsrt1: 819531834
+    m_lastTimePart2: -1999427104
+    List:
+    - Name: Gameplay
+      Path: Default Work Unit\Gameplay
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Gameplay
+        ObjectType: 9
+      ID: 89505537
+      Guid: 6c9a3f535545124893d750a3035fe583
+      values:
+      - Beginning
+      - Building
+      - Ending
+      - NoBuilding
+      - None
+      ValueIcons:
+      - ElementName: Beginning
+        ObjectType: 8
+      - ElementName: Building
+        ObjectType: 8
+      - ElementName: Ending
+        ObjectType: 8
+      - ElementName: NoBuilding
+        ObjectType: 8
+      - ElementName: None
+        ObjectType: 8
+      valueIDs: 92d63f02e9b610c7245567ec2ca80a0ddb3ba32c
+      ValueGuids:
+      - bytes: b3c65b174f5e9f459f91cb2d6931e933
+      - bytes: 92453c4b24e81a449053b08807e692a3
+      - bytes: 7c2cd29c471b04449e52a9ac0e39cd9b
+      - bytes: fdc61a0b26c4754bb5b168b12b97ec2c
+      - bytes: 225a1881a287164cbf4dad47f80d81d2
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 

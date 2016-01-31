@@ -7,6 +7,7 @@ public class DragAndDropSprite : MonoBehaviour {
 	public float m_Speed = 2f;
 	public float m_TargetScale = 1.2f;
 	public GameObject m_SpawnObject;
+	public Transform listHouse;
 
 	private bool m_PickedUp = false;
 	private Transform m_Camera;
@@ -54,5 +55,8 @@ public class DragAndDropSprite : MonoBehaviour {
 		m_FaceCamera.enabled = false;
 		m_PickedUp = false;
 		gameObject.tag = "Untagged";
+
+		GameObject newHouse = Instantiate (m_SpawnObject, transform.GetChild (0).position, transform.GetChild (0).rotation) as GameObject;
+		newHouse.transform.parent = listHouse;
 	}
 }

@@ -21,23 +21,27 @@ public class CheckUp : MonoBehaviour {
 
     void FixedUpdate() {
 
-        checkPerso();
+        //checkPerso();
 
     }
 
-    void checkPerso()
+    public void checkPerso()
     {
-        bool alrLogo = false;
+        nHouse = listHouse.childCount;
+        nTree = listTree.childCount;
+        nBHom = listBHom.childCount;
+
+        //bool alrLogo = false;
         for (int i = 0; i < listBHom.childCount; i++)
         {
             if (listBHom.GetChild(i).GetComponent<BHom>().hisHouse == null)
             {
                 if ((!checkHouse(i, listHouse)) && (!listBHom.GetChild(i).GetComponent<BHom>().needHouse))
                 {
-                    GameObject logo = Instantiate(listBHom.GetChild(i).GetComponent<BHom>().logoHouse, listBHom.GetChild(i).GetChild(1).position, Quaternion.Euler(0, 0, 0)) as GameObject;
-                    logo.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
-                    logo.transform.parent = listBHom.GetChild(i).GetChild(1);
-                    alrLogo = true;
+					GameObject logo = Instantiate(listBHom.GetChild(i).GetComponent<BHom>().logoHouse, listBHom.GetChild(i).GetChild (0).GetChild(4).position, Quaternion.Euler(0, 0, 0)) as GameObject;
+                    logo.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f)/10;
+					logo.transform.parent = listBHom.GetChild(i).GetChild (0).GetChild(4);
+                    //alrLogo = true;
 
                     listBHom.GetChild(i).GetComponent<BHom>().needHouse = true;
                 }
@@ -47,14 +51,14 @@ public class CheckUp : MonoBehaviour {
                 if ((!checkTree(i, listTree)) && (!listBHom.GetChild(i).GetComponent<BHom>().needHungry))
                 {
                     
-                    GameObject logo = Instantiate(listBHom.GetChild(i).GetComponent<BHom>().logoHungry, listBHom.GetChild(i).GetChild(1).position, Quaternion.Euler(0, 0, 0)) as GameObject;
+					GameObject logo = Instantiate(listBHom.GetChild(i).GetComponent<BHom>().logoHungry, listBHom.GetChild(i).GetChild (0).GetChild(4).position, Quaternion.Euler(0, 0, 0)) as GameObject;
                     /*if (alrLogo)
                     {
                         logo.transform.localPosition = new Vector3(listBHom.GetChild(i).GetChild(1).position.x + 1, listBHom.GetChild(i).GetChild(1).position.y, listBHom.GetChild(i).GetChild(1).position.z);
                         logo.transform.rotation = Quaternion.Euler(0, 180, 0);
                     }*/
-                    logo.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
-                    logo.transform.parent = listBHom.GetChild(i).GetChild(1);
+                    logo.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f)/10;
+                    logo.transform.parent = listBHom.GetChild(i).GetChild(4);
 
                     listBHom.GetChild(i).GetComponent<BHom>().needHungry = true;
                 }

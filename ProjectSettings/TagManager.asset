@@ -8,6 +8,7 @@ TagManager:
   - Cursor
   - Pickup
   - DropZone
+  - God
   layers:
   - Default
   - TransparentFX
