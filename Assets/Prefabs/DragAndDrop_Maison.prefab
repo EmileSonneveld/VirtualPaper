@@ -27,6 +27,7 @@ GameObject:
   - 114: {fileID: 11417032}
   - 114: {fileID: 11430352}
   - 65: {fileID: 6587418}
+  - 114: {fileID: 11419866}
   m_Layer: 0
   m_Name: DragAndDrop_Maison
   m_TagString: Pickup
@@ -41,7 +42,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 151326}
   m_LocalRotation: {x: -0.5829615, y: 0.22133367, z: 0.19950555, w: 0.75588685}
-  m_LocalPosition: {x: -0.3503, y: 0.8184, z: -0.1707}
+  m_LocalPosition: {x: -0.4109, y: 0.8041, z: -0.0651}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 498366}
@@ -86,6 +87,17 @@ MonoBehaviour:
   m_Speed: 2
   m_TargetScale: 2
   m_SpawnObject: {fileID: 0}
+--- !u!114 &11419866
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 151326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cc857323f5086548981a1c2d09f63ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11430352
 MonoBehaviour:
   m_ObjectHideFlags: 1

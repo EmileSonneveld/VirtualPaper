@@ -11,6 +11,7 @@ GameObject:
   - 114: {fileID: 11459864}
   - 114: {fileID: 11421118}
   - 65: {fileID: 6587528}
+  - 114: {fileID: 11498100}
   m_Layer: 0
   m_Name: DragAndDrop_Tree
   m_TagString: Pickup
@@ -101,6 +102,17 @@ MonoBehaviour:
   m_Speed: 2
   m_TargetScale: 1.65
   m_SpawnObject: {fileID: 0}
+--- !u!114 &11498100
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 133528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cc857323f5086548981a1c2d09f63ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21289350
 SpriteRenderer:
   m_ObjectHideFlags: 1
