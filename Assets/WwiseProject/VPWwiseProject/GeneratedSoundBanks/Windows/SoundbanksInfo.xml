@@ -21,6 +21,7 @@
 			<IncludedEvents>
 				<Event Id="2473207511" Name="CutTree"/>
 				<Event Id="3545924000" Name="DeadToTree"/>
+				<Event Id="1064937105" Name="LaunchMusic"/>
 				<Event Id="130612384" Name="ObjectLamp_Off"/>
 				<Event Id="545104874" Name="ObjectLamp_On"/>
 				<Event Id="1673655846" Name="OutdoorAmb_loop"/>
@@ -51,6 +52,10 @@
 					<ShortName>VP_People_FS_1.wav</ShortName>
 					<Path>SFX/VP_People_FS_1_9E69E797.wem</Path>
 				</File>
+				<File Id="220857840" Language="SFX">
+					<ShortName>Music_GameOver.wav</ShortName>
+					<Path>SFX/Music_GameOver_4B8CC0C5.wem</Path>
+				</File>
 				<File Id="301034461" Language="SFX">
 					<ShortName>VP_People_Praying_1.wav</ShortName>
 					<Path>SFX/VP_People_Praying_1_9E69E797.wem</Path>
@@ -59,9 +64,17 @@
 					<ShortName>VP_Object_DeadToTree.wav</ShortName>
 					<Path>SFX/VP_Object_DeadToTree_9E69E797.wem</Path>
 				</File>
+				<File Id="346205445" Language="SFX">
+					<ShortName>Music_Drone.wav</ShortName>
+					<Path>SFX/Music_Drone_4B8CC0C5.wem</Path>
+				</File>
 				<File Id="371271959" Language="SFX">
 					<ShortName>VP_UI_Drop.wav</ShortName>
 					<Path>SFX/VP_UI_Drop_9E69E797.wem</Path>
+				</File>
+				<File Id="393492132" Language="SFX">
+					<ShortName>Music_Layer_4.wav</ShortName>
+					<Path>SFX/Music_Layer_4_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="413082198" Language="SFX">
 					<ShortName>VP_Object_Switch.wav</ShortName>
@@ -87,9 +100,17 @@
 					<ShortName>VP_People_Praying_2.wav</ShortName>
 					<Path>SFX/VP_People_Praying_2_9E69E797.wem</Path>
 				</File>
+				<File Id="577851284" Language="SFX">
+					<ShortName>Music_Melody_1.wav</ShortName>
+					<Path>SFX/Music_Melody_1_4B8CC0C5.wem</Path>
+				</File>
 				<File Id="585570235" Language="SFX">
 					<ShortName>VP_Object_Treefall.wav</ShortName>
 					<Path>SFX/VP_Object_Treefall_9E69E797.wem</Path>
+				</File>
+				<File Id="604232302" Language="SFX">
+					<ShortName>Music_RelGameOver.wav</ShortName>
+					<Path>SFX/Music_RelGameOver_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="617340143" Language="SFX">
 					<ShortName>VP_UI_Grab.wav</ShortName>
@@ -98,6 +119,18 @@
 				<File Id="659017131" Language="SFX">
 					<ShortName>VP_People_Throw.wav</ShortName>
 					<Path>SFX/VP_People_Throw_9E69E797.wem</Path>
+				</File>
+				<File Id="734356936" Language="SFX">
+					<ShortName>Music_Theme_1.wav</ShortName>
+					<Path>SFX/Music_Theme_1_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="757725807" Language="SFX">
+					<ShortName>Music_BigMelody.wav</ShortName>
+					<Path>SFX/Music_BigMelody_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="825318859" Language="SFX">
+					<ShortName>Music_Layer_3.wav</ShortName>
+					<Path>SFX/Music_Layer_3_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="910893991" Language="SFX">
 					<ShortName>VP_People_FS_2.wav</ShortName>
@@ -110,6 +143,14 @@
 				<File Id="981818366" Language="SFX">
 					<ShortName>VP_People_Sad_1.wav</ShortName>
 					<Path>SFX/VP_People_Sad_1_9E69E797.wem</Path>
+				</File>
+				<File Id="1037384218" Language="SFX">
+					<ShortName>Music_Layer_2.wav</ShortName>
+					<Path>SFX/Music_Layer_2_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="1063809229" Language="SFX">
+					<ShortName>Music_Loop_1.wav</ShortName>
+					<Path>SFX/Music_Loop_1_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="1071045819" Language="SFX">
 					<ShortName>VP_People_Sacrificed.wav</ShortName>

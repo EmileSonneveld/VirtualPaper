@@ -188,6 +188,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="LaunchMusic" ID="{C6DD78CD-A24C-4B0A-A661-AFA12AE30036}">
+					<ChildrenList>
+						<Action Name="Play" ID="{DBB546C6-7F8C-4EF1-A20B-C1B53BBB3830}" ShortID="257996927" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{390247C1-2B04-4249-B945-666C3A61ACD4}" Global="false">
+									<ObjectRef Name="In-Game Music" ID="{D9EECC20-06A8-4FB5-81E6-5155CB7BBF47}" WorkUnitID="{72CCC21B-389B-4AB6-8014-35F96947D253}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

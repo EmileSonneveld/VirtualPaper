@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{898D2991-9679-411B-BED8-F63DCB0E03BC}" SchemaVersion="70">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{898D2991-9679-411B-BED8-F63DCB0E03BC}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{898D2991-9679-411B-BED8-F63DCB0E03BC}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="BluePop" ID="{0C3E763D-2D76-430A-82B0-4D683E2C37AF}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="10"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="VioletPop" ID="{7CA4FDC0-EDB6-4526-A98D-1568A77461D2}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="10"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="TotPop" ID="{437109CE-5EFA-4AE0-9397-02A682353ECF}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="10"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

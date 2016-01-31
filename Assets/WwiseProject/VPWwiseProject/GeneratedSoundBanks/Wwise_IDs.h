@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID CUTTREE = 2473207511U;
         static const AkUniqueID DEADTOTREE = 3545924000U;
+        static const AkUniqueID LAUNCHMUSIC = 1064937105U;
         static const AkUniqueID OBJECTLAMP_OFF = 130612384U;
         static const AkUniqueID OBJECTLAMP_ON = 545104874U;
         static const AkUniqueID OUTDOORAMB_LOOP = 1673655846U;
@@ -29,8 +30,26 @@ namespace AK
         static const AkUniqueID UIGRAB = 3379585205U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace GAMEPLAY
+        {
+            static const AkUniqueID GROUP = 89505537U;
+
+            namespace STATE
+            {
+                static const AkUniqueID BEGINNING = 37738130U;
+                static const AkUniqueID BUILDING = 3339761385U;
+                static const AkUniqueID ENDING = 3966194980U;
+                static const AkUniqueID NOBUILDING = 218802220U;
+            } // namespace STATE
+        } // namespace GAMEPLAY
+
+    } // namespace STATES
+
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID BLUEPOP = 1298094074U;
         static const AkUniqueID SS_AIR_FEAR = 1351367891U;
         static const AkUniqueID SS_AIR_FREEFALL = 3002758120U;
         static const AkUniqueID SS_AIR_FURY = 1029930033U;
@@ -41,6 +60,8 @@ namespace AK
         static const AkUniqueID SS_AIR_STORM = 3715662592U;
         static const AkUniqueID SS_AIR_TIMEOFDAY = 3203397129U;
         static const AkUniqueID SS_AIR_TURBULENCE = 4160247818U;
+        static const AkUniqueID TOTPOP = 3618010883U;
+        static const AkUniqueID VIOLETPOP = 838019585U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

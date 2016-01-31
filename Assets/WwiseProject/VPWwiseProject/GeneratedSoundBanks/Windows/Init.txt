@@ -1,3 +1,13 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	89505537	Gameplay			\Default Work Unit\Gameplay	
+
+State	ID	Name	State Group			Notes
+	37738130	Beginning	Gameplay			
+	218802220	NoBuilding	Gameplay			
+	748895195	None	Gameplay			
+	3339761385	Building	Gameplay			
+	3966194980	Ending	Gameplay			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	
 	1117531639	AMB			\Default Work Unit\Master Audio Bus\AMB	
