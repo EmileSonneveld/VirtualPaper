@@ -262,6 +262,8 @@ MonoBehaviour:
   believe: 0
   hisHouse: {fileID: 0}
   hisTree: {fileID: 0}
+  AnchorThrow: {fileID: 0}
+  Sacrefice: {fileID: 0}
   logoHeart: {fileID: 184030, guid: 9e09054f899b19549ab01927c87324ac, type: 2}
   logoHungry: {fileID: 105356, guid: 40ec446cf31e03844b9cd0028524ef76, type: 2}
   logoHouse: {fileID: 106380, guid: 021ed6c7aaeca254cb7b05ec7ca00a62, type: 2}
@@ -273,11 +275,11 @@ MonoBehaviour:
   needHouse: 0
   cueillette: 0
   pick: 0
+  victimeUp: 0
   cut: 0
   jetter: 0
   victime: 0
-  prefixe: 
-  fixe: 
+  nMA: {fileID: 0}
   transportingFood: 0
   target: 0
   maxTime: 3
@@ -289,7 +291,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 165956}
   m_Enabled: 1
   m_Radius: 0.5
-  m_Speed: 1
+  m_Speed: 0.2
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

@@ -69,14 +69,14 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: {x: 0.203, y: 0.8, z: -0.12}
-        inSlope: {x: 0, y: 0, z: -0.028000005}
-        outSlope: {x: 0, y: 0, z: -0.028000005}
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0.0093, z: 0}
+        outSlope: {x: 0, y: 0.0093, z: 0}
         tangentMode: 0
       - time: 1
-        value: {x: 0.203, y: 0.8, z: -0.148}
-        inSlope: {x: 0, y: 0, z: -0.028000005}
-        outSlope: {x: 0, y: 0, z: -0.028000005}
+        value: {x: 0, y: 0.0093, z: 0}
+        inSlope: {x: 0, y: 0.0093, z: 0}
+        outSlope: {x: 0, y: 0.0093, z: 0}
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -405,12 +405,12 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 0.203
+        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       - time: 1
-        value: 0.203
+        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 10
@@ -425,14 +425,14 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 0.8
-        inSlope: 0
-        outSlope: 0
+        value: 0
+        inSlope: 0.0093
+        outSlope: 0.0093
         tangentMode: 10
       - time: 1
-        value: 0.8
-        inSlope: 0
-        outSlope: 0
+        value: 0.0093
+        inSlope: 0.0093
+        outSlope: 0.0093
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -445,14 +445,14 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: -0.12
-        inSlope: -0.028000005
-        outSlope: -0.028000005
+        value: 0
+        inSlope: 0
+        outSlope: 0
         tangentMode: 10
       - time: 1
-        value: -0.148
-        inSlope: -0.028000005
-        outSlope: -0.028000005
+        value: 0
+        inSlope: 0
+        outSlope: 0
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2

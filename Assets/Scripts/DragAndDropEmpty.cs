@@ -1,14 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DragAndDropSprite : MonoBehaviour {
+public class DragAndDropEmpty : MonoBehaviour {
 
 	public float m_SpaceAboveDragpoint = 0.5f;
 	public float m_Speed = 2f;
 	public float m_TargetScale = 1.2f;
 	public GameObject m_SpawnObject;
-	public Transform m_ObjectList;
 
+	public GameObject m_EmptySprite;
+	public GameObject m_TreeInstance;
+
+	private Transform m_ObjectList;
 	private bool m_PickedUp = false;
 	private Transform m_Camera;
 	private Transform m_Cursor;
@@ -24,6 +27,10 @@ public class DragAndDropSprite : MonoBehaviour {
 		m_Cursor = GameObject.FindGameObjectWithTag("Cursor").transform;
 		m_FaceCamera = GetComponent<FaceCamera> ();
 		m_FaceCamera.enabled = false;
+		m_ObjectList = GameObject.FindGameObjectWithTag("ListTree").transform;
+
+		m_EmptySprite.SetActive (true);
+		m_TreeInstance.SetActive (false);
 	}
 
 	void Update() {
@@ -44,20 +51,19 @@ public class DragAndDropSprite : MonoBehaviour {
 	public void OnClick(){
 		if(!m_PickedUp)
 			m_PickedUp = true;
-		AkSoundEngine.PostEvent ("UIGrab", gameObject);
+			m_EmptySprite.SetActive (false);
+			m_TreeInstance.SetActive (true);
+		//AkSoundEngine.PostEvent ("UIGrab", gameObject);
 	}
 	public void UpdateTargetPos(){
 		m_TargetPos = m_Cursor.position;
 	}
 
 	public void Drop(){
-		AkSoundEngine.PostEvent ("UIDrop", gameObject);
+		//AkSoundEngine.PostEvent ("UIDrop", gameObject);
 		m_FaceCamera.enabled = false;
 		m_PickedUp = false;
 		gameObject.tag = "Untagged";
-
-		GameObject.FindGameObjectWithTag ("God").GetComponent<CheckUp> ().checkPerso (); 
-		GameObject.FindGameObjectWithTag ("God").GetComponent<CheckUp> ().removeBul ();
 
 		//instantiate the real object
 		GameObject newObject = Instantiate (m_SpawnObject, m_TargetPos, Quaternion.identity) as GameObject;

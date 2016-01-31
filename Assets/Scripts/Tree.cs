@@ -5,6 +5,8 @@ public class Tree : MonoBehaviour {
 
     public int nFruit = 5;
 
+	public int cutting;
+
     public Transform p1;
     public Transform p2;
     public Transform p3;

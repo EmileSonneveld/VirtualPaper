@@ -8,6 +8,12 @@ public class BHom : MonoBehaviour {
     public Transform hisHouse;
     public Transform hisTree;
 
+	public bool goToAnchor = false;
+	public bool ajette = false;
+
+	public Transform AnchorThrow; 
+	public Transform Sacrefice; 
+
     public GameObject logoHeart;
     public GameObject logoHungry;
     public GameObject logoHouse;
@@ -29,16 +35,18 @@ public class BHom : MonoBehaviour {
 
 	public bool cueillette = false;
 	public bool pick = false;
+	public bool victimeUp = false;
 	public bool cut = false;
 	public bool jetter = false;
 	public bool victime = false;
 
-	public string prefixe;
-	public string fixe;
+	private string prefixe;
+	private string fixe;
 
 	private Animator anim;
 	private Animator animBack;
-    private NavMeshAgent nMA;
+	[HideInInspector]
+	public NavMeshAgent nMA;
 
 	private bool alrRestartCuting = false;
 
@@ -52,20 +60,22 @@ public class BHom : MonoBehaviour {
 	void FixedUpdate () {
 
 		GameObject.FindGameObjectWithTag ("God").GetComponent<CheckUp> ().checkPerso ();
-		AniamtionBHom ();
 
-		if (!victime) {
-			if (needHouse) {
+
+		if (!victime && !goToAnchor) {
+			AniamtionBHom ();
+			if ((needHouse)) {
 				int lastelement = 0;
 				if (timerHouse > 0)
 					timerHouse -= Time.deltaTime;
-				else if (!believe) {
+				else if ((!believe) && (hisTree != null) && (hisTree.GetComponent<Tree> ().cutting < 2)) {
+					hisTree.GetComponent<Tree> ().cutting++;
 					if (!alrRestartCuting) {
 						timerHouse = 10;
 						alrRestartCuting = true;
 
 
-						if ((Vector3.Distance (hisTree.GetChild(0).position, transform.position) > 1)) {
+						if ((Vector3.Distance (hisTree.GetChild (0).position, transform.position) > 1)) {
 							nMA.SetDestination (hisTree.GetChild (0).position);
 						} else {
 							//transform.position = listTree.GetChild (lastelement).GetChild (0).position;
@@ -75,10 +85,10 @@ public class BHom : MonoBehaviour {
 					}
 					if (timerHouse <= 0) {
 						//int lastelement = 0;
-						if ((Vector3.Distance (hisTree.GetChild(0).position, transform.position) > 1)) {
+						if ((Vector3.Distance (hisTree.GetChild (0).position, transform.position) > 1)) {
 							nMA.SetDestination (hisTree.GetChild (0).position);
 						} else {
-							nMA.Stop ();
+							//nMA.Stop ();
 							//moveAgain = true;
 							GameObject newHouse;
 							newHouse = Instantiate (house.gameObject, listTree.GetChild (lastelement).position, Quaternion.Euler (0, 0, 0)) as GameObject;
@@ -86,14 +96,12 @@ public class BHom : MonoBehaviour {
 							newHouse.GetComponent<House> ().p1 = null;
 							newHouse.GetComponent<House> ().p2 = null;
 
-							DestroyImmediate (listTree.GetChild (lastelement).gameObject);
+							Destroy (listTree.GetChild (lastelement).gameObject);
 
 							for (int i = 0; i < transform.parent.childCount; i++) {
 								transform.parent.GetChild (i).GetComponent<BHom> ().needHouse = false;
-
-							for (int j = 0; j < transform.parent.GetChild (i).GetChild (0).GetChild (1).childCount; j++) {  //destroy info bul
-								Destroy (transform.parent.GetChild (i).GetChild (0).GetChild (1).GetChild (0).gameObject);
-									
+								for (int j = 0; j < transform.parent.GetChild (i).GetChild (0).GetChild (4).childCount; j++) {  //destroy info bul
+									Destroy (transform.parent.GetChild (i).GetChild (0).GetChild (4).GetChild (0).gameObject);									
 								}
 							}
 
@@ -116,73 +124,118 @@ public class BHom : MonoBehaviour {
 						AniamtionBHom ();
 					}
 				}
-			} else if (needHungry) { //Si ils ont faim qu'ils n'ont plus d'arbre
+			} else if (needHungry && !ajette) { //Si ils ont faim qu'ils n'ont plus d'arbre
 				if (timerHungry > 0)
 					timerHungry -= Time.deltaTime;
 				else if (!believe) {
 					int lastelement = 0;
+					timerHungry -= 10;
 					if (!choseBHom) {
-						choseBHom = true;
-
 						for (int i = 0; i < transform.parent.childCount; i++) {
-						if (/*transform.parent.GetChild(i).GetComponent<BHom>().believe &&*/ (!transform.parent.GetChild (i).GetComponent<BHom> ().pick) &&
-							(!transform.parent.GetChild (i).GetComponent<BHom> ().victime) &&
-								((Vector3.Distance (transform.parent.GetChild (i).position, transform.position)) <
-								(Vector3.Distance (transform.parent.GetChild (lastelement).position, transform.position))))
+							if (/*transform.parent.GetChild(i).GetComponent<BHom>().believe &&*/ (!transform.parent.GetChild (i).GetComponent<BHom> ().pick) &&
+							    (!transform.parent.GetChild (i).GetComponent<BHom> ().victime) &&
+							    ((Vector3.Distance (transform.parent.GetChild (i).position, transform.position)) <
+							    (Vector3.Distance (transform.parent.GetChild (lastelement).position, transform.position))))
 								lastelement = i;
-								
+							choseBHom = true;
+							pick = true;
 						}
 					}
 					if (Vector3.Distance (transform.parent.GetChild (lastelement).position, transform.position) > 1)
 						nMA.SetDestination (transform.parent.GetChild (lastelement).position);
-				else if ((transform.parent.GetChild (lastelement).GetChild(1).childCount) < 1){
-						nMA.Stop ();
-						pick = true;
-						anim.Play ("brun_pickup");
-						animBack.Play ("brun_pickup");
-						transform.parent.GetChild (lastelement).GetComponent<BHom> ().victime = true;
-						transform.parent.GetChild (lastelement).position = transform.GetChild (1).GetChild (0).position;
+					else if ((transform.parent.GetChild (lastelement).GetChild (0).GetChild (1).childCount) < 1) {
+						//nMA.Stop ();
+
+						transform.parent.GetChild (lastelement).GetComponent<BHom> ().victime = true;							
 						transform.parent.GetChild (lastelement).parent = transform.GetChild (0).GetChild (1);
+						(transform.GetChild (0).GetChild (1).GetChild (0).GetComponent<BHom> ().nMA).enabled = false;
+						transform.GetChild (0).GetChild (1).GetChild (0).position = transform.GetChild (0).GetChild (1).position;
+						transform.GetChild (0).GetChild (1).GetChild (0).rotation = Quaternion.Euler (0, 0, 90);
+						//Debug.Log ("Capt Name : " + transform.GetChild (0).GetChild(1).GetChild(0).gameObject.name);
+						anim.Play ("violet_pickup");
+						animBack.Play ("violet_pickup");
 						//if (the BHom is taken) go to the end of the desk
 
+						nMA.SetDestination (AnchorThrow.position);
+						goToAnchor = true;
+						needHouse = false;
+						needHungry = false;
 					}
 
 				} else if (believe) {
 					int lastelement = 0;
 					for (int i = 0; i < transform.parent.childCount; i++) {
-					if (((!transform.parent.GetChild (i).GetComponent<BHom> ().believe) && (!transform.parent.GetChild (i).GetComponent<BHom> ().pick)) &&
-						(!transform.parent.GetChild (i).GetComponent<BHom> ().victime) &&
-						((Vector3.Distance (transform.parent.GetChild (i).position, transform.position)) <
-		                    (Vector3.Distance (transform.parent.GetChild (lastelement).position, transform.position))))
+						if (((!transform.parent.GetChild (i).GetComponent<BHom> ().believe) && (!transform.parent.GetChild (i).GetComponent<BHom> ().pick)) &&
+						    (!transform.parent.GetChild (i).GetComponent<BHom> ().victime) &&
+						    ((Vector3.Distance (transform.parent.GetChild (i).position, transform.position)) <
+						    (Vector3.Distance (transform.parent.GetChild (lastelement).position, transform.position))))
 							lastelement = i;
-							pick = true;
+						pick = true;
 					}
-					if (Vector3.Distance (transform.parent.GetChild (lastelement).position, transform.position) > 1){
+					if (Vector3.Distance (transform.parent.GetChild (lastelement).position, transform.position) > 1) {
 						nMA.SetDestination (transform.parent.GetChild (lastelement).position);
-					}
-					else {
-							nMA.Stop ();
-							anim.Play ("violet_pickup");
-							animBack.Play ("violet_pickup");
-							transform.parent.GetChild (lastelement).GetComponent<BHom> ().victime = true;
-						transform.parent.GetChild (lastelement).position = transform.GetChild (0).GetChild(1).position;
+					} else {
+						//nMA.Stop ();
+						transform.parent.GetChild (lastelement).GetComponent<BHom> ().victime = true;							
 						transform.parent.GetChild (lastelement).parent = transform.GetChild (0).GetChild (1);
-						}
+						transform.parent.GetChild (lastelement).localPosition = transform.GetChild (0).GetChild (1).localPosition;
+						(transform.GetChild (0).GetChild (1).GetChild (0).GetComponent<BHom> ().nMA).enabled = false;
+						//	Debug.Log ("Capt Name : " + transform.GetChild (0).GetChild(1).GetChild(0).gameObject.name);
+						anim.Play ("violet_pickup");
+						animBack.Play ("violet_pickup");
+					}
 				}
 			} else {
 				GameObject.FindGameObjectWithTag ("God").GetComponent<CheckUp> ().checkPerso ();
-				Move3();
+				Move3 ();
 			}  
-		}else{
-			if (believe) {
-				anim.Play ("violet_victime");
-				animBack.Play ("violet_victime");
-			} else {
-				anim.Play ("brun_victime");
-				animBack.Play ("brun_victime");
+		} else if (victime) {
+			if (!victimeUp) {
+				victimeUp = true;
+				if (believe) {
+					anim.Play ("violet_victime");
+					animBack.Play ("violet_victime");
+				} else {
+					anim.Play ("brun_victime");
+					animBack.Play ("brun_victime");
+				}
 			}
+		} else if (goToAnchor) {
 
-    	}
+
+			if (!ajette) {
+				nMA.SetDestination (AnchorThrow.position);
+				if (((Vector3.Distance (transform.position, nMA.destination)) < (nMA.speed / 2.5))) {
+					ajette = true;
+					if (believe) {
+						anim.Play ("violet_sacrifier");
+						animBack.Play ("violet_sacrifier");
+					} else {
+						anim.Play ("brun_jetter");
+						animBack.Play ("brun_jetter");
+					}
+
+					for (int i = 0; i < transform.parent.childCount; i++) {
+						transform.parent.GetChild (i).GetComponent<BHom> ().needHouse = false;
+						transform.parent.GetChild (i).GetComponent<BHom> ().needHungry = false;
+						for (int j = 0; j < transform.parent.GetChild (i).GetChild (0).GetChild (4).childCount; j++) {  //destroy info bul
+							Destroy (transform.parent.GetChild (i).GetChild (0).GetChild (4).GetChild (0).gameObject);									
+						}
+					}
+					GameObject.FindGameObjectWithTag ("God").GetComponent<CheckUp> ().checkPerso ();
+
+				}
+			} else {
+				if (((Vector3.Distance (transform.position, house.position)) < 0.08)) {
+					ajette = false;
+					goToAnchor = false;
+					Debug.Log ("Teseeedfshgj");
+				} else {
+					nMA.SetDestination (house.position);
+					Debug.Log ("Teseeedfshgj ELSE");
+				}
+			}
+		}
 	}
 	
     public bool transportingFood;
@@ -190,14 +243,20 @@ public class BHom : MonoBehaviour {
     public int target;
 
     public float maxTime = 3;
-    private float time;
+    private float time = 3;
 
     private void Move3()
     {
-		if (((Vector3.Distance(transform.position, hisHouse.GetChild(0).position)) < 0.005 ) /*&& (target == 0)*/)
+		if (((Vector3.Distance(transform.position, hisHouse.GetChild(0).position)) < (nMA.speed / 2.5)) /*&& (target == 0)*/)
         {
-            nMA.SetDestination(hisTree.GetChild(0).position);
-			target = 1;
+			if (time > 0) {
+				time -= Time.deltaTime;
+			}
+			else {
+				nMA.SetDestination (hisTree.GetChild (0).position);
+				target = 0;
+				time = maxTime;
+			}
         }/*
         else if (believe)           
         {
@@ -208,9 +267,17 @@ public class BHom : MonoBehaviour {
         }*/
         else            
         {
-			if (((Vector3.Distance(transform.position, hisTree.GetChild(0).position)) < 0.005) /*&& (target == 1)*/){
-                nMA.SetDestination(hisHouse.GetChild(0).position);
-				target = 0;
+			if ((((Vector3.Distance(transform.position, hisTree.GetChild(0).position)) < (nMA.speed / 2.5))) /*&& (target == 1)*/){
+
+				if (time > 0) {
+					time -= Time.deltaTime;
+				}
+				else {
+					nMA.SetDestination (hisHouse.GetChild (0).position);
+					target = 0;
+					time = maxTime;
+				}
+
 			}
         }
     }
@@ -240,13 +307,17 @@ public class BHom : MonoBehaviour {
 				animBack.Play (prefixe + fixe);
 			}
 		} else if (pick) {
-			if (nMA.velocity.x > 0.1) {
+			/*if (nMA.velocity.x > 0.1) {
+				pickUp = true;
+				pick = false;
 				anim.Play (prefixe + "pickup_" + "marche");
 				animBack.Play (prefixe + "pickup_" + "marche");
 			} else {
+				pickUp = true;
+				pick = false;
 				anim.Play (prefixe + "pickup");
 				animBack.Play (prefixe + "pickup");
-			}
+			}*/
 		} else if (cut) {
 			anim.Play (prefixe + "coupe");
 			animBack.Play (prefixe + "coupe");
