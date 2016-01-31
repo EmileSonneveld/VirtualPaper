@@ -3,7 +3,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	545104874	ObjectLamp_On			\Default Work Unit\ObjectLamp_On	
 	621005312	Sacrifice			\Default Work Unit\Sacrifice	
 	1023995335	PeopleWalk			\Default Work Unit\PeopleWalk	
-	1064937105	LaunchMusic			\Default Work Unit\LaunchMusic	
 	1137489086	ThrowPeople			\Default Work Unit\ThrowPeople	
 	1389954868	UIDrop			\Default Work Unit\UIDrop	
 	1673655846	OutdoorAmb_loop			\Default Work Unit\OutdoorAmb_loop	
@@ -15,40 +14,25 @@ Event	ID	Name			Wwise Object Path	Notes
 	3545924000	DeadToTree			\Default Work Unit\DeadToTree	
 	3573189912	PeoplePray			\Default Work Unit\PeoplePray	
 
-Game Parameter	ID	Name			Wwise Object Path	Notes
-	838019585	VioletPop			\Default Work Unit\VioletPop	
-	1298094074	BluePop			\Default Work Unit\BluePop	
-	3618010883	TotPop			\Default Work Unit\TotPop	
-
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	10234216	VP_People_Sad_2	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_People_Sad_2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\PEOPLE\VP_People_Sad\VP_People_Sad_2		60992
 	62901543	VP_People_Fall	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_People_Fall_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\PEOPLE\VP_People_Fall		98570
 	194422785	VP_Object_Lamp	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_Object_Lamp_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\OBJECTS\VP_Object_Lamp		52528
 	194802731	VP_People_FS_1	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_People_FS_1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\PEOPLE\VP_People_FS\VP_People_FS_1		25540
-	220857840	Music_GameOver	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\Music_GameOver_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\In-Game Music\Ending\Layers\Music_GameOver		7815944
 	301034461	VP_People_Praying_1	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_People_Praying_1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\PEOPLE\VP_People_Praying\VP_People_Praying_1		145472
 	304144823	VP_Object_DeadToTree	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_Object_DeadToTree_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\OBJECTS\VP_Object_DeadToTree		64576
-	346205445	Music_Drone	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\Music_Drone_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\In-Game Music\Beginning\Drone\Music_Drone		2605356
 	371271959	VP_UI_Drop	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_UI_Drop_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\VP_UI_Drop		24512
-	393492132	Music_Layer_4	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\Music_Layer_4_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\In-Game Music\NoBuilding\Layers\Music_Layer_4		2605356
 	413082198	VP_Object_Switch	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_Object_Switch_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\OBJECTS\VP_Object_Switch		16868
 	466414173	VP_Amb_Outdoor	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_Amb_Outdoor_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\VP_Amb_Outdoor		15597632
 	528988439	VP_People_CutTree	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_People_CutTree_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\PEOPLE\VP_People_CutTree		30528
 	568544124	VP_People_Uh_2	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_People_Uh_2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\PEOPLE\VP_People_Uh\VP_People_Uh_2		21568
 	569060656	VP_People_Uh_1	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_People_Uh_1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\PEOPLE\VP_People_Uh\VP_People_Uh_1		22848
 	569595219	VP_People_Praying_2	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_People_Praying_2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\PEOPLE\VP_People_Praying\VP_People_Praying_2		124992
-	577851284	Music_Melody_1	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\Music_Melody_1_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\In-Game Music\Building\Layers\Music_Melody_1		5210648
 	585570235	VP_Object_Treefall	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_Object_Treefall_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\OBJECTS\VP_Object_Treefall		154610
-	604232302	Music_RelGameOver	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\Music_RelGameOver_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\In-Game Music\Ending\Layers\Music_RelGameOver		10421232
 	617340143	VP_UI_Grab	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_UI_Grab_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\VP_UI_Grab		20032
 	659017131	VP_People_Throw	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_People_Throw_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\PEOPLE\VP_People_Throw		23210
-	734356936	Music_Theme_1	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\Music_Theme_1_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\In-Game Music\NoBuilding\Layers\Music_Theme_1		5210648
-	757725807	Music_BigMelody	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\Music_BigMelody_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\In-Game Music\NoBuilding\Layers\Music_BigMelody		10421232
-	825318859	Music_Layer_3	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\Music_Layer_3_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\In-Game Music\NoBuilding\Layers\Music_Layer_3		2605356
 	910893991	VP_People_FS_2	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_People_FS_2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\PEOPLE\VP_People_FS\VP_People_FS_2		22270
 	912513292	VP_People_Sacrificing	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_People_Sacrificing_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\PEOPLE\VP_People_Sacrificing		356416
 	981818366	VP_People_Sad_1	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_People_Sad_1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\PEOPLE\VP_People_Sad\VP_People_Sad_1		51264
-	1037384218	Music_Layer_2	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\Music_Layer_2_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\In-Game Music\Building\Layers\Music_Layer_2		3256680
-	1063809229	Music_Loop_1	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\Music_Loop_1_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\In-Game Music\Building\Layers\Music_Loop_1		2605356
 	1071045819	VP_People_Sacrificed	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\VP_People_Sacrificed_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\PEOPLE\VP_People_Sacrificed		393280
 

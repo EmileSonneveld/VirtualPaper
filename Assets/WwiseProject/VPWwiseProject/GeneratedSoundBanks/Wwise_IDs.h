@@ -68,6 +68,7 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID VPMAINSOUNDBANK = 2676280715U;
+        static const AkUniqueID VPMUSIC = 1608788760U;
     } // namespace BANKS
 
     namespace BUSSES
@@ -75,6 +76,7 @@ namespace AK
         static const AkUniqueID AMB = 1117531639U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MASTER_SECONDARY_BUS = 805203703U;
+        static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID OBJECTS = 1695690031U;
         static const AkUniqueID PEOPLE = 1417401084U;
         static const AkUniqueID UI = 1551306167U;

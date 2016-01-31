@@ -23,6 +23,13 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="VPMusic" ID="{FEE088AA-54D4-4C5D-8E6D-4D974B64D359}">
+					<ObjectInclusionList>
+						<ObjectRef Name="LaunchMusic" ID="{C6DD78CD-A24C-4B0A-A661-AFA12AE30036}" WorkUnitID="{11ACF6D0-1759-459D-9125-555F172497CC}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

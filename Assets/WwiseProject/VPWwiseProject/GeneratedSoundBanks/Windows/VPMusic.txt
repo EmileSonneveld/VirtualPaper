@@ -1,0 +1,20 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1064937105	LaunchMusic			\Default Work Unit\LaunchMusic	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	838019585	VioletPop			\Default Work Unit\VioletPop	
+	1298094074	BluePop			\Default Work Unit\BluePop	
+	3618010883	TotPop			\Default Work Unit\TotPop	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	220857840	Music_GameOver	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\Music_GameOver_D4FD16BB.wem		\Interactive Music Hierarchy\Default Work Unit\In-Game Music\Ending\Layers\Music_GameOver		217887
+	346205445	Music_Drone	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\Music_Drone_D4FD16BB.wem		\Interactive Music Hierarchy\Default Work Unit\In-Game Music\Beginning\Drone\Music_Drone		97455
+	393492132	Music_Layer_4	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\Music_Layer_4_D4FD16BB.wem		\Interactive Music Hierarchy\Default Work Unit\In-Game Music\NoBuilding\Layers\Music_Layer_4		101326
+	577851284	Music_Melody_1	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\Music_Melody_1_D4FD16BB.wem		\Interactive Music Hierarchy\Default Work Unit\In-Game Music\Building\Layers\Music_Melody_1		166452
+	604232302	Music_RelGameOver	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\Music_RelGameOver_D4FD16BB.wem		\Interactive Music Hierarchy\Default Work Unit\In-Game Music\Ending\Layers\Music_RelGameOver		342135
+	734356936	Music_Theme_1	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\Music_Theme_1_D4FD16BB.wem		\Interactive Music Hierarchy\Default Work Unit\In-Game Music\NoBuilding\Layers\Music_Theme_1		161872
+	757725807	Music_BigMelody	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\Music_BigMelody_D4FD16BB.wem		\Interactive Music Hierarchy\Default Work Unit\In-Game Music\NoBuilding\Layers\Music_BigMelody		346045
+	825318859	Music_Layer_3	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\Music_Layer_3_D4FD16BB.wem		\Interactive Music Hierarchy\Default Work Unit\In-Game Music\NoBuilding\Layers\Music_Layer_3		90530
+	1037384218	Music_Layer_2	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\Music_Layer_2_D4FD16BB.wem		\Interactive Music Hierarchy\Default Work Unit\In-Game Music\Building\Layers\Music_Layer_2		120746
+	1063809229	Music_Loop_1	Y:\VirtualPaper\Assets\WwiseProject\VPWwiseProject\.cache\Windows\SFX\Music_Loop_1_D4FD16BB.wem		\Interactive Music Hierarchy\Default Work Unit\In-Game Music\Building\Layers\Music_Loop_1		103677
+

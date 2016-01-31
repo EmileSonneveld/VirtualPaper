@@ -45,6 +45,7 @@
 								</Reference>
 							</ReferenceList>
 						</AuxBus>
+						<Bus Name="MUSIC" ID="{456C7820-3792-4359-9420-887F9109EA30}"/>
 					</ChildrenList>
 				</Bus>
 				<Bus Name="Master Secondary Bus" ID="{D2E0BC7E-7B3F-4FFE-A670-FAE02761B631}"/>

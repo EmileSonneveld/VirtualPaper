@@ -9,10 +9,10 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5E60A99F-BEFC-4EAB-BC0F-6D1DE8F4755D}"/>
+							<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
+							<ObjectRef Name="MUSIC" ID="{456C7820-3792-4359-9420-887F9109EA30}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1818,7 +1818,7 @@
 																<Property Name="EndTrimOffset" Type="Real64" Value="44307.7097505669"/>
 																<Property Name="FadeInMode" Type="int16" Value="0"/>
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																<Property Name="PlayAt" Type="Real64" Value="1310.37200504414"/>
+																<Property Name="PlayAt" Type="Real64" Value="8.88178419700125E-13"/>
 															</PropertyList>
 															<AudioSourceRef Name="Music_GameOver" ID="{0AF8E2AE-9322-4996-8568-D4759C9C3D86}"/>
 														</MusicClip>

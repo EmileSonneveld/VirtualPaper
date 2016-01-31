@@ -2,8 +2,9 @@
 <IncrementalBankBuild Version="4" Flags="240381544">
 	<Platform GUID="{C76B73D0-8985-4265-A42C-EADE64E8B20B}">
 		<Language ID="0">
-			<Bank Name="Init" Hash="2600682828" StreamHash="157587662" Timestamp="130986767250000000"/>
-			<Bank Name="VPMainSoundBank" Hash="2805003203" StreamHash="157587662" Timestamp="130986767250000000"/>
+			<Bank Name="Init" Hash="2158106824" StreamHash="157587662" Timestamp="130987100800000000"/>
+			<Bank Name="VPMainSoundBank" Hash="615577418" StreamHash="157587662" Timestamp="130987100800000000"/>
+			<Bank Name="VPMusic" Hash="551302655" StreamHash="157587662" Timestamp="130987100800000000"/>
 		</Language>
 	</Platform>
 </IncrementalBankBuild>
