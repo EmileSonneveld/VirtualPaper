@@ -45,6 +45,7 @@ public class CheckUp : MonoBehaviour {
 						//alrLogo = true;
 
 						listBHom.GetChild (i).GetComponent<BHom> ().needHouse = true;
+						AkSoundEngine.PostEvent ("PeopleSad", gameObject);
 					}
                 }
             }
@@ -63,6 +64,7 @@ public class CheckUp : MonoBehaviour {
 						logo.transform.parent = listBHom.GetChild (i).GetChild (0).GetChild (4);
 
 						listBHom.GetChild (i).GetComponent<BHom> ().needHungry = true;
+						AkSoundEngine.PostEvent ("PeopleSad", gameObject);
 					}
                 }
             }

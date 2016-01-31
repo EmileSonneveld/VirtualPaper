@@ -68,8 +68,8 @@ public class BHom : MonoBehaviour {
 				int lastelement = 0;
 				if (timerHouse > 0)
 					timerHouse -= Time.deltaTime;
-				else if ((!believe) && (hisTree != null) && (hisTree.GetComponent<Tree> ().cutting < 2)) {
-					hisTree.GetComponent<Tree> ().cutting++;
+				else if ((!believe) && (hisTree != null) /*&& (hisTree.GetComponent<Tree> ().cutting < 2)*/) {
+					//hisTree.GetComponent<Tree> ().cutting++;
 					if (!alrRestartCuting) {
 						timerHouse = 10;
 						alrRestartCuting = true;
@@ -90,7 +90,7 @@ public class BHom : MonoBehaviour {
 						} else {
 							//nMA.Stop ();
 							//moveAgain = true;
-							GameObject newHouse;
+							GameObject newHouse;//-------------------------------------------------
 							newHouse = Instantiate (house.gameObject, listTree.GetChild (lastelement).position, Quaternion.Euler (0, 0, 0)) as GameObject;
 							newHouse.transform.parent = house.parent;
 							newHouse.GetComponent<House> ().p1 = null;

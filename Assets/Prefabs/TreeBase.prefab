@@ -24,6 +24,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 450450}
   - 212: {fileID: 21278144}
+  - 114: {fileID: 11408936}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Untagged
@@ -130,7 +131,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153290}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: 0.42, y: 0.075, z: 0.027}
+  m_LocalPosition: {x: -0.38, y: 0.08, z: 0.03}
   m_LocalScale: {x: 0.8317159, y: 0.8317158, z: 0.8317158}
   m_Children:
   - {fileID: 444400}
@@ -168,9 +169,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 177960}
-  m_LocalRotation: {x: -0.037099887, y: 0.0000064434203, z: 0.00017355807, w: 0.99931157}
-  m_LocalPosition: {x: -0.016099738, y: 0, z: 0.095259644}
-  m_LocalScale: {x: 0.015000002, y: 0.014999997, z: 0.015}
+  m_LocalRotation: {x: -0.036223117, y: -0.21144427, z: 0.008019825, w: 0.97668576}
+  m_LocalPosition: {x: 0.932, y: 0.14600003, z: 1.705}
+  m_LocalScale: {x: 0.015000004, y: 0.014999995, z: 0.014999998}
   m_Children:
   - {fileID: 480264}
   - {fileID: 450450}
@@ -251,6 +252,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11408936
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 101966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cc857323f5086548981a1c2d09f63ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11425008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -263,6 +275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nFruit: 5
+  cutting: 0
   p1: {fileID: 0}
   p2: {fileID: 0}
   p3: {fileID: 0}
@@ -291,7 +304,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 81ae8fb43158b3349b7e5047a26ea2e7, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -309,7 +322,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: eaabe5fcf7ee3c349a79ce1c988a2a91, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
 --- !u!1001 &100100000
 Prefab:

@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{11ACF6D0-1759-459D-9125-555F172497CC}'
-    m_lastTimePsrt1: 798760491
-    m_lastTimePart2: -1999427104
+    m_lastTimePsrt1: 2011855017
+    m_lastTimePart2: -1999427003
     List:
     - Name: CutTree
       Path: Default Work Unit\CutTree
@@ -48,6 +48,26 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1064937105
       Guid: cd78ddc64ca20a4ba661afa12ae30036
+      maxAttenuation: 0
+    - Name: MusicOff
+      Path: Default Work Unit\MusicOff
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MusicOff
+        ObjectType: 3
+      ID: -1087869659
+      Guid: 02aa2a66cf1e8145a7be2418ae61dc17
+      maxAttenuation: 0
+    - Name: MusicOn
+      Path: Default Work Unit\MusicOn
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MusicOn
+        ObjectType: 3
+      ID: -296488039
+      Guid: ecc2b37e9cccd641b4234729ba1338b1
       maxAttenuation: 0
     - Name: ObjectLamp_Off
       Path: Default Work Unit\ObjectLamp_Off
@@ -173,8 +193,8 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{E95E3857-58C1-44ED-82DF-432A2E7AACA6}'
-    m_lastTimePsrt1: 1757634951
-    m_lastTimePart2: -1999427160
+    m_lastTimePsrt1: 2014082205
+    m_lastTimePart2: -1999427003
     List:
     - Name: RoomRev
       Path: Default Work Unit\Master Audio Bus\RoomRev
@@ -238,8 +258,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{AE64D10A-2AB2-4A4A-A7F6-10E55BFD7791}'
-    m_lastTimePsrt1: 1758261387
-    m_lastTimePart2: -1999427160
+    m_lastTimePsrt1: 2014170194
+    m_lastTimePart2: -1999427003
     List:
     - Name: VPMainSoundBank
       Path: Default Work Unit\VPMainSoundBank
@@ -250,6 +270,15 @@ MonoBehaviour:
         ObjectType: 7
       ID: -1618686581
       Guid: d75a8e98ca3993419096e2391489da96
+    - Name: VPMusic
+      Path: Default Work Unit\VPMusic
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: VPMusic
+        ObjectType: 7
+      ID: 1608788760
+      Guid: aa88e0fed4545d4c8e6d4d974b64d359
   ExpandedItems:
   - /VPWwiseProject
   - /VPWwiseProject/Events
