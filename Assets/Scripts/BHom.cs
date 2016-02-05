@@ -14,10 +14,8 @@ public class BHom : MonoBehaviour {
 	public Transform AnchorThrow; 
 	public Transform Sacrefice; 
 
-    public GameObject logoHeart;
-    public GameObject logoHungry;
-    public GameObject logoHouse;
-    public GameObject logoWhat;
+    [HideInInspector]
+    public GameObject logoHeart, logoHungry, logoHouse, logoWhat;
 
     public Transform monument;
     public Transform house;
@@ -53,14 +51,17 @@ public class BHom : MonoBehaviour {
     void Start () {
 		nMA = transform.GetComponent<NavMeshAgent>();
 		anim = transform.GetChild(0).GetComponent<Animator> ();
-		animBack = transform.GetChild(0).GetComponent<Animator> ();
+		animBack = transform.GetChild(0).GetChild(0).GetComponent<Animator> ();
 		AniamtionBHom ();
     }
 	
 	void FixedUpdate () {
 
-		GameObject.FindGameObjectWithTag ("God").GetComponent<CheckUp> ().checkPerso ();
+        if (nMA == null) {
+            nMA = transform.GetComponent<NavMeshAgent>();
+        }
 
+        GameObject.FindGameObjectWithTag ("God").GetComponent<CheckUp> ().checkPerso ();
 
 		if (!victime && !goToAnchor) {
 			AniamtionBHom ();
@@ -247,17 +248,19 @@ public class BHom : MonoBehaviour {
 
     private void Move3()
     {
-		if (((Vector3.Distance(transform.position, hisHouse.GetChild(0).position)) < (nMA.speed / 2.5)) /*&& (target == 0)*/)
+        if (hisHouse != null)
         {
-			if (time > 0) {
-				time -= Time.deltaTime;
-			}
-			else {
-				nMA.SetDestination (hisTree.GetChild (0).position);
-				target = 0;
-				time = maxTime;
-			}
-        }/*
+            if (((Vector3.Distance(transform.position, hisHouse.GetChild(0).position)) < (nMA.speed / 2.5)) /*&& (target == 0)*/)
+            {
+                if (time > 0) {
+                    time -= Time.deltaTime;
+                }
+                else {
+                    nMA.SetDestination(hisTree.GetChild(0).position);
+                    target = 0;
+                    time = maxTime;
+                }
+            }/*
         else if (believe)           
         {
             if ((Vector3.Distance(transform.position, hisTree.GetChild(0).position)) < 1)
@@ -265,20 +268,21 @@ public class BHom : MonoBehaviour {
             else if ((Vector3.Distance(transform.position, monument.GetChild(0).position)) < 1)
                     nMA.SetDestination(hisHouse.GetChild(0).position);
         }*/
-        else            
-        {
-			if ((((Vector3.Distance(transform.position, hisTree.GetChild(0).position)) < (nMA.speed / 2.5))) /*&& (target == 1)*/){
+            else
+            {
+                if ((((Vector3.Distance(transform.position, hisTree.GetChild(0).position)) < (nMA.speed / 2.5))) /*&& (target == 1)*/) {
 
-				if (time > 0) {
-					time -= Time.deltaTime;
-				}
-				else {
-					nMA.SetDestination (hisHouse.GetChild (0).position);
-					target = 0;
-					time = maxTime;
-				}
+                    if (time > 0) {
+                        time -= Time.deltaTime;
+                    }
+                    else {
+                        nMA.SetDestination(hisHouse.GetChild(0).position);
+                        target = 0;
+                        time = maxTime;
+                    }
 
-			}
+                }
+            }
         }
     }
 

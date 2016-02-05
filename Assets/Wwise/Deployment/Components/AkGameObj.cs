@@ -55,7 +55,7 @@ public class AkGameObj : MonoBehaviour
 		}		
 		
 		// Cache the bounds to avoid calls to GetComponent()
-		GameObjColliderBounds = GetComponent<Collider>().bounds;
+		//GameObjColliderBounds = GetComponent<Collider>().bounds;
 	
         //Register a Game Object in the sound engine, with its name.		
         AKRESULT res = AkSoundEngine.RegisterGameObj(gameObject, gameObject.name, (uint)(listenerMask & ALL_LISTENER_MASK));

@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{11ACF6D0-1759-459D-9125-555F172497CC}'
-    m_lastTimePsrt1: 2011855017
-    m_lastTimePart2: -1999427003
+    m_lastTimePsrt1: -1138408494
+    m_lastTimePart2: -1999426788
     List:
     - Name: CutTree
       Path: Default Work Unit\CutTree
@@ -193,8 +193,8 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{E95E3857-58C1-44ED-82DF-432A2E7AACA6}'
-    m_lastTimePsrt1: 2014082205
-    m_lastTimePart2: -1999427003
+    m_lastTimePsrt1: -1131689748
+    m_lastTimePart2: -1999426788
     List:
     - Name: RoomRev
       Path: Default Work Unit\Master Audio Bus\RoomRev
@@ -211,8 +211,8 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{917236FF-65CF-400D-9C16-A8FD82016E72}'
-    m_lastTimePsrt1: 819531834
-    m_lastTimePart2: -1999427104
+    m_lastTimePsrt1: -1112002234
+    m_lastTimePart2: -1999426788
     List:
     - Name: Gameplay
       Path: Default Work Unit\Gameplay
@@ -251,15 +251,15 @@ MonoBehaviour:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A74A0377-8C3D-4FAA-BE60-CDD27EDB598B}'
-    m_lastTimePsrt1: 1178702661
-    m_lastTimePart2: -1999427367
+    m_lastTimePsrt1: -1112002234
+    m_lastTimePart2: -1999426788
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{AE64D10A-2AB2-4A4A-A7F6-10E55BFD7791}'
-    m_lastTimePsrt1: 2014170194
-    m_lastTimePart2: -1999427003
+    m_lastTimePsrt1: -1113564731
+    m_lastTimePart2: -1999426788
     List:
     - Name: VPMainSoundBank
       Path: Default Work Unit\VPMainSoundBank
@@ -279,10 +279,7 @@ MonoBehaviour:
         ObjectType: 7
       ID: 1608788760
       Guid: aa88e0fed4545d4c8e6d4d974b64d359
-  ExpandedItems:
-  - /VPWwiseProject
-  - /VPWwiseProject/Events
-  - /VPWwiseProject/Events/Default Work Unit
+  ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
