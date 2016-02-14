@@ -2324,7 +2324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_positionOffsetData:
-    positionOffset: {x: -44.566597, y: 71.547485, z: 17.200228}
+    positionOffset: {x: 0, y: 0, z: 0}
     KeepMe: 0
   isEnvironmentAware: 1
   listenerMask: 1
