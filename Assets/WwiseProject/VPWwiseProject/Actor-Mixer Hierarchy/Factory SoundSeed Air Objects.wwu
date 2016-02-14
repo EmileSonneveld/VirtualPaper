@@ -16,7 +16,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -30,7 +30,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -303,7 +303,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -363,7 +363,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 															</Custom>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -404,7 +404,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 						<Flags>5</Flags>
 					</Point>
 					<Point>
-						<XPos>5.19466666666667E-02</XPos>
+						<XPos>0.0519466666666667</XPos>
 						<YPos>195.918</YPos>
 						<Flags>0</Flags>
 					</Point>
@@ -598,7 +598,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 															</Custom>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -639,7 +639,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 						<Flags>5</Flags>
 					</Point>
 					<Point>
-						<XPos>5.84421686746988E-02</XPos>
+						<XPos>0.0584421686746988</XPos>
 						<YPos>0</YPos>
 						<Flags>0</Flags>
 					</Point>
@@ -833,7 +833,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 															</Custom>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -874,7 +874,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 						<Flags>5</Flags>
 					</Point>
 					<Point>
-						<XPos>6.81825301204819E-02</XPos>
+						<XPos>0.0681825301204819</XPos>
 						<YPos>0</YPos>
 						<Flags>0</Flags>
 					</Point>
@@ -1024,7 +1024,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -1119,7 +1119,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 An example of trajectories and positioning handled in Wwise as opposed to SS Air positioning</Comment>
 									<ReferenceList>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -1136,7 +1136,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -1395,7 +1395,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -1456,7 +1456,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 															</Custom>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -1653,7 +1653,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -1703,7 +1703,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -1764,7 +1764,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 															</Custom>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -1961,7 +1961,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -2011,7 +2011,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -2072,7 +2072,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 															</Custom>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -2269,7 +2269,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -2319,7 +2319,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -2380,7 +2380,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 															</Custom>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -2577,7 +2577,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -2627,7 +2627,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -2688,7 +2688,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 															</Custom>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -2885,7 +2885,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -2935,7 +2935,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -2996,7 +2996,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 															</Custom>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -3193,7 +3193,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -3249,7 +3249,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -3415,7 +3415,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -3570,7 +3570,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -3675,7 +3675,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -3906,7 +3906,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -4104,7 +4104,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -4119,14 +4119,14 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="Arrow" ID="{06C7C35B-7B81-4A18-ADF3-F64BA69A9E29}" ShortID="541978274" Type="SoundFX">
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -4227,7 +4227,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 												<Sound Name="Silence" ID="{35F5DD55-D553-44EF-B282-79948A842711}" ShortID="613963290" Type="SoundFX">
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -4261,14 +4261,14 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="Arrow" ID="{B1A2D0B9-FEC7-45F0-8042-29DA809B8FF1}" ShortID="718792907" Type="SoundFX">
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -4369,7 +4369,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 												<Sound Name="Silence" ID="{F6C15E8E-03AE-4BBE-AA41-79D1F3BB9967}" ShortID="757203631" Type="SoundFX">
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -4403,14 +4403,14 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="Arrow" ID="{FEB1A354-2A9E-4BDA-8EF9-A28D2AA15AC1}" ShortID="992258119" Type="SoundFX">
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -4511,7 +4511,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 												<Sound Name="Silence" ID="{FC7C2688-D485-41B8-923C-65DFCB1990EF}" ShortID="507633266" Type="SoundFX">
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -4545,14 +4545,14 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="Arrow" ID="{67F1D393-4A8A-4972-AD52-A9D8112D7A3C}" ShortID="685833007" Type="SoundFX">
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -4653,7 +4653,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 												<Sound Name="Silence" ID="{EA1943AE-08E1-4E43-8ABA-D21E10F9C86F}" ShortID="36972759" Type="SoundFX">
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -4687,14 +4687,14 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="Arrow" ID="{49C490C2-28A0-4B27-B6B0-50F3E974885E}" ShortID="845183019" Type="SoundFX">
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -4796,7 +4796,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 												<Sound Name="Silence" ID="{9F8ED909-45DB-4381-BF4A-E5D0BE94D769}" ShortID="275508572" Type="SoundFX">
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -4830,14 +4830,14 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="Arrow" ID="{F690B9A6-AFB7-496D-A561-18061483691F}" ShortID="170912858" Type="SoundFX">
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -4938,7 +4938,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 												<Sound Name="Silence" ID="{BC9C4CF8-685E-49E8-BC33-0B56E7ACCCFB}" ShortID="98221531" Type="SoundFX">
 													<ReferenceList>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -4973,7 +4973,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -5149,7 +5149,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -5362,7 +5362,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -5629,7 +5629,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -5856,7 +5856,7 @@ An example of trajectories and positioning handled in Wwise as opposed to SS Air
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -6082,69 +6082,12 @@ Presence - roughly related to distance and occlusion
 RPM - a throttle control for the engine</Comment>
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Lowpass" Type="int16">
-											<RTPCList>
-												<RTPC Name="" ID="{4D60AC20-E7B2-40CE-92D1-F5BDB527988E}" ShortID="438390234">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{88764ECC-CF3A-4F30-9528-017AE49DE0F6}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>62</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>0</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
 										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="Spatialization" Type="bool" Value="False"/>
-										<Property Name="Volume" Type="Real64">
-											<RTPCList>
-												<RTPC Name="" ID="{9AFFCC88-0CEA-4829-9A0D-6357C84213F5}" ShortID="283201519">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{E392C1E6-6AD9-44C5-B55E-4B322C05A254}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-23.91799</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>Log1</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>0</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -6154,151 +6097,11 @@ RPM - a throttle control for the engine</Comment>
 												<Property Name="ChannelMask" Type="int32" Value="0"/>
 												<Property Name="DistanceAttenuation" Type="bool" Value="False"/>
 												<Property Name="Duration" Type="Real64" Value="0.85"/>
-												<Property Name="GainOffset" Type="Real32" Value="-1.9">
-													<RTPCList>
-														<RTPC Name="" ID="{7B0CB0C7-7726-4B23-B16B-CDA68ED30AA6}" ShortID="659520759">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{0FE29681-1577-424D-A91F-D433031C7BA6}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-24</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>-16</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
+												<Property Name="GainOffset" Type="Real32" Value="-1.9"/>
 												<Property Name="NoiseColor" Type="int16" Value="1"/>
 												<Property Name="Oversampling" Type="int16" Value="8"/>
-												<Property Name="PlaybackRate" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{9F2DE032-1F55-4766-BE66-D1A8BB25079C}" ShortID="145094931">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{E44501EC-4E33-4D95-94FE-1BB0B2C97E07}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0.5</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>Log3</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>9.94256</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-												<Property Name="QFactorScale" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{F0715417-FEB5-4BFF-85EE-D0E96781D91A}" ShortID="646961530">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{1391A0B1-24D9-41D9-8481-49D285FB619E}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>2.93144</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>-3.34752</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-												<Property Name="Speed" Type="Real32" Value="25">
-													<RTPCList>
-														<RTPC Name="" ID="{25430B30-0902-485C-AA63-6030DEFF453C}" ShortID="651853380">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{6D4D7F17-C13D-4A36-BE65-45E48250B033}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-50</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>Log2</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>0.35461</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
+												<Property Name="Speed" Type="Real32" Value="25"/>
 												<Property Name="SpeedAutomate" Type="bool" Value="True"/>
-												<Property Name="VelocityDynamicRange" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{932ED16F-7535-43CB-90A0-C902252C4EB8}" ShortID="611151886">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{58F3DE74-760E-4278-9308-D0F3AD69790D}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>1</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>0.39007</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 											</PropertyList>
 											<Language>SFX</Language>
 											<PluginData>
@@ -6337,7 +6140,7 @@ RPM - a throttle control for the engine</Comment>
 				</PropertyList>
 				<PointList>
 					<Point>
-						<XPos>0.00001</XPos>
+						<XPos>1E-05</XPos>
 						<YPos>0</YPos>
 						<Flags>12</Flags>
 						<Time>0</Time>
@@ -6391,7 +6194,7 @@ RPM - a throttle control for the engine</Comment>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -6400,150 +6203,13 @@ RPM - a throttle control for the engine</Comment>
 											<PropertyList>
 												<Property Name="DistanceAttenuation" Type="bool" Value="False"/>
 												<Property Name="Duration" Type="Real64" Value="0.7"/>
-												<Property Name="GainOffset" Type="Real32" Value="-1.9">
-													<RTPCList>
-														<RTPC Name="" ID="{31C3B384-438D-4DAB-9F33-51A5B1A53391}" ShortID="106071381">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{1F98AB6C-2CBA-4622-BFCD-E806D508FDA3}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-13.09218</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>-6</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-												<Property Name="PlaybackRate" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{599CA8FD-3ADD-4151-941A-1BC97E9FB217}" ShortID="408906296">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{43E9A0E9-F959-4BCA-AE06-13D68CF85C28}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0.78937</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>7.22767</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-												<Property Name="QFactorScale" Type="Real32" Value="-1.47">
-													<RTPCList>
-														<RTPC Name="" ID="{21B4AB02-B3DA-48CB-AFED-CABB060203D8}" ShortID="72778213">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{0362BC1B-A3D5-4C5C-9845-9C8DEADDF843}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-3.76359</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>3.92435</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-												<Property Name="Speed" Type="Real32" Value="25">
-													<RTPCList>
-														<RTPC Name="" ID="{EB9A443A-863D-44ED-A302-D589F98EC8C8}" ShortID="448689242">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{94D2B4B2-6947-46A1-9FAB-D4D236819901}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>50</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>Exp1</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>50</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
+												<Property Name="GainOffset" Type="Real32" Value="-1.9"/>
+												<Property Name="QFactorScale" Type="Real32" Value="-1.47"/>
+												<Property Name="Speed" Type="Real32" Value="25"/>
 												<Property Name="SpeedAutomate" Type="bool" Value="True"/>
 												<Property Name="SpeedPointSpeedRandom" Type="Real32" Value="3.7"/>
 												<Property Name="SpeedPointTimeRandom" Type="Real32" Value="0.3"/>
-												<Property Name="VelocityDynamicRange" Type="Real32" Value="0.48">
-													<RTPCList>
-														<RTPC Name="" ID="{8B9CC0AB-4321-4948-B92C-067E303E983F}" ShortID="833678145">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{38CFA508-B47A-4A0C-BD05-A2A1CD1A5D36}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>1</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>0.29314</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
+												<Property Name="VelocityDynamicRange" Type="Real32" Value="0.48"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<PluginData>
@@ -6683,7 +6349,7 @@ RPM - Controls the speed at which the car passes by</Comment>
 											</Custom>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -6691,91 +6357,6 @@ RPM - Controls the speed at which the car passes by</Comment>
 											<PropertyList>
 												<Property Name="AttenuationRollOff" Type="Real32" Value="2"/>
 												<Property Name="Duration" Type="Real64" Value="5"/>
-												<Property Name="FrequencyScale" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{6A98934C-214D-40FD-A539-D79BB92643A7}" ShortID="529299588">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{1A7CAA31-C413-4269-B90B-CF5521130D7B}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>1</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>-1</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-												<Property Name="PlaybackRate" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{028234E4-43AE-464E-816D-F978C6BEF797}" ShortID="527404073">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{114CB14C-256F-40C6-B000-6ED46C9723FE}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0.5</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>Exp2</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>2</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-												<Property Name="Speed" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{709C0EDF-B7B6-4F8D-A46A-9B2D5BE4DC19}" ShortID="1050808766">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{DD63AAA4-7440-436E-A552-15F0B3331404}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-25</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>25</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 												<Property Name="SpeedAutomate" Type="bool" Value="True"/>
 												<Property Name="SpeedPointSpeedRandom" Type="Real32" Value="2.5"/>
 												<Property Name="SpeedPointTimeRandom" Type="Real32" Value="0.33"/>
@@ -6962,7 +6543,7 @@ RPM - Controls the speed at which the car passes by</Comment>
 								<BlendContainer Name="Airplane" ID="{FFD16B0D-1091-4919-A8D2-0D84A8643FC4}" ShortID="229779334">
 									<ReferenceList>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -6979,190 +6560,26 @@ RPM - a throttle control for the engine</Comment>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
 												<SourcePlugin Name="SoundSeed Air Wind" ID="{F2E55D80-0402-4882-A88C-D006AA0BA70E}" ShortID="640643725" PluginName="SoundSeed Air/SoundSeed Wind" CompanyID="0" PluginID="119">
 													<PropertyList>
-														<Property Name="AttenuationRollOff" Type="Real32" Value="2">
-															<RTPCList>
-																<RTPC Name="" ID="{3C302E68-0726-44FA-83A0-A3D5ED4783D8}" ShortID="793362389">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{B61CF265-B96D-44B0-A1C7-F6C120F23BA4}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>4</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>4</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
-														<Property Name="AverageVelocity" Type="Real32" Value="-2122.1">
-															<RTPCList>
-																<RTPC Name="" ID="{9A4183E1-83E4-4FEF-8C0B-F1641AD3739A}" ShortID="248272474">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{F5F73AD1-9091-4649-A2B7-B0A2B81937CF}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>2400</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
+														<Property Name="AttenuationRollOff" Type="Real32" Value="2"/>
+														<Property Name="AverageVelocity" Type="Real32" Value="-2122.1"/>
 														<Property Name="AverageVelocityRandom" Type="Real32" Value="200"/>
 														<Property Name="Direction" Type="Real32" Value="45"/>
 														<Property Name="Duration" Type="Real64" Value="5"/>
 														<Property Name="FrequencyScale" Type="Real32" Value="2.75"/>
 														<Property Name="FrequencyScaleRandom" Type="Real32" Value="0.65"/>
-														<Property Name="GainOffset" Type="Real32" Value="-14.5">
-															<RTPCList>
-																<RTPC Name="" ID="{F54C2CFF-A1B5-4912-86E2-DF1E57E97990}" ShortID="38261998">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{A9503DF4-3CAF-4B40-A1B7-B7A25311FB79}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>-30.27938</YPos>
-																				<Flags>5</Flags>
-																				<SegmentShape>SCurve</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>-13.33334</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
-														<Property Name="Gustiness" Type="Real32" Value="0.32">
-															<RTPCList>
-																<RTPC Name="" ID="{88E96AA9-686F-4796-B1A5-2B5F1B74BA79}" ShortID="1050373475">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{7CF57FC6-4CBA-4F8A-869F-2CE5DA996DD6}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>0.57547</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>0.51213</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
+														<Property Name="GainOffset" Type="Real32" Value="-14.5"/>
+														<Property Name="Gustiness" Type="Real32" Value="0.32"/>
 														<Property Name="MaxDistance" Type="Real32" Value="20"/>
 														<Property Name="MinDistance" Type="Real32" Value="4.6"/>
-														<Property Name="QFactorScale" Type="Real32" Value="4">
-															<RTPCList>
-																<RTPC Name="" ID="{3D19AB42-D62E-4AD4-9373-55C2171C3B37}" ShortID="523569460">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{3A5771E1-DB0C-435F-A49B-72D936C6ABF0}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>1.85001</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>4</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
+														<Property Name="QFactorScale" Type="Real32" Value="4"/>
 														<Property Name="QFactorScaleRandom" Type="Real32" Value="0.46"/>
-														<Property Name="Variability" Type="Real32" Value="0.58">
-															<RTPCList>
-																<RTPC Name="" ID="{36E98C1A-EBC8-46E6-91C3-1D94306C8AEB}" ShortID="456196271">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="SS_Air_Turbulence" ID="{EDA87B19-73AA-40A0-9F19-2073606DB710}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{C0F12097-7AF4-4A54-949E-042047558929}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>0.05</YPos>
-																				<Flags>5</Flags>
-																				<SegmentShape>Exp1</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>0.70283</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
+														<Property Name="Variability" Type="Real32" Value="0.58"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<PluginData/>
@@ -7241,190 +6658,26 @@ RPM - a throttle control for the engine</Comment>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
 												<SourcePlugin Name="SoundSeed Air Wind" ID="{AFFB4344-7E93-43E8-863E-D46840BD1E67}" ShortID="60142098" PluginName="SoundSeed Air/SoundSeed Wind" CompanyID="0" PluginID="119">
 													<PropertyList>
 														<Property Name="AttenuationRollOff" Type="Real32" Value="2"/>
-														<Property Name="AverageVelocity" Type="Real32" Value="-2122.1">
-															<RTPCList>
-																<RTPC Name="" ID="{3BF5B8D4-8BEA-47E3-A775-0CD04D931D93}" ShortID="335069118">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{44D097F9-4433-4B01-86B3-74287877045F}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>2400</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
+														<Property Name="AverageVelocity" Type="Real32" Value="-2122.1"/>
 														<Property Name="AverageVelocityRandom" Type="Real32" Value="200"/>
 														<Property Name="Direction" Type="Real32" Value="45"/>
 														<Property Name="Duration" Type="Real64" Value="5"/>
-														<Property Name="FrequencyScale" Type="Real32" Value="2.75">
-															<RTPCList>
-																<RTPC Name="" ID="{1B8ADC7E-3834-4406-B7BF-0A8BA5B7F891}" ShortID="800640170">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{8EE49D1A-C00E-4243-95C7-C884B43D19DE}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>2.96927</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>2.49645</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
+														<Property Name="FrequencyScale" Type="Real32" Value="2.75"/>
 														<Property Name="FrequencyScaleRandom" Type="Real32" Value="0.65"/>
-														<Property Name="GainOffset" Type="Real32" Value="-14.5">
-															<RTPCList>
-																<RTPC Name="" ID="{5C33DF1E-99D0-4F99-BAD1-717BF014FF19}" ShortID="851792996">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{7C8B85E8-893E-4E53-962D-3FD6808E8FC3}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>-30.27938</YPos>
-																				<Flags>5</Flags>
-																				<SegmentShape>SCurve</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>-13.33334</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
-														<Property Name="Gustiness" Type="Real32" Value="0.32">
-															<RTPCList>
-																<RTPC Name="" ID="{4AB09D86-CBB2-4CAE-A198-DF557A17798B}" ShortID="121193204">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{26D488CF-3A7E-4DBF-AD1B-61AAC94C9969}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>0.57547</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>0.51213</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
+														<Property Name="GainOffset" Type="Real32" Value="-14.5"/>
+														<Property Name="Gustiness" Type="Real32" Value="0.32"/>
 														<Property Name="MaxDistance" Type="Real32" Value="20"/>
 														<Property Name="MinDistance" Type="Real32" Value="4.6"/>
-														<Property Name="QFactorScale" Type="Real32" Value="4">
-															<RTPCList>
-																<RTPC Name="" ID="{19D3640D-7D19-459E-8592-5B4B45E69278}" ShortID="125407144">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{28D2E7D1-E7E4-4C6F-B812-3FF44C274CEA}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>1.85001</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>4</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
+														<Property Name="QFactorScale" Type="Real32" Value="4"/>
 														<Property Name="QFactorScaleRandom" Type="Real32" Value="0.46"/>
-														<Property Name="Variability" Type="Real32" Value="0.58">
-															<RTPCList>
-																<RTPC Name="" ID="{D6FA3BF1-236A-48D4-B4A2-E4B7754A58F9}" ShortID="1070810284">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="SS_Air_Turbulence" ID="{EDA87B19-73AA-40A0-9F19-2073606DB710}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{D9BD3D51-F767-42FB-845A-DA9191F6EC7A}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																				<SegmentShape>Exp1</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>0.2</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
+														<Property Name="Variability" Type="Real32" Value="0.58"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<PluginData/>
@@ -7464,14 +6717,14 @@ Foes will take more time to load bigger arrows and bolts, unless they're furious
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="Arrow" ID="{FFFEE9A1-6B07-417B-AA65-044C212AC42F}" ShortID="262153073" Type="SoundFX">
 											<ReferenceList>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -7481,93 +6734,10 @@ Foes will take more time to load bigger arrows and bolts, unless they're furious
 														<Property Name="ChannelMask" Type="int32" Value="2"/>
 														<Property Name="Duration" Type="Real64" Value="0.25"/>
 														<Property Name="DurationRandom" Type="Real32" Value="0.08"/>
-														<Property Name="FrequencyScale" Type="Real32" Value="2">
-															<RTPCList>
-																<RTPC Name="" ID="{1235545C-C99F-47B8-B62E-D6A1627944BA}" ShortID="77047412">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{1AA2C8F1-198F-41B4-A741-89A9ACDC5AD2}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>2</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>-1</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
+														<Property Name="FrequencyScale" Type="Real32" Value="2"/>
 														<Property Name="FrequencyScaleRandom" Type="Real32" Value="0.25"/>
 														<Property Name="GainOffsetRandom" Type="Real32" Value="16"/>
 														<Property Name="Oversampling" Type="int16" Value="8"/>
-														<Property Name="PlaybackRate" Type="Real32">
-															<RTPCList>
-																<RTPC Name="" ID="{45EB5375-70B7-4FF9-8554-6C1AF60DAA20}" ShortID="349284777">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{E80C1B47-D846-4813-85F4-EA468FEBD989}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>1.5</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>1</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
-														<Property Name="Speed" Type="Real32">
-															<RTPCList>
-																<RTPC Name="" ID="{C8B8331B-1D60-4309-B6E0-9B2C22BD198B}" ShortID="332380467">
-																	<ReferenceList>
-																		<Reference Name="ControlInput">
-																			<ObjectRef Name="SS_Air_Fury" ID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<Curve Name="" ID="{50CF0338-639C-4279-9329-F271BAE99A80}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>-20</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>10</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</RTPC>
-															</RTPCList>
-														</Property>
 														<Property Name="SpeedAutomate" Type="bool" Value="True"/>
 														<Property Name="SpeedPointSpeedRandom" Type="Real32" Value="20"/>
 														<Property Name="SpeedPointTimeRandom" Type="Real32" Value="0.4"/>
@@ -7658,39 +6828,9 @@ Foes will take more time to load bigger arrows and bolts, unless they're furious
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Silence" ID="{99BF497C-C367-4A7B-BDFD-791A94F09EFF}" ShortID="224830394" Type="SoundFX">
-											<PropertyList>
-												<Property Name="Pitch" Type="int32">
-													<RTPCList>
-														<RTPC Name="" ID="{3D6F8CB9-2116-4FA8-8007-574FFC292AA5}" ShortID="882013462">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Fury" ID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{2F0B1C16-68E9-48D8-A7C5-7F4297C04C9B}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="65537"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-2400</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>4800</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -7717,7 +6857,7 @@ Foes will take more time to load bigger arrows and bolts, unless they're furious
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -7725,91 +6865,7 @@ Foes will take more time to load bigger arrows and bolts, unless they're furious
 											<PropertyList>
 												<Property Name="Duration" Type="Real64" Value="0.65"/>
 												<Property Name="DurationRandom" Type="Real32" Value="0.1"/>
-												<Property Name="FrequencyScale" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{C47CB74B-9A9F-4550-A407-FB381FD60AD9}" ShortID="340189377">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{6243254B-A881-40AA-83CC-AB123DAE0174}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0.5</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>-0.25</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 												<Property Name="GainOffset" Type="Real32" Value="12"/>
-												<Property Name="PlaybackRate" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{10832232-866E-4ABE-9C91-FF81E94D733F}" ShortID="969875275">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{307ED319-CC32-40D1-9BBF-EA659DDF2B60}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>1.5</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>1</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-												<Property Name="Speed" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{CD7DE0C8-8397-4C1C-B695-EB826B1E8C55}" ShortID="796756049">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Fury" ID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{D2073582-974F-4A78-AFCB-2E4CAB926E23}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-10</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>20</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 												<Property Name="SpeedAutomate" Type="bool" Value="True"/>
 												<Property Name="SpeedPointTimeRandom" Type="Real32" Value="0.35"/>
 												<Property Name="SpeedRandom" Type="Real32" Value="20"/>
@@ -7956,96 +7012,12 @@ Foes will take more time to load bigger arrows and bolts, unless they're furious
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<SourcePlugin Name="SoundSeed Woosh" ID="{B716D06B-1087-474F-A6EC-60628FD8953C}" ShortID="223736328" PluginName="SoundSeed Air/SoundSeed Woosh" CompanyID="0" PluginID="120">
 											<PropertyList>
-												<Property Name="FrequencyScale" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{DE82CC10-6D69-48F4-91B8-EB9BBBF010A2}" ShortID="706313772">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{2D5F9C2E-DB89-4AEA-A4E2-D4A2A225CAB0}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>1</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>-1</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-												<Property Name="PlaybackRate" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{C5B908CE-1954-4EE6-9E88-D61324A83DD3}" ShortID="368755908">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{986B789A-716F-4E83-B9B5-9FB6A1BFC322}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>1.99999</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>0.75</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-												<Property Name="Speed" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{0D602DD4-01B4-489F-A96E-96C3CA834707}" ShortID="925164086">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Fury" ID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{93E0A830-3254-4039-8943-005E8D1F38F7}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-20.00005</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>20.00001</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 												<Property Name="SpeedAutomate" Type="bool" Value="True"/>
 												<Property Name="SpeedPointSpeedRandom" Type="Real32" Value="15"/>
 												<Property Name="SpeedPointTimeRandom" Type="Real32" Value="0.75"/>
@@ -8145,7 +7117,7 @@ Foes will take more time to load bigger arrows and bolts, unless they're furious
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -8153,91 +7125,7 @@ Foes will take more time to load bigger arrows and bolts, unless they're furious
 											<PropertyList>
 												<Property Name="ChannelMask" Type="int32" Value="2"/>
 												<Property Name="Duration" Type="Real64" Value="1.8"/>
-												<Property Name="FrequencyScale" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{6C4F0E93-3E9C-4EF0-B21D-A26370D4BC7B}" ShortID="342795032">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{98B68551-F1E2-4611-8646-52F7360BC6CB}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0.5</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>-0.5</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 												<Property Name="GainOffset" Type="Real32" Value="12"/>
-												<Property Name="PlaybackRate" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{BA03EDC6-8942-4C65-8FE0-14563EEB4A4C}" ShortID="673763257">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{3D894372-FBD4-4367-BF3A-FB639CB6B6B3}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>1.5</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>1</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-												<Property Name="Speed" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{7D1D7F0C-4B07-433A-9648-9E4718193969}" ShortID="425668451">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Fury" ID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{4AB9C6D5-76C7-477D-BF9E-494B7E6188AC}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-15</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>5.07092</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 												<Property Name="SpeedAutomate" Type="bool" Value="True"/>
 											</PropertyList>
 											<Language>SFX</Language>
@@ -8460,7 +7348,7 @@ Foes will take more time to load bigger arrows and bolts, unless they're furious
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -8469,92 +7357,8 @@ Foes will take more time to load bigger arrows and bolts, unless they're furious
 												<Property Name="ChannelMask" Type="int32" Value="2"/>
 												<Property Name="Duration" Type="Real64" Value="1.3"/>
 												<Property Name="DurationRandom" Type="Real32" Value="0.25"/>
-												<Property Name="FrequencyScale" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{7C602A38-9E63-45E5-899D-9B6CE820C6BD}" ShortID="204174164">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{B1DFC82B-9662-4A54-9F32-76ACBADF771A}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0.5</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>-0.5</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 												<Property Name="FrequencyScaleRandom" Type="Real32" Value="0.5"/>
 												<Property Name="GainOffset" Type="Real32" Value="12"/>
-												<Property Name="PlaybackRate" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{87F8C98B-1880-42F4-9B44-6F24828D5E14}" ShortID="626520474">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{A5E7382D-D04C-4EC6-B4D8-E642D4EBF78D}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>1.8</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>1</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-												<Property Name="Speed" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{721FA695-3DEA-408C-9469-451253343685}" ShortID="455127598">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Fury" ID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{CD71B079-8C72-48BE-9863-048BB34B2808}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-25</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>15</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 												<Property Name="SpeedAutomate" Type="bool" Value="True"/>
 												<Property Name="SpeedPointSpeedRandom" Type="Real32" Value="15"/>
 												<Property Name="SpeedPointTimeRandom" Type="Real32" Value="0.35"/>
@@ -8751,230 +7555,25 @@ Air currents change during the hours of the day and months of the year.</Comment
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<SourcePlugin Name="SoundSeed Air Wind" ID="{87576840-7511-49B5-9177-1EFFB9091FC5}" ShortID="71113179" PluginName="SoundSeed Air/SoundSeed Wind" CompanyID="0" PluginID="119">
 											<PropertyList>
-												<Property Name="AverageVelocity" Type="Real32" Value="-75.8">
-													<RTPCList>
-														<RTPC Name="" ID="{5C8697F9-7334-48DA-B3DE-E4BFD5505165}" ShortID="734600401">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{16770155-BC23-430B-9598-9745F6B0B75A}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-312.05673</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>InvertedSCurve</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>4.90225</XPos>
-																		<YPos>1777.47737</YPos>
-																		<Flags>0</Flags>
-																		<SegmentShape>InvertedSCurve</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>11.0376</XPos>
-																		<YPos>-268.94426</YPos>
-																		<Flags>0</Flags>
-																		<SegmentShape>InvertedSCurve</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>17.08271</XPos>
-																		<YPos>1850.53331</YPos>
-																		<Flags>0</Flags>
-																		<SegmentShape>InvertedSCurve</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>24</XPos>
-																		<YPos>-312.05673</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
+												<Property Name="AverageVelocity" Type="Real32" Value="-75.8"/>
 												<Property Name="AverageVelocityAutomate" Type="bool" Value="True"/>
 												<Property Name="AverageVelocityRandom" Type="Real32" Value="25.3"/>
 												<Property Name="ChannelMask" Type="int16" Value="2"/>
-												<Property Name="Direction" Type="Real32" Value="90">
-													<RTPCList>
-														<RTPC Name="" ID="{1B37D192-C371-43C0-A712-0AE5963911BD}" ShortID="59159959">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{C9F7737D-798F-4F43-A8C9-14584CA74F13}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>0.421052631578947</XPos>
-																		<YPos>100.494961061496</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>10.6165416</XPos>
-																		<YPos>104.52475</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>11.4889608</XPos>
-																		<YPos>-75.22388</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>23.428572</XPos>
-																		<YPos>-77.01492</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>24</XPos>
-																		<YPos>0.89552</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
+												<Property Name="Direction" Type="Real32" Value="90"/>
 												<Property Name="DirectionRandom" Type="Real32" Value="1"/>
 												<Property Name="Duration" Type="Real64" Value="60"/>
 												<Property Name="DurationRandom" Type="Real32" Value="60"/>
-												<Property Name="FrequencyScale" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{84430DDF-6008-4719-AAF1-1763BA28FDF1}" ShortID="227985263">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Month" ID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{51EED6EC-BFAF-4F80-AD06-7C230BCCE805}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>1</XPos>
-																		<YPos>-0.00472</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>6.19674</XPos>
-																		<YPos>-0.62164</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>12</XPos>
-																		<YPos>-0.00472</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-												<Property Name="Gustiness" Type="Real32" Value="0.43">
-													<RTPCList>
-														<RTPC Name="" ID="{123DED1E-6B25-4ABD-81B8-D9AB678C7A2F}" ShortID="369685944">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{DE52EEA4-58E4-4438-B4D1-85B7EFF67949}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0.5</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>1.4436096</XPos>
-																		<YPos>0.69154</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>4.75188</XPos>
-																		<YPos>0.29644</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>10.2556392</XPos>
-																		<YPos>0.29858</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>14.1353376</XPos>
-																		<YPos>0.62885</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>24</XPos>
-																		<YPos>0.5</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
+												<Property Name="Gustiness" Type="Real32" Value="0.43"/>
 												<Property Name="GustinessAutomate" Type="bool" Value="True"/>
 												<Property Name="MaxDistance" Type="Real32" Value="50"/>
 												<Property Name="MinDistance" Type="Real32" Value="1.4"/>
-												<Property Name="Variability" Type="Real32" Value="0.29">
-													<RTPCList>
-														<RTPC Name="" ID="{300ABB77-9029-433D-8762-0D10277B1A64}" ShortID="528231047">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{9C8BF006-4B33-446A-8EF3-0BCA8F58E161}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0.25</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>8.3308272</XPos>
-																		<YPos>0.61816</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>24</XPos>
-																		<YPos>0.25</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
+												<Property Name="Variability" Type="Real32" Value="0.29"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<PluginData>
@@ -9170,250 +7769,22 @@ Air currents change during the hours of the day and foliage changes during  the 
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<SourcePlugin Name="SoundSeed Air Wind" ID="{4ED9D669-2486-4E0A-B046-74BD51810C05}" ShortID="932020803" PluginName="SoundSeed Air/SoundSeed Wind" CompanyID="0" PluginID="119">
 											<PropertyList>
-												<Property Name="AverageVelocity" Type="Real32" Value="-75.8">
-													<RTPCList>
-														<RTPC Name="" ID="{7DDBE7E4-A1DA-415C-AA80-582A89763B6F}" ShortID="647272042">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{18A80A64-6C7D-4282-9B6D-51222D1F6F72}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-19.40701</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>6.71404</XPos>
-																		<YPos>917.9848</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>13.6634</XPos>
-																		<YPos>23.70546</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>18.55314</XPos>
-																		<YPos>732.28063</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>24</XPos>
-																		<YPos>-19.40701</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
+												<Property Name="AverageVelocity" Type="Real32" Value="-75.8"/>
 												<Property Name="AverageVelocityAutomate" Type="bool" Value="True"/>
 												<Property Name="AverageVelocityRandom" Type="Real32" Value="25.3"/>
 												<Property Name="ChannelMask" Type="int16" Value="2"/>
 												<Property Name="Direction" Type="Real32" Value="90"/>
 												<Property Name="Duration" Type="Real64" Value="20"/>
 												<Property Name="DurationRandom" Type="Real32" Value="20"/>
-												<Property Name="FrequencyScale" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{A459CA1E-56F2-4740-A51D-E4E589DA17E0}" ShortID="588651374">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{369C51FD-F755-47D7-B63E-3DC34C8B2AB1}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0.5</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>SCurve</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>10.9090909090909</XPos>
-																		<YPos>-0.5</YPos>
-																		<Flags>0</Flags>
-																		<SegmentShape>SCurve</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>24</XPos>
-																		<YPos>0.5</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-												<Property Name="GainOffset" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{BD009C59-F758-4CBC-BCD3-3C6BC5827837}" ShortID="559858854">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Month" ID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{42A58E96-C159-4F15-A52D-803A0E5ED282}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>1</XPos>
-																		<YPos>-10.2132</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>Exp3</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>6</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
-																		<SegmentShape>Log3</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>12</XPos>
-																		<YPos>-9.9288</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-												<Property Name="Gustiness" Type="Real32" Value="0.43">
-													<RTPCList>
-														<RTPC Name="" ID="{64019E26-5BDD-4D60-9E4E-72D2AAA38032}" ShortID="594999904">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{60E0E026-8EB1-465B-997E-D9B51B3BF9C8}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0.40027</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>1.4436096</XPos>
-																		<YPos>0.56755</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>5.789376</XPos>
-																		<YPos>0.55994</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>9.507576</XPos>
-																		<YPos>0.24775</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>14.1353376</XPos>
-																		<YPos>0.50486</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>24</XPos>
-																		<YPos>0.4</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
+												<Property Name="Gustiness" Type="Real32" Value="0.43"/>
 												<Property Name="MaxDistance" Type="Real32" Value="50"/>
-												<Property Name="QFactorScale" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{2F861D6D-30F5-4257-9766-A31B75E0570B}" ShortID="1041508979">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Month" ID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{D865DAAB-59FF-43A2-BFFC-62CF307CDF38}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>1</XPos>
-																		<YPos>2</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>Exp2</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>6</XPos>
-																		<YPos>-2.36816</YPos>
-																		<Flags>0</Flags>
-																		<SegmentShape>Log2</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>12</XPos>
-																		<YPos>2</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-												<Property Name="Variability" Type="Real32" Value="0.29">
-													<RTPCList>
-														<RTPC Name="" ID="{211A2F61-5EC7-4FD8-96B1-FEBE8EB9FD30}" ShortID="1059134712">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{FF248B6E-A39C-4042-B855-6661B85D7974}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0.25</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>Exp1</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>8.5934088</XPos>
-																		<YPos>0.56425</YPos>
-																		<Flags>0</Flags>
-																		<SegmentShape>Log1</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>24</XPos>
-																		<YPos>0.25</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
+												<Property Name="Variability" Type="Real32" Value="0.29"/>
 												<Property Name="VelocityDynamicRange" Type="Real32" Value="0.75"/>
 											</PropertyList>
 											<Language>SFX</Language>
@@ -9663,137 +8034,19 @@ Air currents change during the hours of the day and foliage changes during  the 
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<SourcePlugin Name="SoundSeed Air Wind" ID="{7B3EA874-F273-403D-8964-648A78BA2AF8}" ShortID="309737562" PluginName="SoundSeed Air/SoundSeed Wind" CompanyID="0" PluginID="119">
 											<PropertyList>
-												<Property Name="AverageVelocity" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{24D6A48E-9FAC-4BA0-AC3A-79079EBB27F0}" ShortID="652066347">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Storm" ID="{E93F8CDB-06D1-4737-ACAF-7CD44BBED783}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{376AD3AB-7D94-423F-87EC-357A729F25EB}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-1200</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>Exp2</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>927.648</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 												<Property Name="AverageVelocityRandom" Type="Real32" Value="25.3"/>
 												<Property Name="ChannelMask" Type="int16" Value="2"/>
 												<Property Name="Duration" Type="Real64" Value="20"/>
 												<Property Name="DurationRandom" Type="Real32" Value="20"/>
 												<Property Name="GainOffset" Type="Real32" Value="12"/>
-												<Property Name="Gustiness" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{572C0EA9-E112-4F62-B756-9598778BDAB6}" ShortID="975967558">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Storm" ID="{E93F8CDB-06D1-4737-ACAF-7CD44BBED783}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{E417CFDF-5915-47B6-AFE1-F22A3FF139C1}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0.5</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>50</XPos>
-																		<YPos>0.68625</YPos>
-																		<Flags>0</Flags>
-																		<SegmentShape>Exp2</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>0.87694</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 												<Property Name="MaxDistance" Type="Real32" Value="50"/>
-												<Property Name="QFactorScale" Type="Real32" Value="-3.33">
-													<RTPCList>
-														<RTPC Name="" ID="{81D161F5-2B17-44F5-A7BC-F59FD5C5F9C2}" ShortID="483789658">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Storm" ID="{E93F8CDB-06D1-4737-ACAF-7CD44BBED783}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{F9DE116C-FEF3-4B62-8361-4E898D409299}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>1</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>-2</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-												<Property Name="Variability" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{773EBCE3-4AC7-4CC3-8FA4-834BB32BD72C}" ShortID="497849959">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Storm" ID="{E93F8CDB-06D1-4737-ACAF-7CD44BBED783}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{6332A531-8C76-4A03-B69E-B020E7C32B78}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0.25</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>0.74232</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
+												<Property Name="QFactorScale" Type="Real32" Value="-3.33"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<PluginData>
@@ -9950,156 +8203,20 @@ Air currents change during the hours of the day and months of the year.</Comment
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<SourcePlugin Name="SoundSeed Air Wind" ID="{C1D0AFAA-BC77-4CA5-A592-B80277D27445}" ShortID="25868842" PluginName="SoundSeed Air/SoundSeed Wind" CompanyID="0" PluginID="119">
 											<PropertyList>
-												<Property Name="AverageVelocity" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{867973AF-6DCC-42EE-95FF-B51D89AB2ADF}" ShortID="331620563">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{9D0EAF32-CA1E-490A-AB48-86349883373F}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>6</XPos>
-																		<YPos>448.24003</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>17.85558</XPos>
-																		<YPos>-352.90135</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>24</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 												<Property Name="AverageVelocityAutomate" Type="bool" Value="True"/>
 												<Property Name="AverageVelocityRandom" Type="Real32" Value="200"/>
 												<Property Name="ChannelMask" Type="int16" Value="2"/>
-												<Property Name="Direction" Type="Real32" Value="90">
-													<RTPCList>
-														<RTPC Name="" ID="{B17F13D1-E47A-4409-BFE4-0927EFEDA144}" ShortID="450260287">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Month" ID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{86815219-C127-47C0-A89E-E090198EA2E9}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>1</XPos>
-																		<YPos>-90</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>6</XPos>
-																		<YPos>90</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>12</XPos>
-																		<YPos>-90</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
+												<Property Name="Direction" Type="Real32" Value="90"/>
 												<Property Name="DirectionAutomate" Type="bool" Value="True"/>
 												<Property Name="DirectionRandom" Type="Real32" Value="15"/>
 												<Property Name="Duration" Type="Real64" Value="20"/>
 												<Property Name="DurationRandom" Type="Real32" Value="20"/>
-												<Property Name="FrequencyScale" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{22042856-089E-4C66-9B8E-2307D60D1C5B}" ShortID="862309837">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Month" ID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{7741978E-820A-4E34-A923-973BD78BD315}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>1</XPos>
-																		<YPos>0</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>6</XPos>
-																		<YPos>1</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>12</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-												<Property Name="GainOffset" Type="Real32">
-													<RTPCList>
-														<RTPC Name="" ID="{8DD9A35D-416B-4AF4-A4D9-E3E8E3380B8B}" ShortID="212564192">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Month" ID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{FF405A29-6C51-4B0E-964B-320B4396CFEA}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>1</XPos>
-																		<YPos>18</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>6</XPos>
-																		<YPos>12</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>12</XPos>
-																		<YPos>18</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 												<Property Name="Gustiness" Type="Real32" Value="0.43"/>
 												<Property Name="GustinessAutomate" Type="bool" Value="True"/>
 												<Property Name="MaxDistance" Type="Real32" Value="20"/>
@@ -10310,7 +8427,7 @@ Air currents change during the hours of the day and months of the year.</Comment
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -10321,155 +8438,18 @@ Air currents change during the hours of the day and months of the year.</Comment
 												<Property Name="AverageVelocityAutomate" Type="bool" Value="True"/>
 												<Property Name="AverageVelocityRandom" Type="Real32" Value="200"/>
 												<Property Name="ChannelMask" Type="int16" Value="2"/>
-												<Property Name="Direction" Type="Real32" Value="135">
-													<RTPCList>
-														<RTPC Name="" ID="{0DB6FB4F-2EBD-449C-8507-096758F8F7A8}" ShortID="65398626">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Fear" ID="{F72E0659-4346-4E1C-A1B1-DAB46A05101E}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{4A23987D-9AE1-493C-8831-00A672705D24}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>60</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>135</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
+												<Property Name="Direction" Type="Real32" Value="135"/>
 												<Property Name="Duration" Type="Real64" Value="20"/>
 												<Property Name="DurationRandom" Type="Real32" Value="10"/>
-												<Property Name="FrequencyScale" Type="Real32" Value="-0.76">
-													<RTPCList>
-														<RTPC Name="" ID="{0B1CD837-89F4-4BFF-93A9-C9286D04834C}" ShortID="505631292">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Fear" ID="{F72E0659-4346-4E1C-A1B1-DAB46A05101E}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{D84006D6-BB7F-4504-9CFF-9384B49255C4}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-0.75</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
+												<Property Name="FrequencyScale" Type="Real32" Value="-0.76"/>
 												<Property Name="FrequencyScaleRandom" Type="Real32" Value="1.01"/>
 												<Property Name="GainOffset" Type="Real32" Value="12"/>
-												<Property Name="Gustiness" Type="Real32" Value="0.07">
-													<RTPCList>
-														<RTPC Name="" ID="{24C82472-54DA-4E23-B03F-2375C36AD88E}" ShortID="977938464">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Fear" ID="{F72E0659-4346-4E1C-A1B1-DAB46A05101E}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{B3312BB2-B2EE-494C-B567-F246BA74282E}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0.08315</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>0.5</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
+												<Property Name="Gustiness" Type="Real32" Value="0.07"/>
 												<Property Name="MaxDistance" Type="Real32" Value="20"/>
 												<Property Name="MinDistance" Type="Real32" Value="4.6"/>
-												<Property Name="QFactorScale" Type="Real32" Value="0.08">
-													<RTPCList>
-														<RTPC Name="" ID="{493B362E-981B-422F-B496-FD8E089485EB}" ShortID="96858807">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Fear" ID="{F72E0659-4346-4E1C-A1B1-DAB46A05101E}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{E01A3C5D-CDB7-499F-A54B-6ECBF18F556A}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>Log2</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>3.74277</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
+												<Property Name="QFactorScale" Type="Real32" Value="0.08"/>
 												<Property Name="QFactorScaleRandom" Type="Real32" Value="0.46"/>
-												<Property Name="Variability" Type="Real32" Value="0.58">
-													<RTPCList>
-														<RTPC Name="" ID="{4446E2E2-D54D-4425-92B9-1CF956CE1D85}" ShortID="1035050727">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="SS_Air_Fear" ID="{F72E0659-4346-4E1C-A1B1-DAB46A05101E}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{9A925B68-E878-48EE-9E46-91DE9528C5D2}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="1"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0.7888</YPos>
-																		<Flags>5</Flags>
-																		<SegmentShape>Exp1</SegmentShape>
-																	</Point>
-																	<Point>
-																		<XPos>100</XPos>
-																		<YPos>0.16353</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
+												<Property Name="Variability" Type="Real32" Value="0.58"/>
 												<Property Name="VelocityDynamicRange" Type="Real32" Value="1"/>
 											</PropertyList>
 											<Language>SFX</Language>
@@ -10670,7 +8650,7 @@ Presence is roughly related to distance and occlusion</Comment>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -10681,149 +8661,10 @@ Presence is roughly related to distance and occlusion</Comment>
 										<Property Name="DistanceAttenuation" Type="bool" Value="False"/>
 										<Property Name="Duration" Type="Real64" Value="1.5"/>
 										<Property Name="DurationRandom" Type="Real32" Value="0.1"/>
-										<Property Name="FrequencyScale" Type="Real32">
-											<RTPCList>
-												<RTPC Name="" ID="{126D5941-39A8-4C53-9111-EED8B9A7EDBE}" ShortID="409076597">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{9136B606-9AC5-42D0-85CC-FF3B4115BD5E}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="1"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>4</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>Exp2</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>-4</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="GainOffset" Type="Real32" Value="-1.9">
-											<RTPCList>
-												<RTPC Name="" ID="{16070FF5-C686-4EB4-8F3C-AB2E4B456819}" ShortID="560597853">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{FC7E7BAD-286B-4DDA-A67E-4B39BDADCEA8}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="1"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-18</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>-6</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
+										<Property Name="GainOffset" Type="Real32" Value="-1.9"/>
 										<Property Name="Oversampling" Type="int16" Value="4"/>
-										<Property Name="PlaybackRate" Type="Real32">
-											<RTPCList>
-												<RTPC Name="" ID="{BDA50D41-B186-467D-A2F1-530172D0E190}" ShortID="800487072">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{E6766511-695C-4690-B93E-6BCCF5D53E2E}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="1"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>6.5</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>1.01277</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="QFactorScale" Type="Real32" Value="-1.47">
-											<RTPCList>
-												<RTPC Name="" ID="{8CFA45A1-FDBC-4B15-A66F-B38153155218}" ShortID="170470935">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{642448BD-2CB0-4850-9B27-AB457F733046}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="1"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-0.19858</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>0.48227</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="Speed" Type="Real32" Value="25">
-											<RTPCList>
-												<RTPC Name="" ID="{F5ED7ED2-BAC7-4372-8841-A8D81BED9FBD}" ShortID="666462160">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{EFC10A65-29FC-4442-912E-0EEA3DBEFBC9}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="1"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-25</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>Log1</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>0</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
+										<Property Name="QFactorScale" Type="Real32" Value="-1.47"/>
+										<Property Name="Speed" Type="Real32" Value="25"/>
 										<Property Name="SpeedAutomate" Type="bool" Value="True"/>
 										<Property Name="SpeedPointTimeRandom" Type="Real32" Value="0.13"/>
 									</PropertyList>
@@ -10894,7 +8735,7 @@ Presence is roughly related to distance and occlusion</Comment>
 				</PropertyList>
 				<PointList>
 					<Point>
-						<XPos>0.00001</XPos>
+						<XPos>1E-05</XPos>
 						<YPos>-0.59347</YPos>
 						<Flags>12</Flags>
 						<Time>0</Time>
@@ -10954,69 +8795,13 @@ Presence is roughly related to distance and occlusion</Comment>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<SourcePlugin Name="SoundSeed Wind" ID="{BFD0A5AA-2899-4662-B434-E8E62F439A19}" ShortID="767342224" PluginName="SoundSeed Air/SoundSeed Wind" CompanyID="0" PluginID="119">
 									<PropertyList>
-										<Property Name="FrequencyScale" Type="Real32">
-											<RTPCList>
-												<RTPC Name="" ID="{8EF9E8C7-A16F-471E-ABC8-1294B37766F3}" ShortID="278071640">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{4BCD8744-A58F-45AB-ACEF-19FED8CC650F}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="1"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>1.84389</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>-1</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="GainOffset" Type="Real32" Value="-1.9">
-											<RTPCList>
-												<RTPC Name="" ID="{75CD260F-B331-48FC-8EA3-A0C2E9E837FD}" ShortID="656279670">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{05E7049B-2976-436B-945F-5F6DAD9CBEDF}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="1"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-4.0467</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>Log1</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>14.82275</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
+										<Property Name="GainOffset" Type="Real32" Value="-1.9"/>
 										<Property Name="Gustiness" Type="Real32" Value="0.8"/>
 										<Property Name="Variability" Type="Real32" Value="0.2"/>
 										<Property Name="VelocityDynamicRange" Type="Real32" Value="0.75"/>
@@ -11112,79 +8897,20 @@ Presence is roughly related to distance and occlusion</Comment>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC40B9D3-86D8-41C6-A75A-A40369084F59}"/>
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E95E3857-58C1-44ED-82DF-432A2E7AACA6}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<SourcePlugin Name="SoundSeed Air Wind" ID="{2089777B-53EB-4648-A53C-D186514756F7}" ShortID="849098007" PluginName="SoundSeed Air/SoundSeed Wind" CompanyID="0" PluginID="119">
 									<PropertyList>
-										<Property Name="AverageVelocity" Type="Real32" Value="-404.2">
-											<RTPCList>
-												<RTPC Name="" ID="{3F938BAA-1CAA-44F3-AD26-B6354940D037}" ShortID="896292638">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="SS_Air_Freefall" ID="{2F2DFE37-4F9E-4D94-83D8-53CCA39781AD}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{9812785D-2D29-4D7C-A668-F57EC4EE0D89}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="1"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>5.67376</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>1560.2836</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
+										<Property Name="AverageVelocity" Type="Real32" Value="-404.2"/>
 										<Property Name="AverageVelocityRandom" Type="Real32" Value="200"/>
 										<Property Name="Direction" Type="Real32" Value="11"/>
 										<Property Name="DirectionRandom" Type="Real32" Value="15"/>
 										<Property Name="Duration" Type="Real64" Value="20"/>
 										<Property Name="DurationRandom" Type="Real32" Value="20"/>
 										<Property Name="FrequencyScale" Type="Real32" Value="-2"/>
-										<Property Name="GainOffset" Type="Real32" Value="-12">
-											<RTPCList>
-												<RTPC Name="" ID="{9B71E80A-9E87-4998-BE7C-8B38C284FC88}" ShortID="168975815">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="SS_Air_Freefall" ID="{2F2DFE37-4F9E-4D94-83D8-53CCA39781AD}" WorkUnitID="{3B167755-FB42-458B-98BF-96F557AFB3B9}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{D2EA95BD-1BBB-4AD9-A7AF-96E08DDA3A70}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="1"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-96</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>2</XPos>
-																<YPos>0</YPos>
-																<Flags>0</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>0</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
+										<Property Name="GainOffset" Type="Real32" Value="-12"/>
 										<Property Name="Gustiness" Type="Real32" Value="0.76"/>
 										<Property Name="MaxDistance" Type="Real32" Value="20"/>
 										<Property Name="Variability" Type="Real32" Value="0.97"/>

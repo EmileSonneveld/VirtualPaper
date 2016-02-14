@@ -39,11 +39,7 @@
 									</ValueList>
 								</Property>
 							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Medium_Room1" ID="{71B802A7-03E2-4998-B241-B2B84FE9DDFF}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-								</Reference>
-							</ReferenceList>
+							<ReferenceList/>
 						</AuxBus>
 						<Bus Name="MUSIC" ID="{456C7820-3792-4359-9420-887F9109EA30}"/>
 					</ChildrenList>
