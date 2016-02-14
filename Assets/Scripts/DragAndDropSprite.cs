@@ -15,7 +15,6 @@ public class DragAndDropSprite : MonoBehaviour {
 	private Transform m_StartPos;
 	private Vector3 m_TargetPos;
 	private FaceCamera m_FaceCamera;
-
 	// Use this for initialization
 	void Start () {
 		m_StartPos = transform;
@@ -32,6 +31,8 @@ public class DragAndDropSprite : MonoBehaviour {
 			transform.gameObject.layer = LayerMask.NameToLayer( "Ignore Raycast" );
 			m_FaceCamera.enabled = true;
 			transform.localScale = Vector3.Lerp (transform.localScale, new Vector3(m_TargetScale, m_TargetScale, m_TargetScale), Time.deltaTime * 2f);
+			SpriteRenderer SR = GetComponentInChildren<SpriteRenderer> ();
+			SR.flipX = false;
 		} else {
 			//make sure layer is default
 			transform.gameObject.layer = LayerMask.NameToLayer( "Default" );
@@ -60,7 +61,10 @@ public class DragAndDropSprite : MonoBehaviour {
 		GameObject.FindGameObjectWithTag ("God").GetComponent<CheckUp> ().removeBul ();
 
 		//instantiate the real object
+		//GameObject newObject = Instantiate (m_SpawnObject, m_TargetPos, Quaternion.identity) as GameObject; 
 		GameObject newObject = Instantiate (m_SpawnObject, m_TargetPos, Quaternion.identity) as GameObject;
+		newObject.transform.LookAt(m_Camera.transform);
+		newObject.transform.rotation = Quaternion.Euler(0, newObject.transform.rotation.eulerAngles.y, newObject.transform.rotation.eulerAngles.z);
 		newObject.transform.parent = m_ObjectList;
 
 		//destroy pickup placeholder object

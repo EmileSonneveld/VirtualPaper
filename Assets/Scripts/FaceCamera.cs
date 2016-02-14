@@ -27,5 +27,6 @@ public class FaceCamera : MonoBehaviour {
 			transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
 		if(!invert)
 			transform.Rotate (0, 180f, 0);
+		//transform.localScale = new Vector3 (-transform.localScale.x, transform.localScale.y, transform.localScale.z);
 	}
 }
