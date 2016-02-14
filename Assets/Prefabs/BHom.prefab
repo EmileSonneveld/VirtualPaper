@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 422200}
   - 212: {fileID: 21233684}
   - 95: {fileID: 9578210}
+  - 114: {fileID: 11418548}
   m_Layer: 0
   m_Name: CitizenFullAnimBack
   m_TagString: Untagged
@@ -95,8 +96,9 @@ GameObject:
   - 114: {fileID: 11439336}
   - 114: {fileID: 11487966}
   - 114: {fileID: 11459702}
-  - 114: {fileID: 11468100}
   - 54: {fileID: 5480848}
+  - 114: {fileID: 11443134}
+  - 136: {fileID: 13678454}
   m_Layer: 0
   m_Name: CitizenFullAnim
   m_TagString: Untagged
@@ -273,6 +275,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11418548
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66446d165fe18d04f8c5d8ff5ad58a93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11439336
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -284,6 +297,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cc857323f5086548981a1c2d09f63ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11443134
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc180fed1be02894480d6442039ac52e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_positionOffsetData:
+    positionOffset: {x: 0, y: 0, z: 0}
+    KeepMe: 0
+  isEnvironmentAware: 1
+  listenerMask: 1
+  isStaticObject: 0
 --- !u!114 &11446516
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -312,23 +342,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00e74d9a19b38b74ea62093e17de7545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11468100
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 170710}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc180fed1be02894480d6442039ac52e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_positionOffsetData:
-    positionOffset: {x: 0, y: 0, z: 0}
-    KeepMe: 0
-  isEnvironmentAware: 1
-  listenerMask: 1
-  isStaticObject: 0
 --- !u!114 &11468502
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -378,6 +391,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   test: {fileID: 0}
+--- !u!136 &13678454
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170710}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2.56
+  m_Height: 5.12
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0.0000009536743}
 --- !u!195 &19509020
 NavMeshAgent:
   m_ObjectHideFlags: 1
