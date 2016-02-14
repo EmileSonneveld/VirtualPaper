@@ -60,6 +60,7 @@ GameObject:
   - 195: {fileID: 19509020}
   - 114: {fileID: 11446516}
   - 54: {fileID: 5423132}
+  - 114: {fileID: 11419408}
   m_Layer: 0
   m_Name: BHom
   m_TagString: Untagged
@@ -101,7 +102,7 @@ GameObject:
   - 136: {fileID: 13678454}
   m_Layer: 0
   m_Name: CitizenFullAnim
-  m_TagString: Untagged
+  m_TagString: DropZone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -286,6 +287,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66446d165fe18d04f8c5d8ff5ad58a93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11419408
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa17c1c94b1d9604b8795cdc89f37c9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnchorThrow: {fileID: 0}
+  Sacrefice: {fileID: 0}
+  hisHouse: {fileID: 0}
+  hisTree: {fileID: 0}
+  believe: 0
+  isMoving: 0
+  mToTree: 0
+  mTHouse: 1
+  cutting: 0
+  keeping: 0
+  victime: 0
+  needHouse: 0
+  needTree: 0
 --- !u!114 &11439336
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -309,7 +334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_positionOffsetData:
-    positionOffset: {x: 0, y: 0, z: 0}
+    positionOffset: {x: -0.028790712, y: 1.4971733, z: 0.0000009536743}
     KeepMe: 0
   isEnvironmentAware: 1
   listenerMask: 1
@@ -348,7 +373,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 165956}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 359ba939e27642d4a97bef5b1cd5143b, type: 3}
   m_Name: 
@@ -400,8 +425,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 2.56
-  m_Height: 5.12
+  m_Radius: 1.1852038
+  m_Height: 4.1885257
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0.0000009536743}
 --- !u!195 &19509020

@@ -45,7 +45,8 @@ public class GazeInput : MonoBehaviour {
 
 			//check if clicked while over interactive object
 			if (m_HoverOnInteractive && (Input.GetKeyDown ("space") || Input.GetMouseButtonDown(0))) {
-				m_Hit.transform.gameObject.SendMessage("OnClick");
+
+				m_Hit.transform.gameObject.SendMessage ("OnClick");
 
 				//if hit pickup, stor ref to Drag And Drop script
 				if (m_Hit.transform.gameObject.tag == "Pickup") {
@@ -66,16 +67,29 @@ public class GazeInput : MonoBehaviour {
 				if (m_PickedUpObject) {
 					m_HitObjectDADS.UpdateTargetPos ();
 					Debug.Log ("moved within dropzone");
+
 					//if we click, drop the object
 					if (Input.GetKeyDown ("space") || Input.GetMouseButtonDown (0)) {
-						m_PickedUpObject = false;
-						m_HitObjectDADS.Drop ();
-						m_HitDropZone = false;
-						AkSoundEngine.PostEvent ("UIDrop", gameObject);
+						//if object is an obstacle, display that the pickup cant be dropped here
+						NavMeshObstacle obstacle = m_Hit.transform.gameObject.GetComponent<NavMeshObstacle> ();
+						if (obstacle) {
+							m_HitObjectDADS.AnimateError ();
+						} 
+						//if not, go ahead and drop it if clicked
+						else {
+							m_PickedUpObject = false;
+							m_HitObjectDADS.Drop ();
+							m_HitDropZone = false;
+							AkSoundEngine.PostEvent ("UIDrop", gameObject);
+						}
 					}
 				}
-			} 
+			}
 
+			//picked up, clicked, but not over drop zone
+			if (!m_HoverOnInteractive && m_PickedUpObject && m_Hit.transform.gameObject.tag != "DropZone" && (Input.GetKeyDown ("space") || Input.GetMouseButtonDown (0))) { 
+				m_HitObjectDADS.AnimateError ();
+			}
 		} 
 		else 
 		{

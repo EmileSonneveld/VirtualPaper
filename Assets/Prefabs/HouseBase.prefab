@@ -56,9 +56,10 @@ GameObject:
   - 95: {fileID: 9520710}
   - 208: {fileID: 20882586}
   - 114: {fileID: 11476558}
+  - 65: {fileID: 6571962}
   m_Layer: 0
   m_Name: HouseBase
-  m_TagString: Untagged
+  m_TagString: DropZone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -275,7 +276,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 136344}
   m_LocalRotation: {x: 0, y: -0.16116628, z: 0, w: 0.98692733}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.152, y: 0.0021, z: -0.288}
   m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_Children:
   - {fileID: 411754}
@@ -438,6 +439,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 179764}
   m_Mesh: {fileID: 4300000, guid: 15b69c35604123447aa412f1cec37fed, type: 3}
+--- !u!65 &6571962
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 136344}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.6488023, y: 0.7678509, z: 2.63834}
+  m_Center: {x: 0.086632416, y: -0.116074316, z: 0.25237992}
 --- !u!95 &9520710
 Animator:
   serializedVersion: 3

@@ -15,6 +15,7 @@ public class DragAndDropSprite : MonoBehaviour {
 	private Transform m_StartPos;
 	private Vector3 m_TargetPos;
 	private FaceCamera m_FaceCamera;
+	private Animator m_Anim;
 	// Use this for initialization
 	void Start () {
 		m_StartPos = transform;
@@ -23,6 +24,8 @@ public class DragAndDropSprite : MonoBehaviour {
 		m_Cursor = GameObject.FindGameObjectWithTag("Cursor").transform;
 		m_FaceCamera = GetComponent<FaceCamera> ();
 		m_FaceCamera.enabled = false;
+		//m_Anim.GetComponentInChildren<Animator> ();
+		m_Anim = transform.GetChild(0).GetComponent<Animator>();
 	}
 
 	void Update() {
@@ -57,11 +60,13 @@ public class DragAndDropSprite : MonoBehaviour {
 		m_PickedUp = false;
 		gameObject.tag = "Untagged";
 
-		GameObject.FindGameObjectWithTag ("God").GetComponent<CheckUp> ().checkPerso (); 
-		GameObject.FindGameObjectWithTag ("God").GetComponent<CheckUp> ().removeBul ();
+		//GameObject.FindGameObjectWithTag ("God").GetComponent<CkeckAll>().checkPerso (); 
+		//GameObject.FindGameObjectWithTag ("God").GetComponent<CkeckAll>().removeBul ();
 
 		//instantiate the real object
 		//GameObject newObject = Instantiate (m_SpawnObject, m_TargetPos, Quaternion.identity) as GameObject; 
+
+		Debug.Log ("spawned new object");
 		GameObject newObject = Instantiate (m_SpawnObject, m_TargetPos, Quaternion.identity) as GameObject;
 		newObject.transform.LookAt(m_Camera.transform);
 		newObject.transform.rotation = Quaternion.Euler(0, newObject.transform.rotation.eulerAngles.y, newObject.transform.rotation.eulerAngles.z);
@@ -69,5 +74,9 @@ public class DragAndDropSprite : MonoBehaviour {
 
 		//destroy pickup placeholder object
 		Destroy(transform.gameObject);
+	}
+
+	public void AnimateError(){
+		m_Anim.Play ("object_dontdrop_flashfadeout");
 	}
 }
