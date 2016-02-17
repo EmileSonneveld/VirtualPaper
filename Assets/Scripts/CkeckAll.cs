@@ -7,24 +7,17 @@ public class CkeckAll : MonoBehaviour {
     public Transform listTree;
     public Transform listBHom;
 
-    public int lastHouseUse;
-    public int lastTreeUse;
-
     private float timer;
 
     private int nBHom;
 
     private Transform currentBHom;
 
-    private bool noMoreTree;
-
-	void Start () {
-        lastHouseUse = 0;
-        lastTreeUse = 0;
-    }
+    public bool noMoreTree;
 	
-	void FixedUpdate () {
-        if (timer < 1.0f)
+	void FixedUpdate ()
+    {
+        if (timer < 1.0f)  //---Every 1 segonde
             timer += Time.fixedDeltaTime;
         else
         {
@@ -48,8 +41,6 @@ public class CkeckAll : MonoBehaviour {
         nBHom = listBHom.childCount;
         for (int i = 0; i < nBHom; i++)
         {
-            lastHouseUse = 0;
-            lastTreeUse = 0;
             currentBHom = listBHom.GetChild(i);
 
             check();
@@ -58,20 +49,27 @@ public class CkeckAll : MonoBehaviour {
 
     void check() //-----Check if the current BHom can have a house and assign this house-----
     {
-        if (currentBHom.GetComponent<BHomInfo>().hisHouse == null)
+        if ((!currentBHom.GetComponent<BHomInfo>().cutting) && (currentBHom.GetComponent<BHomInfo>().hisTreeCut == null))
         {
-            checkHouse();
+            if (currentBHom.GetComponent<BHomInfo>().hisHouse == null)
+            {
+                checkHouse();
+            }
+            else
+            {
+                if (currentBHom.GetComponent<BHomInfo>().hisTreeEat != null)
+                {
+                    setMoveHouseaTree();
+                }
+                else if (!noMoreTree)
+                {
+                    checkForATreeToEat();
+                }
+            }
         }
-        else
+        else if ((currentBHom.GetComponent<BHomInfo>().cutting) || (currentBHom.GetComponent<BHomInfo>().hisTreeCut != null))
         {
-            if (currentBHom.GetComponent<BHomInfo>().hisTree != null)
-            {
-                setMoveHouseaTree();
-            }
-            else if (!noMoreTree)
-            {
-                checkForATreeToEat();
-            }
+            cutTree();
         }
     }
 
@@ -110,7 +108,7 @@ public class CkeckAll : MonoBehaviour {
     {
         if (currentBHom.GetComponent<BHomInfo>().mTHouse)
         {
-            if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().hisHouse.position))
+            if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().hisHouse.GetChild(0).position))
             {
                 currentBHom.GetComponent<BHomInfo>().mTHouse = false;
                 currentBHom.GetComponent<BHomInfo>().mToTree = true;
@@ -118,7 +116,7 @@ public class CkeckAll : MonoBehaviour {
         }
         else if (currentBHom.GetComponent<BHomInfo>().mToTree)
         {
-            if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().hisTree.position))
+            if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().hisTreeEat.GetChild(0).position))
             {
                 currentBHom.GetComponent<BHomInfo>().mTHouse = true;
                 currentBHom.GetComponent<BHomInfo>().mToTree = false;
@@ -130,25 +128,50 @@ public class CkeckAll : MonoBehaviour {
     {
         if (!noMoreTree)
         {
-            if (currentBHom.GetComponent<BHomInfo>().hisTree != null)
+            if ((currentBHom.GetComponent<BHomInfo>().hisTreeEat != null) && ((currentBHom.GetComponent<BHomInfo>().hisTreeEat.GetComponent<Tree>().cutter1 == null) || (currentBHom.GetComponent<BHomInfo>().hisTreeEat.GetComponent<Tree>().cutter2 == null)))
             {
-                if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().hisTree.position))
+                setCutterToTree(currentBHom.GetComponent<BHomInfo>().hisTreeEat);
+                currentBHom.GetComponent<BHomInfo>().hisTreeCut = currentBHom.GetComponent<BHomInfo>().hisTreeEat;
+
+                if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().hisTreeCut.GetChild(currentBHom.GetComponent<BHomInfo>().nCutter).position))
                 {
-                    currentBHom.GetComponent<BHomInfo>().cutting = true;
+                    currentBHom.GetComponent<BHomInfo>().cutting = true;                    
                 }
             }
             else
             {
-                Transform tree = checkForATreeToCut(currentBHom.position);
-                if (tree != null)
+                Transform tree = null;
+                if (currentBHom.GetComponent<BHomInfo>().hisTreeCut == null)
+                    tree = checkForATreeToCut(currentBHom.position);
+                if ((tree != null) || (currentBHom.GetComponent<BHomInfo>().hisTreeCut != null))
                 {
-                    if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(tree.position))
+                    if (currentBHom.GetComponent<BHomInfo>().hisTreeCut == null)
+                    {
+                        currentBHom.GetComponent<BHomInfo>().hisTreeCut = tree;
+                        setCutterToTree(tree);
+                    }
+
+                    if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().hisTreeCut.GetChild(currentBHom.GetComponent<BHomInfo>().nCutter).position))
                     {
                         currentBHom.GetComponent<BHomInfo>().cutting = true;
                     }
                 }
                 else noMoreTree = true;
             }
+        }
+    }
+
+    private void setCutterToTree(Transform tree)  //-----Set the cutters of a tree-----
+    {
+        if (tree.GetComponent<Tree>().cutter1 == null)
+        {
+            tree.GetComponent<Tree>().cutter1 = currentBHom;
+            currentBHom.GetComponent<BHomInfo>().nCutter = 1;
+        }
+        else if (tree.GetComponent<Tree>().cutter2 == null)
+        {
+            tree.GetComponent<Tree>().cutter2 = currentBHom;
+            currentBHom.GetComponent<BHomInfo>().nCutter = 2;
         }
     }
 
@@ -161,9 +184,10 @@ public class CkeckAll : MonoBehaviour {
 
             for (int i = 1; i < nTree; i++)
             {
-                if (Vector3.Distance(pos, listTree.GetChild(lastTreeUse).position) < Vector3.Distance(pos, listTree.GetChild(lastTreeUse).position))
+                if (Vector3.Distance(pos, listTree.GetChild(i).position) < Vector3.Distance(pos, lastTree.position))  //---Check if the current cheched tree is closer than the previous closest---
                 {
-                    lastTree = listTree.GetChild(lastTreeUse);
+                    if ((listTree.GetChild(i).GetComponent<Tree>().cutter1 == null) || (listTree.GetChild(i).GetComponent<Tree>().cutter2 == null))  //---Check if the tree is already cutting by max two BHom---
+                        lastTree = listTree.GetChild(i);
                 }
             }
             return lastTree;
@@ -173,31 +197,31 @@ public class CkeckAll : MonoBehaviour {
 
     private void checkForATreeToEat()  //-----Check for the first in the list to eat-----
     {
-        bool alrHouse = false;
+        bool alrTree = false;
         int nTree = listTree.childCount;
         if (nTree > 0)
         {
             for (int i = 0; i < nTree; i++)
             {
-                if (!alrHouse)
+                if (!alrTree)
                 {
                     if (listTree.GetChild(i).GetComponent<Tree>().p1 == null)
                     {
-                        alrHouse = true;
+                        alrTree = true;
                         listTree.GetChild(i).GetComponent<Tree>().p1 = currentBHom;
-                        currentBHom.GetComponent<BHomInfo>().hisTree = listTree.GetChild(i);
+                        currentBHom.GetComponent<BHomInfo>().hisTreeEat = listTree.GetChild(i);
                     }
                     else if (listTree.GetChild(i).GetComponent<Tree>().p2 == null)
                     {
-                        alrHouse = true;
+                        alrTree = true;
                         listTree.GetChild(i).GetComponent<Tree>().p2 = currentBHom;
-                        currentBHom.GetComponent<BHomInfo>().hisTree = listTree.GetChild(i);
+                        currentBHom.GetComponent<BHomInfo>().hisTreeEat = listTree.GetChild(i);
                     }
                     else if (listTree.GetChild(i).GetComponent<Tree>().p3 == null)
                     {
-                        alrHouse = true;
+                        alrTree = true;
                         listTree.GetChild(i).GetComponent<Tree>().p3 = currentBHom;
-                        currentBHom.GetComponent<BHomInfo>().hisTree = listTree.GetChild(i);
+                        currentBHom.GetComponent<BHomInfo>().hisTreeEat = listTree.GetChild(i);
                     }
                 }
             }

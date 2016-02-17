@@ -301,7 +301,9 @@ MonoBehaviour:
   AnchorThrow: {fileID: 0}
   Sacrefice: {fileID: 0}
   hisHouse: {fileID: 0}
-  hisTree: {fileID: 0}
+  hisTreeEat: {fileID: 0}
+  hisTreeCut: {fileID: 0}
+  nCutter: 0
   believe: 0
   isMoving: 0
   mToTree: 0

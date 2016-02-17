@@ -6,7 +6,11 @@ public class SoundTriggerer : MonoBehaviour {
 	public void ChopSound()
 	{
 		AkSoundEngine.PostEvent ("CutTree", gameObject);
-	}
+                
+        if ((transform.parent.GetComponent<BHomInfo>().hisTreeCut.GetComponent<Tree>().cuttingProgress > 15) && (!transform.parent.GetComponent<BHomInfo>().hisTreeCut.GetComponent<Tree2House>().alrFall))
+            transform.parent.GetComponent<BHomInfo>().hisTreeCut.GetComponent<Tree2House>().SetAnimation(true);
+        else transform.parent.GetComponent<BHomInfo>().hisTreeCut.GetComponent<Tree>().cuttingProgress++;
+    }
 	public void ThrowSound(){
 		AkSoundEngine.PostEvent ("ThrowPeople", gameObject);
 	}

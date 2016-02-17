@@ -12,11 +12,34 @@ public class House : MonoBehaviour {
     public Transform p1;
     public Transform p2;
 
-	public float timer = 15;
-	private float maxTimer = 15;
+    public float timer = 0;
+
+    private bool animating;
+
+    public void SetAnimation(bool value)
+    {
+        animating = value;
+    }
+
+    void FixedUpdate()
+    {
+        if (animating)
+        {
+            if (transform.eulerAngles.x < 355)
+            {
+                if (timer > 0.01f)
+                {
+                    timer = 0;
+                    transform.Rotate(5, 0, 0);                    
+                }
+                else timer += Time.deltaTime;
+            }
+            else animating = false;
+        }
+    }
 
 
-	void Update()
+	/*void Update()
 	{
 		if ((p1 != null) && (p2 != null)) {
 			if ((p1.GetComponent<BHom> ().hisTree != null) && (p2.GetComponent<BHom> ().hisTree != null)) {
@@ -37,6 +60,6 @@ public class House : MonoBehaviour {
 				}
 			}
 		}
-	}
+	}*/
 }
 

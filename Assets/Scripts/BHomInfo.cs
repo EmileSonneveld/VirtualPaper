@@ -15,7 +15,10 @@ public class BHomInfo : MonoBehaviour {
     //--------Var--------
 
     public Transform hisHouse;  //---House-Tree---
-    public Transform hisTree;
+    public Transform hisTreeEat;
+    public Transform hisTreeCut;
+
+    public int nCutter;
 
     public bool believe;
 
@@ -83,11 +86,25 @@ public class BHomInfo : MonoBehaviour {
             animFront.Play(prefixeAnim + fixeAnim + "_marche");
             animBack.Play(prefixeAnim + fixeAnim + "_marche");
         }
+        else if (cutting)
+        {
+            if (nCutter == 1)
+            {
+                animFront.Play(prefixeAnim + "coupe");
+                animBack.Play(prefixeAnim + "coupe");
+            }
+            else if (nCutter == 2)
+            {
+                animFront.Play(prefixeAnim + "coupe_flip");
+                animBack.Play(prefixeAnim + "coupe_flip");
+            }
+        }
         else
         {
             animFront.Play(prefixeAnim + fixeAnim);
             animBack.Play(prefixeAnim + fixeAnim);
         }
+
     }
 
     private void setMood()  //-----Set prefixeAnim and fixeAnim-----
@@ -117,7 +134,7 @@ public class BHomInfo : MonoBehaviour {
             needHouse = true;
         else needHouse = false;
 
-        if (hisTree == null)
+        if (hisTreeEat == null)
             needTree = true;
         else needTree = false;
     }
