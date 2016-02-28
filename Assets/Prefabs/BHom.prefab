@@ -298,19 +298,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa17c1c94b1d9604b8795cdc89f37c9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AnchorThrow: {fileID: 0}
-  Sacrefice: {fileID: 0}
+  AnchorThrow: {fileID: 498032, guid: 07007fe9fda53d54886f4865286e03b1, type: 2}
+  Sacrefice: {fileID: 468920, guid: a103e01c77aa46d4d89aeed041102720, type: 2}
   hisHouse: {fileID: 0}
   hisTreeEat: {fileID: 0}
   hisTreeCut: {fileID: 0}
+  hisBHomKill: {fileID: 0}
   nCutter: 0
-  believe: 0
+  believe: 1
   isMoving: 0
   mToTree: 0
   mTHouse: 1
   cutting: 0
   keeping: 0
-  victime: 0
+  victim: 0
   needHouse: 0
   needTree: 0
 --- !u!114 &11439336

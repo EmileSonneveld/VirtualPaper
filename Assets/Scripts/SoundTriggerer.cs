@@ -21,4 +21,10 @@ public class SoundTriggerer : MonoBehaviour {
 		AkSoundEngine.PostEvent ("PeopleWalk", gameObject);
 	}
 
+    public void animationSpeedZero()
+    {
+        transform.GetComponent<Animator>().speed = 0;
+        transform.GetChild(0).GetComponent<Animator>().speed = 0;
+    }
+
 }

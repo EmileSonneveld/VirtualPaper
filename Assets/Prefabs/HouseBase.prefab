@@ -466,6 +466,9 @@ MonoBehaviour:
   deplacing: 0
   houseFood: 0
   BHomOnHome: 0
+  defaultH: {fileID: 21300000, guid: ba40276edbb7e144d98c5de1d0921aad, type: 3}
+  oneBH: {fileID: 21300002, guid: ba40276edbb7e144d98c5de1d0921aad, type: 3}
+  twoBH: {fileID: 21300004, guid: ba40276edbb7e144d98c5de1d0921aad, type: 3}
   p1: {fileID: 0}
   p2: {fileID: 0}
   timer: 15

@@ -18,6 +18,9 @@ public class BHomInfo : MonoBehaviour {
     public Transform hisTreeEat;
     public Transform hisTreeCut;
 
+    public Transform hisBHomKill;  //---BHom to Kill---
+    public Transform hisBHomMurder;  //---BHom who kill hi---
+
     public int nCutter;
 
     public bool believe;
@@ -28,7 +31,7 @@ public class BHomInfo : MonoBehaviour {
 
     public bool cutting;  //---Actions---
     public bool keeping;
-    public bool victime;
+    public bool victim;
 
     public bool needHouse; //---Needs---
     public bool needTree;
@@ -80,31 +83,30 @@ public class BHomInfo : MonoBehaviour {
     {
         checkMood();
         setMood();
-
-        if (isMoving)
-        {
-            animFront.Play(prefixeAnim + fixeAnim + "_marche");
-            animBack.Play(prefixeAnim + fixeAnim + "_marche");
-        }
-        else if (cutting)
-        {
-            if (nCutter == 1)
+        if (!victim && !keeping)
+            if (isMoving)
             {
-                animFront.Play(prefixeAnim + "coupe");
-                animBack.Play(prefixeAnim + "coupe");
+                animFront.Play(prefixeAnim + fixeAnim + "_marche");
+                animBack.Play(prefixeAnim + fixeAnim + "_marche");
             }
-            else if (nCutter == 2)
+            else if (cutting)
             {
-                animFront.Play(prefixeAnim + "coupe_flip");
-                animBack.Play(prefixeAnim + "coupe_flip");
+                if (nCutter == 1)
+                {
+                    animFront.Play(prefixeAnim + "coupe");
+                    animBack.Play(prefixeAnim + "coupe");
+                }
+                else if (nCutter == 2)
+                {
+                    animFront.Play(prefixeAnim + "coupe_flip");
+                    animBack.Play(prefixeAnim + "coupe_flip");
+                }
             }
-        }
-        else
-        {
-            animFront.Play(prefixeAnim + fixeAnim);
-            animBack.Play(prefixeAnim + fixeAnim);
-        }
-
+            else
+            {
+                animFront.Play(prefixeAnim + fixeAnim);
+                animBack.Play(prefixeAnim + fixeAnim);
+            }
     }
 
     private void setMood()  //-----Set prefixeAnim and fixeAnim-----
@@ -139,5 +141,42 @@ public class BHomInfo : MonoBehaviour {
         else needTree = false;
     }
 
+    public void Victim()  //-----Set var, animation and transform of a victim Bhom-----
+    {
+        navMeshA.Stop();
+        victim = true;
+        animFront.Play(prefixeAnim + "victime");
+        animBack.Play(prefixeAnim + "victime");
+        navMeshA.enabled = false;
+        transform.localPosition = Vector3.zero;
+        transform.localEulerAngles = new Vector3(90, 270, 270);
+    }
+
+    public void Keeper()  //-----Set var and animation of a murder BHom-----
+    {
+        keeping = true;
+        animFront.Play(prefixeAnim + "pickup");
+        animBack.Play(prefixeAnim + "pickup");
+    }
+
+    public void KillBySacrifice()  //-----Set Anim of the sacrifice-----
+    {
+        animFront.Play("violet_sacrifier");
+        animBack.Play("violet_sacrifier");
+        resetVarAfterKill();
+    }
+
+    public void KillByThrow()  //-----Set Anim of the throw-----
+    {
+        animFront.Play("brun_jetter");
+        animBack.Play("brun_jetter");
+        resetVarAfterKill();
+    }
+
+    private void resetVarAfterKill()  //-----Reset variable after BHom have made a murder-----
+    {
+        hisBHomKill = null;
+        keeping = false;
+    }
 
 }

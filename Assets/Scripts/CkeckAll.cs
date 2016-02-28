@@ -49,7 +49,7 @@ public class CkeckAll : MonoBehaviour {
 
     void check() //-----Check if the current BHom can have a house and assign this house-----
     {
-        if ((!currentBHom.GetComponent<BHomInfo>().cutting) && (currentBHom.GetComponent<BHomInfo>().hisTreeCut == null))
+        if (currentBHom.GetComponent<BHomInfo>().hisTreeCut == null)
         {
             if (currentBHom.GetComponent<BHomInfo>().hisHouse == null)
             {
@@ -64,10 +64,12 @@ public class CkeckAll : MonoBehaviour {
                 else if (!noMoreTree)
                 {
                     checkForATreeToEat();
+                    if (currentBHom.GetComponent<BHomInfo>().hisTreeEat == null)
+                        killBHom();
                 }
             }
         }
-        else if ((currentBHom.GetComponent<BHomInfo>().cutting) || (currentBHom.GetComponent<BHomInfo>().hisTreeCut != null))
+        else if (currentBHom.GetComponent<BHomInfo>().hisTreeCut != null)
         {
             cutTree();
         }
@@ -210,21 +212,68 @@ public class CkeckAll : MonoBehaviour {
                         alrTree = true;
                         listTree.GetChild(i).GetComponent<Tree>().p1 = currentBHom;
                         currentBHom.GetComponent<BHomInfo>().hisTreeEat = listTree.GetChild(i);
+                        currentBHom.GetComponent<BHomInfo>().hisBHomKill = null;
                     }
                     else if (listTree.GetChild(i).GetComponent<Tree>().p2 == null)
                     {
                         alrTree = true;
                         listTree.GetChild(i).GetComponent<Tree>().p2 = currentBHom;
                         currentBHom.GetComponent<BHomInfo>().hisTreeEat = listTree.GetChild(i);
+                        currentBHom.GetComponent<BHomInfo>().hisBHomKill = null;
                     }
                     else if (listTree.GetChild(i).GetComponent<Tree>().p3 == null)
                     {
                         alrTree = true;
                         listTree.GetChild(i).GetComponent<Tree>().p3 = currentBHom;
                         currentBHom.GetComponent<BHomInfo>().hisTreeEat = listTree.GetChild(i);
+                        currentBHom.GetComponent<BHomInfo>().hisBHomKill = null;
                     }
                 }
             }
         }
+    }
+
+    private void killBHom()
+    {
+        if (currentBHom.GetComponent<BHomInfo>().hisBHomKill == null)
+            choseBHom(currentBHom.GetComponent<BHomInfo>().believe);
+        if (!currentBHom.GetComponent<BHomInfo>().keeping && currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().hisBHomKill.position))
+        {
+            currentBHom.GetComponent<BHomInfo>().hisBHomKill.position = currentBHom.GetChild(0).GetChild(1).position;
+            currentBHom.GetComponent<BHomInfo>().hisBHomKill.parent = currentBHom.GetChild(0).GetChild(1);
+            currentBHom.GetComponent<BHomInfo>().Keeper();
+            currentBHom.GetComponent<BHomInfo>().hisBHomKill.GetComponent<BHomInfo>().Victim();
+
+        }
+        else if (currentBHom.GetComponent<BHomInfo>().keeping)
+        {
+            if (!currentBHom.GetComponent<BHomInfo>().believe)
+            {
+                if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().AnchorThrow.position))
+                    currentBHom.GetComponent<BHomInfo>().KillByThrow();
+            }
+            else
+            {
+                if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().Sacrefice.position))
+                    currentBHom.GetComponent<BHomInfo>().KillBySacrifice();
+            }
+        }
+    }
+
+    private void choseBHom(bool believe)
+    {
+        int i = 0;
+        bool chosed = false;
+        do
+        {
+            if ((listBHom.GetChild(i).GetComponent<BHomInfo>().believe != believe) && (listBHom.GetChild(i) != currentBHom))
+                if (listBHom.GetChild(i).GetComponent<BHomInfo>().hisBHomMurder == null)
+                {
+                    currentBHom.GetComponent<BHomInfo>().hisBHomKill = listBHom.GetChild(i);
+                    listBHom.GetChild(i).GetComponent<BHomInfo>().hisBHomMurder = currentBHom;
+                    chosed = true;
+                }
+            i++;
+        } while ((i < listBHom.childCount) || !chosed);
     }
 }
