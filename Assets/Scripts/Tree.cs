@@ -15,4 +15,16 @@ public class Tree : MonoBehaviour {
     public Transform cutter1;
     public Transform cutter2;
 
+    public int getCuttingProgress() {
+        return cuttingProgress;
+    }
+
+    public void setCuttingProgress(int value) {
+        cuttingProgress = value;
+    }
+
+    public void incrassCuttingProgress(int value) {
+        cuttingProgress += value;
+    }
+
 }

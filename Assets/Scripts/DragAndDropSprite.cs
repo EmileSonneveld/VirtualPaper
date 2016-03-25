@@ -71,6 +71,7 @@ public class DragAndDropSprite : MonoBehaviour {
 		newObject.transform.LookAt(m_Camera.transform);
 		newObject.transform.rotation = Quaternion.Euler(0, newObject.transform.rotation.eulerAngles.y, newObject.transform.rotation.eulerAngles.z);
 		newObject.transform.parent = m_ObjectList;
+        newObject.transform.GetComponent<placeByGod>().setPlaceByGod(true);
 
 		//destroy pickup placeholder object
 		Destroy(transform.gameObject);

@@ -21,23 +21,32 @@ public class BHomInfo : MonoBehaviour {
     public Transform hisBHomKill;  //---BHom to Kill---
     public Transform hisBHomMurder;  //---BHom who kill hi---
 
-    public int nCutter;
+    public int nCutter;    
 
     public bool believe;
+    public bool isAMurder;
 
     public bool isMoving;  //---Displacements---
-    public bool mToTree;
-    public bool mTHouse = true;
+    public bool mToTree;   //-Move to tree-
+    public bool mToHouse = true; //-Move to house-
 
     public bool cutting;  //---Actions---
     public bool keeping;
+    public bool willKeeping;
     public bool victim;
+    public bool praying;
 
     public bool needHouse; //---Needs---
     public bool needTree;
 
     private string prefixeAnim;  //---Animations---
-    private string fixeAnim;    
+    private string fixeAnim;
+
+    public int waitToDo; //---Waiting time---
+
+    public int nFood;
+    public bool readyToReproduction;
+    public bool isAChild;
 
     void Start()
     {
@@ -79,15 +88,21 @@ public class BHomInfo : MonoBehaviour {
         }
     }
 
-    private void amination()  //-----Set Animation compare to current need and the current action of the BHom
+    private void amination()  //-----Set Animation compare to current need and the current action of the BHom-----
     {
         checkMood();
         setMood();
         if (!victim && !keeping)
+        {
             if (isMoving)
             {
                 animFront.Play(prefixeAnim + fixeAnim + "_marche");
                 animBack.Play(prefixeAnim + fixeAnim + "_marche");
+            }
+            else if (praying)
+            {
+                animFront.Play("violet_priere");
+                animBack.Play("violet_priere");
             }
             else if (cutting)
             {
@@ -107,6 +122,12 @@ public class BHomInfo : MonoBehaviour {
                 animFront.Play(prefixeAnim + fixeAnim);
                 animBack.Play(prefixeAnim + fixeAnim);
             }
+        }
+        else if (isAMurder && isMoving)
+        {
+            animFront.Play(prefixeAnim + fixeAnim + "_marche");
+            animBack.Play(prefixeAnim + fixeAnim + "_marche");
+        }
     }
 
     private void setMood()  //-----Set prefixeAnim and fixeAnim-----
@@ -150,11 +171,24 @@ public class BHomInfo : MonoBehaviour {
         navMeshA.enabled = false;
         transform.localPosition = Vector3.zero;
         transform.localEulerAngles = new Vector3(90, 270, 270);
+
+        if (hisTreeEat.GetComponent<Tree>().p1 == transform) {
+            hisTreeEat.GetComponent<Tree>().p1 = null;
+        }
+        else if (hisTreeEat.GetComponent<Tree>().p2 == transform)
+        {
+            hisTreeEat.GetComponent<Tree>().p2 = null;
+        }
+        else if (hisTreeEat.GetComponent<Tree>().p3 == transform)
+        {
+            hisTreeEat.GetComponent<Tree>().p3 = null;
+        }
     }
 
     public void Keeper()  //-----Set var and animation of a murder BHom-----
     {
         keeping = true;
+        willKeeping = false;
         animFront.Play(prefixeAnim + "pickup");
         animBack.Play(prefixeAnim + "pickup");
     }
@@ -163,20 +197,81 @@ public class BHomInfo : MonoBehaviour {
     {
         animFront.Play("violet_sacrifier");
         animBack.Play("violet_sacrifier");
-        resetVarAfterKill();
+        //resetVarAfterKill();
     }
 
     public void KillByThrow()  //-----Set Anim of the throw-----
     {
         animFront.Play("brun_jetter");
         animBack.Play("brun_jetter");
-        resetVarAfterKill();
+        //resetVarAfterKill();
     }
 
-    private void resetVarAfterKill()  //-----Reset variable after BHom have made a murder-----
+    public void resetVarAfterKill()  //-----Reset variable after BHom have made a murder-----
     {
         hisBHomKill = null;
         keeping = false;
+        isAMurder = false;
     }
 
+
+
+
+
+    /*-------------------------------------------------------
+    ----------------------Getter Setter----------------------
+    -------------------------------------------------------*/
+
+    public int getWaitToDo()  //-----Return the value of wait to do-----
+    {
+        return waitToDo;
+    } 
+
+    public void setWaitToDo(int value) //-----Set the value of wait to do-----
+    {
+        waitToDo = value;
+    }
+
+    public void incrassWait(int value)  //-----Diminue of value waitToDo-----
+    {
+        waitToDo += value;
+    }
+
+    public bool getPraying() {
+        return praying;
+    }
+
+    public void setPraying(bool value) {
+        praying = value;
+    }
+
+    public int getNFood()
+    {
+        return nFood;
+    }
+
+    public void setNFood(int value)
+    {
+        nFood = value;
+    }
+
+    public bool getReadyToReproduction()
+    {
+        return readyToReproduction;
+    }
+
+    public void setReadyToReproduction(bool value)
+    {
+        readyToReproduction = value;
+    }
+
+    public bool getIsAChild()
+    {
+        return isAChild;
+    }
+
+    public void setIsAChild(bool value)
+    {
+        isAChild = value;
+    }
 }

@@ -30,48 +30,77 @@ public class CkeckAll : MonoBehaviour {
 
     void ingoreColl()
     {
-        for (int i = 0; i < listBHom.childCount; i++)
-        {
-            //---disable collider
-        }
+        /*for (int i = 0; i < listBHom.childCount; i++)
+            for (int j = 0; j < listBHom.childCount; j++)
+                if (listBHom.GetChild(i) != listBHom.GetChild(j))
+                    Physics.IgnoreCollision(listBHom.GetChild(i).GetChild(0).GetComponent<Collider>(), listBHom.GetChild(j).GetChild(0).GetComponent<Collider>(), true);*/
     }
 
     void foreachBHom ()  //-----For each BHom in the scene-----
     {
         nBHom = listBHom.childCount;
-        for (int i = 0; i < nBHom; i++)
+        for (int i = 0; i < listBHom.childCount; i++)
         {
+           
             currentBHom = listBHom.GetChild(i);
 
             check();
         }
-    } 
+    }
 
     void check() //-----Check if the current BHom can have a house and assign this house-----
     {
-        if (currentBHom.GetComponent<BHomInfo>().hisTreeCut == null)
+        if (!currentBHom.GetComponent<BHomInfo>().getIsAChild())
         {
-            if (currentBHom.GetComponent<BHomInfo>().hisHouse == null)
-            {
-                checkHouse();
+            if (!currentBHom.GetComponent<BHomInfo>().keeping)
+            {                
+                if (currentBHom.GetComponent<BHomInfo>().hisTreeCut == null)
+                {
+                    if (currentBHom.GetComponent<BHomInfo>().hisHouse == null)
+                    {
+                        //if (wouldWait(10))
+                        checkHouse();
+                    }
+                    else
+                    {
+                        if (currentBHom.GetComponent<BHomInfo>().hisTreeEat != null)
+                        {
+                            checkReproductionCondition(/*And else set the setMoveHouseaTree() function*/);
+                        }
+                        else if (!noMoreTree)
+                        {
+                            checkForATreeToEat();
+                            if (currentBHom.GetComponent<BHomInfo>().hisTreeEat == null)
+                            {
+                                if ((currentBHom.GetComponent<BHomInfo>().hisBHomKill == null) && (wouldWait(20, 5)))
+                                {
+                                    killBHom();
+                                }
+                                else if (currentBHom.GetComponent<BHomInfo>().hisBHomKill != null)
+                                {
+                                    killBHom();
+                                }
+                            }
+                        }
+                    }
+                }
+                else if (currentBHom.GetComponent<BHomInfo>().hisTreeCut != null)
+                {
+                    if (!currentBHom.GetComponent<BHomInfo>().cutting && (wouldWait(15, 5)))
+                        cutTree();
+                }
             }
+            else killBHom();
+        }
+        else //---If is a child---
+        {
+            if (currentBHom.localScale.x < 1)
+                currentBHom.localScale = new Vector3(currentBHom.localScale.x + 0.1f, currentBHom.localScale.y + 0.1f, currentBHom.localScale.z + 0.1f);
             else
             {
-                if (currentBHom.GetComponent<BHomInfo>().hisTreeEat != null)
-                {
-                    setMoveHouseaTree();
-                }
-                else if (!noMoreTree)
-                {
-                    checkForATreeToEat();
-                    if (currentBHom.GetComponent<BHomInfo>().hisTreeEat == null)
-                        killBHom();
-                }
+                currentBHom.GetComponent<BHomInfo>().setIsAChild(false);
+                currentBHom.GetComponent<NavMeshAgent>().enabled = true;
             }
-        }
-        else if (currentBHom.GetComponent<BHomInfo>().hisTreeCut != null)
-        {
-            cutTree();
         }
     }
 
@@ -87,12 +116,15 @@ public class CkeckAll : MonoBehaviour {
             {
                 currentBHom.GetComponent<BHomInfo>().hisHouse = listHouse.GetChild(currentCheckHouse);
                 listHouse.GetChild(currentCheckHouse).GetComponent<House>().p1 = currentBHom;
+                isPlacedByGod(listHouse.GetChild(currentCheckHouse));
+
                 findHouse = true;
             }
             else if (listHouse.GetChild(currentCheckHouse).GetComponent<House>().p2 == null)
             {
                 currentBHom.GetComponent<BHomInfo>().hisHouse = listHouse.GetChild(currentCheckHouse);
                 listHouse.GetChild(currentCheckHouse).GetComponent<House>().p2 = currentBHom;
+                isPlacedByGod(listHouse.GetChild(currentCheckHouse));
                 findHouse = true;
             }
             else
@@ -108,21 +140,26 @@ public class CkeckAll : MonoBehaviour {
 
     private void setMoveHouseaTree()  //-----Define the destination and set the movement-----
     {
-        if (currentBHom.GetComponent<BHomInfo>().mTHouse)
+        if (currentBHom.GetComponent<BHomInfo>().mToHouse)
         {
-            if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().hisHouse.GetChild(0).position))
-            {
-                currentBHom.GetComponent<BHomInfo>().mTHouse = false;
-                currentBHom.GetComponent<BHomInfo>().mToTree = true;
-            }
+            if (currentBHom.GetComponent<BHomInfo>().hisHouse != null)
+                if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().hisHouse.GetChild(0).position))
+                {
+                    currentBHom.GetComponent<BHomInfo>().mToHouse = false;
+                    currentBHom.GetComponent<BHomInfo>().mToTree = true;
+                }
         }
         else if (currentBHom.GetComponent<BHomInfo>().mToTree)
         {
-            if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().hisTreeEat.GetChild(0).position))
+            if (currentBHom.GetComponent<BHomInfo>().hisTreeEat != null)
             {
-                currentBHom.GetComponent<BHomInfo>().mTHouse = true;
-                currentBHom.GetComponent<BHomInfo>().mToTree = false;
-            }
+                if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().hisTreeEat.GetChild(0).position))
+                {
+                    currentBHom.GetComponent<BHomInfo>().mToHouse = true;
+                    currentBHom.GetComponent<BHomInfo>().mToTree = false;
+                    currentBHom.GetComponent<BHomInfo>().setNFood(currentBHom.GetComponent<BHomInfo>().getNFood() + 1);
+                }
+            } else currentBHom.GetComponent<BHomInfo>().mToTree = false;
         }
     }
 
@@ -137,7 +174,9 @@ public class CkeckAll : MonoBehaviour {
 
                 if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().hisTreeCut.GetChild(currentBHom.GetComponent<BHomInfo>().nCutter).position))
                 {
-                    currentBHom.GetComponent<BHomInfo>().cutting = true;                    
+                    currentBHom.GetComponent<BHomInfo>().cutting = true;
+                    if (currentBHom.GetComponent<BHomInfo>().believe)
+                        currentBHom.GetComponent<BHomInfo>().believe = false;
                 }
             }
             else
@@ -156,6 +195,8 @@ public class CkeckAll : MonoBehaviour {
                     if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().hisTreeCut.GetChild(currentBHom.GetComponent<BHomInfo>().nCutter).position))
                     {
                         currentBHom.GetComponent<BHomInfo>().cutting = true;
+                        if (currentBHom.GetComponent<BHomInfo>().believe)
+                            currentBHom.GetComponent<BHomInfo>().believe = false;
                     }
                 }
                 else noMoreTree = true;
@@ -213,6 +254,7 @@ public class CkeckAll : MonoBehaviour {
                         listTree.GetChild(i).GetComponent<Tree>().p1 = currentBHom;
                         currentBHom.GetComponent<BHomInfo>().hisTreeEat = listTree.GetChild(i);
                         currentBHom.GetComponent<BHomInfo>().hisBHomKill = null;
+                        isPlacedByGod(listTree.GetChild(i));
                     }
                     else if (listTree.GetChild(i).GetComponent<Tree>().p2 == null)
                     {
@@ -220,6 +262,7 @@ public class CkeckAll : MonoBehaviour {
                         listTree.GetChild(i).GetComponent<Tree>().p2 = currentBHom;
                         currentBHom.GetComponent<BHomInfo>().hisTreeEat = listTree.GetChild(i);
                         currentBHom.GetComponent<BHomInfo>().hisBHomKill = null;
+                        isPlacedByGod(listTree.GetChild(i));
                     }
                     else if (listTree.GetChild(i).GetComponent<Tree>().p3 == null)
                     {
@@ -227,43 +270,70 @@ public class CkeckAll : MonoBehaviour {
                         listTree.GetChild(i).GetComponent<Tree>().p3 = currentBHom;
                         currentBHom.GetComponent<BHomInfo>().hisTreeEat = listTree.GetChild(i);
                         currentBHom.GetComponent<BHomInfo>().hisBHomKill = null;
+                        isPlacedByGod(listTree.GetChild(i));
                     }
                 }
             }
         }
     }
 
-    private void killBHom()
+    private void killBHom()  //-----The current bhom chose and kill a bhom compare is religion-----
     {
-        if (currentBHom.GetComponent<BHomInfo>().hisBHomKill == null)
-            choseBHom(currentBHom.GetComponent<BHomInfo>().believe);
-        if (!currentBHom.GetComponent<BHomInfo>().keeping && currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().hisBHomKill.position))
+        if (!currentBHom.GetComponent<BHomInfo>().isAMurder)
         {
-            currentBHom.GetComponent<BHomInfo>().hisBHomKill.position = currentBHom.GetChild(0).GetChild(1).position;
-            currentBHom.GetComponent<BHomInfo>().hisBHomKill.parent = currentBHom.GetChild(0).GetChild(1);
-            currentBHom.GetComponent<BHomInfo>().Keeper();
-            currentBHom.GetComponent<BHomInfo>().hisBHomKill.GetComponent<BHomInfo>().Victim();
-
-        }
-        else if (currentBHom.GetComponent<BHomInfo>().keeping)
-        {
-            if (!currentBHom.GetComponent<BHomInfo>().believe)
+            if (currentBHom.GetComponent<BHomInfo>().hisBHomKill == null)
             {
-                if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().AnchorThrow.position))
-                    currentBHom.GetComponent<BHomInfo>().KillByThrow();
+                choseBHom(currentBHom.GetComponent<BHomInfo>().believe);
+                if (currentBHom.GetComponent<BHomInfo>().hisBHomKill == null)
+                    choseBHom(!currentBHom.GetComponent<BHomInfo>().believe);
+            }
+
+            if (!currentBHom.GetComponent<BHomInfo>().keeping && currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().hisBHomKill.position))
+            {
+                currentBHom.GetComponent<BHomInfo>().hisBHomKill.position = currentBHom.GetChild(0).GetChild(1).position;
+                currentBHom.GetComponent<BHomInfo>().hisBHomKill.parent = currentBHom.GetChild(0).GetChild(1);
+                currentBHom.GetComponent<BHomInfo>().Keeper();
+                currentBHom.GetComponent<BHomInfo>().hisBHomKill.GetComponent<BHomInfo>().Victim();
+
+            }
+            else if (currentBHom.GetComponent<BHomInfo>().keeping)
+            {
+                if (!currentBHom.GetComponent<BHomInfo>().believe)
+                {
+                    if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().AnchorThrow.position))
+                        currentBHom.GetComponent<BHomInfo>().KillByThrow();
+                }
+                else
+                {
+                    if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().Sacrefice.position))
+                        currentBHom.GetComponent<BHomInfo>().KillBySacrifice();
+                }
+            }
+        }
+        else  //---Set deplacement of the murder to his house (or the first house if he did'nt have house)---
+        {
+            if (currentBHom.GetComponent<BHomInfo>().hisHouse != null)
+            {
+                if (!currentBHom.GetComponent<BHomInfo>().isMoving)
+                    currentBHom.GetComponent<BHomInfo>().isMoving = true;
+                if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().hisHouse.GetChild(0).position))
+                    currentBHom.GetComponent<BHomInfo>().resetVarAfterKill();
             }
             else
             {
-                if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().Sacrefice.position))
-                    currentBHom.GetComponent<BHomInfo>().KillBySacrifice();
+                if (!currentBHom.GetComponent<BHomInfo>().isMoving)
+                    currentBHom.GetComponent<BHomInfo>().isMoving = true;
+                if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(listHouse.GetChild(0).GetChild(0).position))
+                    currentBHom.GetComponent<BHomInfo>().resetVarAfterKill();
             }
         }
     }
 
-    private void choseBHom(bool believe)
+    private void choseBHom(bool believe)  //-----Chose a bhom who not killing a bhom and different of the paremeter (believe)-----
     {
         int i = 0;
         bool chosed = false;
+        i = 0;
         do
         {
             if ((listBHom.GetChild(i).GetComponent<BHomInfo>().believe != believe) && (listBHom.GetChild(i) != currentBHom))
@@ -274,6 +344,98 @@ public class CkeckAll : MonoBehaviour {
                     chosed = true;
                 }
             i++;
-        } while ((i < listBHom.childCount) || !chosed);
+        } while ((i < listBHom.childCount) && !chosed);
+    }
+
+    private void isPlacedByGod(Transform elem)  //-----Check if the element (tree or house) where the bhom are just assign is placed by god-----
+    {
+        if (elem.GetComponent<placeByGod>().getPlaceByGod())
+            if (!currentBHom.GetComponent<BHomInfo>().believe)
+                currentBHom.GetComponent<BHomInfo>().believe = true;
+    }
+
+    private bool wouldWait(int value, int believeAddValue)  //-----Manage the waiting before do an action-----
+    {
+        int waitingTime;
+        if (currentBHom.GetComponent<BHomInfo>().believe)
+        {
+            waitingTime = value + believeAddValue;
+            currentBHom.GetComponent<BHomInfo>().setPraying(true);
+            currentBHom.GetComponent<NavMeshAgent>().enabled = false;
+        }
+        else waitingTime = value;
+
+        if (currentBHom.GetComponent<BHomInfo>().isMoving)
+            currentBHom.GetComponent<BHomInfo>().isMoving = false;
+
+        if (currentBHom.GetComponent<BHomInfo>().getWaitToDo() < waitingTime)
+        {
+            currentBHom.GetComponent<BHomInfo>().incrassWait(1);
+            return false;
+        }
+        else
+        {
+            currentBHom.GetComponent<BHomInfo>().setWaitToDo(0);
+            currentBHom.GetComponent<NavMeshAgent>().enabled = true;
+            if (currentBHom.GetComponent<BHomInfo>().believe)
+                currentBHom.GetComponent<BHomInfo>().setPraying(false);
+            return true;
+        }            
+    }
+
+    private void checkReproductionCondition()  //-----Check all condition before reproduction-----
+    {
+        if (currentBHom.GetComponent<BHomInfo>().getNFood() > 14)
+        {
+            if ((currentBHom.GetComponent<BHomInfo>().hisHouse.GetComponent<House>().p1 != null) && (currentBHom.GetComponent<BHomInfo>().hisHouse.GetComponent<House>().p2 != null))
+            {
+                if (currentBHom.GetComponent<BHomInfo>().hisHouse.GetComponent<House>().p1 == currentBHom)
+                {
+                    Debug.Log("perso 1 is done");
+                    if (currentBHom.GetComponent<BHomInfo>().hisHouse.GetComponent<House>().p2.GetComponent<BHomInfo>().getNFood() > 14)
+                    {
+                        reproduction(currentBHom.GetComponent<BHomInfo>().hisHouse.GetComponent<House>().p2);
+                    }
+                }
+                else if (currentBHom.GetComponent<BHomInfo>().hisHouse.GetComponent<House>().p2 == currentBHom)
+                {
+                    Debug.Log("perso 2 is done");
+                    if (currentBHom.GetComponent<BHomInfo>().hisHouse.GetComponent<House>().p1.GetComponent<BHomInfo>().getNFood() > 14)
+                    {
+                        reproduction(currentBHom.GetComponent<BHomInfo>().hisHouse.GetComponent<House>().p1);
+                    }
+                }
+            }
+        }
+        else setMoveHouseaTree();
+    }
+
+    private void reproduction(Transform orther)  //-----make the reproduction-----
+    {
+        if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().hisHouse.GetChild(0).position))
+        {
+            currentBHom.GetComponent<NavMeshAgent>().enabled = false;
+            if (!currentBHom.GetComponent<BHomInfo>().getReadyToReproduction())
+                currentBHom.GetComponent<BHomInfo>().setReadyToReproduction(true);
+            else
+            {
+                currentBHom.GetComponent<BHomInfo>().setNFood(0);
+                orther.GetComponent<BHomInfo>().setNFood(0);
+                if (orther.GetComponent<BHomInfo>().getReadyToReproduction())
+                    orther.GetComponent<BHomInfo>().setReadyToReproduction(false);
+
+                GameObject newBHom = Instantiate(currentBHom, currentBHom.GetComponent<BHomInfo>().hisHouse.GetChild(0).position, currentBHom.GetComponent<BHomInfo>().hisHouse.rotation) as GameObject;
+                newBHom.transform.parent = listBHom;
+
+                newBHom.GetComponent<BHomInfo>().hisHouse = null;
+                newBHom.GetComponent<BHomInfo>().hisTreeEat = null;
+                newBHom.GetComponent<BHomInfo>().hisTreeCut = null;
+                newBHom.GetComponent<BHomInfo>().hisBHomKill = null;
+                newBHom.GetComponent<BHomInfo>().hisBHomMurder = null;
+
+                newBHom.transform.localScale = newBHom.transform.localScale / 10;
+                newBHom.GetComponent<BHomInfo>().setIsAChild(true);
+            }
+        }
     }
 }
