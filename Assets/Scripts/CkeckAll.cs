@@ -6,6 +6,7 @@ public class CkeckAll : MonoBehaviour {
     public Transform listHouse;
     public Transform listTree;
     public Transform listBHom;
+    public GameObject prefabBHom;
 
     private float timer;
 
@@ -424,17 +425,10 @@ public class CkeckAll : MonoBehaviour {
                 if (orther.GetComponent<BHomInfo>().getReadyToReproduction())
                     orther.GetComponent<BHomInfo>().setReadyToReproduction(false);
 
-                GameObject newBHom = Instantiate(currentBHom, currentBHom.GetComponent<BHomInfo>().hisHouse.GetChild(0).position, currentBHom.GetComponent<BHomInfo>().hisHouse.rotation) as GameObject;
-                newBHom.transform.parent = listBHom;
-
-                newBHom.GetComponent<BHomInfo>().hisHouse = null;
-                newBHom.GetComponent<BHomInfo>().hisTreeEat = null;
-                newBHom.GetComponent<BHomInfo>().hisTreeCut = null;
-                newBHom.GetComponent<BHomInfo>().hisBHomKill = null;
-                newBHom.GetComponent<BHomInfo>().hisBHomMurder = null;
-
-                newBHom.transform.localScale = newBHom.transform.localScale / 10;
-                newBHom.GetComponent<BHomInfo>().setIsAChild(true);
+                GameObject newBHom = Instantiate(prefabBHom, currentBHom.GetComponent<BHomInfo>().hisHouse.GetChild(0).position, currentBHom.GetComponent<BHomInfo>().hisHouse.rotation) as GameObject;
+                newBHom.transform.parent = currentBHom.transform.parent;
+                newBHom.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+                newBHom.GetComponent<BHomInfo>().setIsAChild(true);                
             }
         }
     }

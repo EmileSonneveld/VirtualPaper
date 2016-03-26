@@ -162,6 +162,7 @@ MonoBehaviour:
   m_TargetScale: 1.55
   m_SpawnObject: {fileID: 177960, guid: 3d9db3915d630478faa02fbc1cb29cd6, type: 2}
   m_ObjectList: {fileID: 0}
+  house: {fileID: 0}
 --- !u!114 &11498100
 MonoBehaviour:
   m_ObjectHideFlags: 1
