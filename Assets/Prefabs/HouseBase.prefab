@@ -41,6 +41,7 @@ GameObject:
   - 95: {fileID: 9520710}
   - 208: {fileID: 20882586}
   - 114: {fileID: 11476558}
+  - 114: {fileID: 11482378}
   - 65: {fileID: 6571962}
   m_Layer: 0
   m_Name: HouseBase
@@ -462,13 +463,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bf0462a494e03c47925c8a3ca02e41c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  placeByGod: 0
   nPeople: 0
   deplacing: 0
   houseFood: 0
   BHomOnHome: 0
+  defaultH: {fileID: 21300000, guid: ba40276edbb7e144d98c5de1d0921aad, type: 3}
+  oneBH: {fileID: 21300002, guid: ba40276edbb7e144d98c5de1d0921aad, type: 3}
+  twoBH: {fileID: 21300004, guid: ba40276edbb7e144d98c5de1d0921aad, type: 3}
   p1: {fileID: 0}
   p2: {fileID: 0}
   timer: 15
+--- !u!114 &11482378
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 136344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81dc1a26bbea11141b085320f631fba5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!208 &20882586
 NavMeshObstacle:
   m_ObjectHideFlags: 1

@@ -8,6 +8,7 @@ public class DragAndDropSprite : MonoBehaviour {
 	public float m_TargetScale = 1.2f;
 	public GameObject m_SpawnObject;
 	public Transform m_ObjectList;
+    public Transform house;
 
 	private bool m_PickedUp = false;
 	private Transform m_Camera;
@@ -71,6 +72,8 @@ public class DragAndDropSprite : MonoBehaviour {
 		newObject.transform.LookAt(m_Camera.transform);
 		newObject.transform.rotation = Quaternion.Euler(0, newObject.transform.rotation.eulerAngles.y, newObject.transform.rotation.eulerAngles.z);
 		newObject.transform.parent = m_ObjectList;
+        newObject.transform.GetComponent<placeByGod>().setPlaceByGod(true);
+        newObject.transform.GetComponent<Tree2House>().house = house;
 
 		//destroy pickup placeholder object
 		Destroy(transform.gameObject);

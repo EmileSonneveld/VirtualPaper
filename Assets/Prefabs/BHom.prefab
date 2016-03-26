@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21233684}
   - 95: {fileID: 9578210}
   - 114: {fileID: 11418548}
+  - 114: {fileID: 11435666}
   m_Layer: 0
   m_Name: CitizenFullAnimBack
   m_TagString: Untagged
@@ -165,8 +166,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 165956}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.59, y: 0, z: -5.73}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -5.14, y: -1.162, z: 2.39}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 472434}
   m_Father: {fileID: 0}
@@ -178,7 +179,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 170710}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.115, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 422200}
@@ -298,21 +299,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa17c1c94b1d9604b8795cdc89f37c9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AnchorThrow: {fileID: 0}
-  Sacrefice: {fileID: 0}
+  AnchorThrow: {fileID: 498032, guid: 07007fe9fda53d54886f4865286e03b1, type: 2}
+  Sacrefice: {fileID: 468920, guid: a103e01c77aa46d4d89aeed041102720, type: 2}
   hisHouse: {fileID: 0}
   hisTreeEat: {fileID: 0}
   hisTreeCut: {fileID: 0}
+  hisBHomKill: {fileID: 0}
+  hisBHomMurder: {fileID: 0}
   nCutter: 0
-  believe: 0
+  believe: 1
+  isAMurder: 0
   isMoving: 0
   mToTree: 0
-  mTHouse: 1
+  mToHouse: 1
   cutting: 0
   keeping: 0
-  victime: 0
+  willKeeping: 0
+  victim: 0
+  praying: 0
   needHouse: 0
   needTree: 0
+  waitToDo: 10
+  nFood: 0
+  readyToReproduction: 0
+  isAChild: 0
+--- !u!114 &11435666
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7d8b6d7f96375b4e8c097e6f167474a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11439336
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -336,7 +357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_positionOffsetData:
-    positionOffset: {x: -0.028790712, y: 1.4971733, z: 0.0000009536743}
+    positionOffset: {x: 0, y: 0, z: 0}
     KeepMe: 0
   isEnvironmentAware: 1
   listenerMask: 1
@@ -417,7 +438,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 215763b0b4bd78e4abb1c4f3c894c744, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test: {fileID: 0}
+  pencil: {fileID: 0}
+  defaultPencilposition: {fileID: 0}
 --- !u!136 &13678454
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -438,7 +460,7 @@ NavMeshAgent:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 165956}
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 0.00001
   m_Speed: 0.08
   m_Acceleration: 8
   avoidancePriority: 50
@@ -547,7 +569,19 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.z
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 165956}

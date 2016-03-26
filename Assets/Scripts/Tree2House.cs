@@ -63,6 +63,8 @@ public class Tree2House : MonoBehaviour {
         }
         else newHouse.GetComponent<House>().p2 = null;
 
-       Destroy(gameObject);
+        newHouse.transform.GetComponent<placeByGod>().setPlaceByGod(false);
+
+        Destroy(gameObject);
     }
 }
