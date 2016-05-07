@@ -1081,7 +1081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.97794116, g: 0.97794116, b: 0.97794116, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1671,6 +1671,18 @@ Prefab:
       objectReference: {fileID: 15693012}
     - target: {fileID: 11437500, guid: a29d426f565a54c48909c938e8b15201, type: 2}
       propertyPath: listBHom
+      value: 
+      objectReference: {fileID: 355291203}
+    - target: {fileID: 11490756, guid: a29d426f565a54c48909c938e8b15201, type: 2}
+      propertyPath: listHouseTra
+      value: 
+      objectReference: {fileID: 277396462}
+    - target: {fileID: 11490756, guid: a29d426f565a54c48909c938e8b15201, type: 2}
+      propertyPath: listTreeTra
+      value: 
+      objectReference: {fileID: 15693012}
+    - target: {fileID: 11490756, guid: a29d426f565a54c48909c938e8b15201, type: 2}
+      propertyPath: listBHomTra
       value: 
       objectReference: {fileID: 355291203}
     m_RemovedComponents: []
@@ -2517,6 +2529,12 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 437422, guid: 38c4e2b1aa2fd4e4e8c3e337d234bb36, type: 2}
   m_PrefabInternal: {fileID: 1694295009}
+--- !u!114 &1074785474 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11490756, guid: a29d426f565a54c48909c938e8b15201,
+    type: 2}
+  m_PrefabInternal: {fileID: 585219373}
+  m_Script: {fileID: 11500000, guid: aff05433fb39f124e9c1db3e9285cdbc, type: 3}
 --- !u!1 &1081286882
 GameObject:
   m_ObjectHideFlags: 0
@@ -5025,12 +5043,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01011e23a26449f4599c016464fc1051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Population: 2
+  _God: {fileID: 1074785474}
+  _Population: 10
   _Housing: 4
   _Trees: 11
+  _NeutralMat: {fileID: 2100000, guid: cecd87ca17a033f428284a329b99b63d, type: 2}
+  _RedMat: {fileID: 2100000, guid: 9d92daca5c6393d4784bf32aab25ca49, type: 2}
+  _HousingShortageEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  _FoodShortageEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
   _PopulationText: {fileID: 729475732}
   _HousingText: {fileID: 1538520523}
+  _HouseIcon: {fileID: 1723683084}
   _TreesText: {fileID: 357767951}
+  _TreeIcon: {fileID: 795808662}
   _Date: {fileID: 1083784326}
   _Time: {fileID: 592990745}
 --- !u!4 &1925058557 stripped

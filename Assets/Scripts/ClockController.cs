@@ -5,21 +5,28 @@ using System.Collections;
 
 public class ClockController : MonoBehaviour {
 
+	public AgeOfPaperManage _God;
+
 	[Header("Quantities")]
 	public int _Population;
 	public int _Housing;
 	public int _Trees;
 
 	[Header("Alarms")]
+	public Material _NeutralMat;
+	public Material _RedMat;
 	public UnityEvent _HousingShortageEvent;
 	public UnityEvent _FoodShortageEvent;
 	private bool _HousingShortage = false;
 	private bool _FoodShortage = false;
+	private bool _IsRed = false;
 
 	[Header("Text References")]
 	public Text _PopulationText;
 	public Text _HousingText;
+	public Image _HouseIcon;
 	public Text _TreesText;
+	public Image _TreeIcon;
 	public Text _Date;
 	public Text _Time;
 
@@ -34,17 +41,21 @@ public class ClockController : MonoBehaviour {
 		//get current number of people and trees
 		int pplPerHouse = 2;
 		int pplPerTree = 3;
-		int houses = 3;
-		int trees = 4;
+		int houses = _God.nHouse;
+		int trees = _God.nTree;
+		_Population = _God.nBHom;
 		_Housing = pplPerHouse * houses;
 		_Trees = pplPerTree * trees;
 
+		//set UI text
 		_PopulationText.text = AddZero(Mathf.Clamp(_Population, 0, 99f)); 
 		_HousingText.text = AddZero(Mathf.Clamp(_Housing, 0, 99f));
 		_TreesText.text = AddZero(Mathf.Clamp(_Trees, 0, 99f));
 
+		//check if there is housing or food shortage, invoke events if so
 		if (!_HousingShortage && _Population > _Housing) {
 			_HousingShortage = true;
+			_HousingShortageEvent.Invoke ();
 		}
 		if (_HousingShortage && _Population <= _Housing) {
 			_HousingShortage = false;
@@ -52,25 +63,59 @@ public class ClockController : MonoBehaviour {
 
 		if (!_FoodShortage && _Population > _Trees) {
 			_FoodShortage = true;
+			_FoodShortageEvent.Invoke ();
 		}
 		if (_FoodShortage && _Population <= _Trees) {
 			_FoodShortage = false;
 		}
+
+		//update text flikker
+		if (_FoodShortage) {
+			if(_IsRed){
+				_TreesText.material = _NeutralMat; 
+				_TreeIcon.material = _NeutralMat; 
+			} else{
+				_TreesText.material = _RedMat;
+				_TreeIcon.material = _RedMat;
+			}
+		}
+		if (_HousingShortage) {
+			if(_IsRed){
+				_HousingText.material = _NeutralMat; 
+				_HouseIcon.material = _NeutralMat; 
+			} else{
+				_HousingText.material = _RedMat;
+				_HouseIcon.material = _RedMat;
+			}
+		}
+		_IsRed = !_IsRed;
+
 	}
 
 	/*DATE & TIME*/
 
 	private void UpdateHour(){
+		
 		_Date.text = System.DateTime.Now.Day+" "+ GetMonthString(System.DateTime.Now.Month)+" "+System.DateTime.Now.Year;
+
 		string separator = (_Time.text.Contains(":")) ? " " : ":" ;
-		_Time.text = AddZero(System.DateTime.Now.Hour ) + separator + AddZero(System.DateTime.Now.Minute) + " " + GetAmPm(System.DateTime.Now.Hour);
+
+		_Time.text = AddZero(PMCorrect(System.DateTime.Now.Hour) ) + separator + AddZero(System.DateTime.Now.Minute) + " " + GetAmPm(System.DateTime.Now.Hour);
 	}
 
-	private string GetAmPm(int m){
-		if (m > 12) {
+	private string GetAmPm(int h){
+		if (h > 12) {
 			return "PM";
 		} else {
 			return "AM";
+		}
+	}
+
+	private int PMCorrect(int h){
+		if (h > 12) {
+			return h - 12;
+		} else {
+			return h;
 		}
 	}
 
