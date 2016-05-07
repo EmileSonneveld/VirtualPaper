@@ -1,0 +1,247 @@
+fileFormatVersion: 2
+guid: cc52aaa389a8eb546b8347c067445504
+timeCreated: 1462615548
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SpriteSheetClock_0
+    21300002: SpriteSheetClock_1
+    21300004: SpriteSheetClock_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: SpriteSheetClock_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 117}
+        - {x: -24, y: 117}
+        - {x: -65, y: 71}
+        - {x: -114, y: 15}
+        - {x: -114, y: 8}
+        - {x: -110, y: 5}
+        - {x: -78, y: -111}
+        - {x: -73, y: -114}
+        - {x: -47, y: -115}
+        - {x: 66, y: -115}
+        - {x: 80, y: -15}
+        - {x: 80, y: 19}
+        - {x: 33, y: 78}
+      - - {x: 3, y: -81}
+        - {x: 1, y: -84}
+        - {x: 1, y: -90}
+        - {x: 4, y: -91}
+        - {x: 12, y: -91}
+        - {x: 12, y: -83}
+        - {x: 8, y: -81}
+      - - {x: 5, y: -5}
+        - {x: 5, y: -46}
+        - {x: 10, y: -49}
+        - {x: 40, y: -49}
+        - {x: 47, y: -46}
+        - {x: 47, y: -5}
+      - - {x: -32, y: -7}
+        - {x: -58, y: -7}
+        - {x: -67, y: -9}
+        - {x: -67, y: -48}
+        - {x: -31, y: -48}
+        - {x: -29, y: -44}
+        - {x: -28, y: -27}
+        - {x: -28, y: -9}
+    - name: SpriteSheetClock_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 128}
+        - {x: -13, y: 122}
+        - {x: -46, y: 59}
+        - {x: -49, y: 45}
+        - {x: -62, y: 5}
+        - {x: -62, y: -54}
+        - {x: -58, y: -59}
+        - {x: -54, y: -58}
+        - {x: -49, y: -55}
+        - {x: -48, y: -51}
+        - {x: -49, y: -55}
+        - {x: -45, y: -60}
+        - {x: -40, y: -63}
+        - {x: -26, y: -44}
+        - {x: -30, y: -37}
+        - {x: -22, y: -22}
+        - {x: -28, y: -57}
+        - {x: -60, y: -110}
+        - {x: -54, y: -121}
+        - {x: 57, y: -121}
+        - {x: 66, y: -113}
+        - {x: 86, y: -69}
+        - {x: 86, y: 92}
+        - {x: 78, y: 128}
+      - - {x: 69, y: 55}
+        - {x: 66, y: 52}
+        - {x: 66, y: 49}
+        - {x: 69, y: 46}
+        - {x: 72, y: 46}
+        - {x: 75, y: 49}
+        - {x: 75, y: 52}
+        - {x: 72, y: 55}
+      - - {x: -6, y: 65}
+        - {x: -8, y: 62}
+        - {x: -8, y: 54}
+        - {x: -6, y: 49}
+        - {x: 8, y: 49}
+        - {x: 8, y: 64}
+        - {x: 3, y: 65}
+      - - {x: 27, y: 66}
+        - {x: 24, y: 62}
+        - {x: 24, y: 54}
+        - {x: 27, y: 50}
+        - {x: 35, y: 50}
+        - {x: 40, y: 52}
+        - {x: 40, y: 64}
+        - {x: 35, y: 66}
+    - name: SpriteSheetClock_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 10}
+        - {x: -3, y: 13}
+        - {x: -5, y: 19}
+        - {x: -13, y: 29}
+        - {x: -17, y: 29}
+        - {x: -19, y: 27}
+        - {x: -27, y: 28}
+        - {x: -37, y: 22}
+        - {x: 18, y: 84}
+        - {x: -1, y: 12}
+        - {x: -10, y: 9}
+        - {x: -5, y: 0}
+        - {x: 6, y: -5}
+        - {x: 2, y: -39}
+        - {x: 4, y: -92}
+        - {x: 3, y: -112}
+        - {x: 17, y: -112}
+        - {x: 63, y: -17}
+        - {x: 63, y: 97}
+        - {x: 21, y: 124}
+        - {x: -55, y: 124}
+        - {x: -89, y: 94}
+        - {x: -89, y: 7}
+        - {x: -20, y: -112}
+        - {x: -1, y: -112}
+        - {x: 1, y: -109}
+        - {x: 0, y: -19}
+        - {x: -3, y: -3}
+        - {x: -8, y: 6}
+      - - {x: -48, y: 17}
+        - {x: -51, y: 10}
+        - {x: -51, y: 2}
+        - {x: -45, y: -4}
+        - {x: -31, y: -4}
+        - {x: -29, y: 2}
+        - {x: -29, y: 14}
+        - {x: -32, y: 17}
+      - - {x: -64, y: 51}
+        - {x: -71, y: 50}
+        - {x: -74, y: 42}
+        - {x: -74, y: 32}
+        - {x: -72, y: 30}
+        - {x: -57, y: 30}
+        - {x: -52, y: 32}
+        - {x: -52, y: 44}
+        - {x: -58, y: 51}
+      - - {x: -19, y: 53}
+        - {x: -22, y: 46}
+        - {x: -22, y: 35}
+        - {x: -16, y: 32}
+        - {x: -2, y: 32}
+        - {x: 0, y: 38}
+        - {x: 0, y: 49}
+        - {x: -4, y: 53}
+      - - {x: 24, y: 76}
+        - {x: 18, y: 74}
+        - {x: 11, y: 71}
+        - {x: 11, y: 61}
+        - {x: 13, y: 55}
+        - {x: 15, y: 54}
+        - {x: 30, y: 54}
+        - {x: 33, y: 60}
+        - {x: 33, y: 70}
+        - {x: 26, y: 76}
+      - - {x: -34, y: 87}
+        - {x: -50, y: 87}
+        - {x: -51, y: 83}
+        - {x: -51, y: 69}
+        - {x: -46, y: 66}
+        - {x: -36, y: 66}
+        - {x: -30, y: 69}
+        - {x: -29, y: 73}
+        - {x: -29, y: 81}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
