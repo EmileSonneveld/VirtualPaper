@@ -7,12 +7,12 @@ public class ClockController : MonoBehaviour {
 
 	public AgeOfPaperManage _God;
 
-	[Header("Quantities")]
+	[Header("QUANTITIES")]
 	public int _Population;
 	public int _Housing;
 	public int _Trees;
 
-	[Header("Alarms")]
+	[Header("ALARMS")]
 	public Material _NeutralMat;
 	public Material _RedMat;
 	public UnityEvent _HousingShortageEvent;
@@ -21,7 +21,7 @@ public class ClockController : MonoBehaviour {
 	private bool _FoodShortage = false;
 	private bool _IsRed = false;
 
-	[Header("Text References")]
+	[Header("TEXT REFERENCES")]
 	public Text _PopulationText;
 
 	public Image _HouseIcon;
@@ -53,8 +53,10 @@ public class ClockController : MonoBehaviour {
 		_Trees = pplPerTree * trees;
 
 		//set UI text
-		_PopulationText.text = AddZero(Mathf.Clamp(_Population, 0, 99f)); 
+		_PopulationText.text = AddZero(Mathf.Clamp(_Population, 0, 99f));
+		_NHousingText.text = AddZero(Mathf.Clamp(houses, 0, 99f));
 		_HousingText.text = AddZero(Mathf.Clamp(_Housing, 0, 99f));
+		_NTreesText.text = AddZero(Mathf.Clamp(trees, 0, 99f));
 		_TreesText.text = AddZero(Mathf.Clamp(_Trees, 0, 99f));
 
 		//check if there is housing or food shortage, invoke events if so
@@ -77,19 +79,19 @@ public class ClockController : MonoBehaviour {
 		//update text flikker
 		if (_FoodShortage) {
 			if(_IsRed){
-				_TreesText.material = _NeutralMat; 
+				_NTreesText.material = _NeutralMat; 
 				_TreeIcon.material = _NeutralMat; 
 			} else{
-				_TreesText.material = _RedMat;
+				_NTreesText.material = _RedMat;
 				_TreeIcon.material = _RedMat;
 			}
 		}
 		if (_HousingShortage) {
 			if(_IsRed){
-				_HousingText.material = _NeutralMat; 
+				_NHousingText.material = _NeutralMat; 
 				_HouseIcon.material = _NeutralMat; 
 			} else{
-				_HousingText.material = _RedMat;
+				_NHousingText.material = _RedMat;
 				_HouseIcon.material = _RedMat;
 			}
 		}
