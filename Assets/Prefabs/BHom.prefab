@@ -166,7 +166,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 165956}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.61, y: 0, z: -21.78}
+  m_LocalPosition: {x: 3.19, y: -1.162, z: -18.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 472434}
@@ -313,17 +313,19 @@ MonoBehaviour:
   mToTree: 0
   mToHouse: 1
   cutting: 0
+  cutter: 0
   keeping: 0
+  kepper: 0
   willKeeping: 0
   victim: 0
   praying: 0
   needHouse: 0
   needTree: 0
-  waitToDo: 10
+  waitToDo: 0
   nFood: 0
   readyToReproduction: 0
   isAChild: 0
-  actionToDo: 0
+  actionToDo: 1
 --- !u!114 &11435666
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -375,7 +377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_positionOffsetData:
-    positionOffset: {x: 0, y: 0, z: 0}
+    positionOffset: {x: 0, y: 0.0000014305115, z: 0}
     KeepMe: 0
   isEnvironmentAware: 1
   listenerMask: 1
