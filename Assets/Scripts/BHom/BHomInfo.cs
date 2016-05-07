@@ -48,6 +48,8 @@ public class BHomInfo : MonoBehaviour {
     public bool readyToReproduction;
     public bool isAChild;
 
+    public bool[] wouldYouWaitArray = {false, false, false};
+
     void Start()
     {
         navMeshA = transform.GetComponent<NavMeshAgent>();

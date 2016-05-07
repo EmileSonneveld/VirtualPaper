@@ -15,6 +15,8 @@ public class CkeckAll : MonoBehaviour {
     private Transform currentBHom;
 
     public bool noMoreTree;
+
+    
 	
 	void FixedUpdate ()
     {
@@ -73,7 +75,7 @@ public class CkeckAll : MonoBehaviour {
                             checkForATreeToEat();
                             if (currentBHom.GetComponent<BHomInfo>().hisTreeEat == null)
                             {
-                                if ((currentBHom.GetComponent<BHomInfo>().hisBHomKill == null) && (wouldWait(20, 5)))
+                                if ((currentBHom.GetComponent<BHomInfo>().hisBHomKill == null) /*&& (wouldWait(20, 5))*/)
                                 {
                                     killBHom();
                                 }
@@ -87,7 +89,7 @@ public class CkeckAll : MonoBehaviour {
                 }
                 else if (currentBHom.GetComponent<BHomInfo>().hisTreeCut != null)
                 {
-                    if (!currentBHom.GetComponent<BHomInfo>().cutting && (wouldWait(15, 5)))
+                    if (!currentBHom.GetComponent<BHomInfo>().cutting /*&& (wouldWait(15, 5))*/)
                         cutTree();
                 }
             }
