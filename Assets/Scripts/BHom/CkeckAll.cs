@@ -67,11 +67,11 @@ public class CkeckAll : MonoBehaviour {
                             {
                                 if ((currentBHom.GetComponent<BHomInfo>().hisBHomKill == null) /*&& (wouldWait(20, 5))*/)
                                 {
-                                    killBHom();
+                                    //killBHom();
                                 }
                                 else if (currentBHom.GetComponent<BHomInfo>().hisBHomKill != null)
                                 {
-                                    killBHom();
+                                    //killBHom();
                                 }
                             }
                         }
@@ -79,11 +79,11 @@ public class CkeckAll : MonoBehaviour {
                 }
                 else if (currentBHom.GetComponent<BHomInfo>().hisTreeCut != null)
                 {
-                    if (!currentBHom.GetComponent<BHomInfo>().cutting /*&& (wouldWait(15, 5))*/)
-                        cutTree();
+                   // if (!currentBHom.GetComponent<BHomInfo>().cutting /*&& (wouldWait(15, 5))*/)
+                        //cutTree();
                 }
             }
-            else killBHom();
+            //else killBHom();
         }
         else //---If is a child---
         {
@@ -123,7 +123,7 @@ public class CkeckAll : MonoBehaviour {
             else
             {
                 //---No house
-                cutTree();
+                //cutTree();
             }
 
             currentCheckHouse++;
@@ -150,7 +150,7 @@ public class CkeckAll : MonoBehaviour {
             }
             else
             {
-                currentBHom.GetComponent<BHomInfo>().hisHouse = ageOfPaperManage.AssignToBHom(ageOfPaperManage.listHouse, 2);
+                currentBHom.GetComponent<BHomInfo>().hisHouse = ageOfPaperManage.AssignToBHom(ageOfPaperManage.listHouse, 2, ageOfPaperManage.nHouse);
             }
         }
         else if (currentBHom.GetComponent<BHomInfo>().mToTree)
@@ -166,49 +166,18 @@ public class CkeckAll : MonoBehaviour {
             }
             else
             {
-                currentBHom.GetComponent<BHomInfo>().hisTreeEat = ageOfPaperManage.AssignToBHom(ageOfPaperManage.listTree, 3);
+                currentBHom.GetComponent<BHomInfo>().hisTreeEat = ageOfPaperManage.AssignToBHom(ageOfPaperManage.listTree, 3, ageOfPaperManage.nTree);
             }
         }
     }
 
-    private void cutTree()  //-----Start to chose a tree and began to cut it-----
+    public void cutTree(Transform currentBHom)  //-----Start to chose a tree and began to cut it-----
     {
-        if (!noMoreTree)
+        if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().hisTreeCut.GetChild(currentBHom.GetComponent<BHomInfo>().nCutter).position))
         {
-            if ((currentBHom.GetComponent<BHomInfo>().hisTreeEat != null) && ((currentBHom.GetComponent<BHomInfo>().hisTreeEat.GetComponent<Tree>().cutter1 == null) || (currentBHom.GetComponent<BHomInfo>().hisTreeEat.GetComponent<Tree>().cutter2 == null)))
-            {
-                //setCutterToTree(currentBHom.GetComponent<BHomInfo>().hisTreeEat);
-                currentBHom.GetComponent<BHomInfo>().hisTreeCut = currentBHom.GetComponent<BHomInfo>().hisTreeEat;
-
-                if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().hisTreeCut.GetChild(currentBHom.GetComponent<BHomInfo>().nCutter).position))
-                {
-                    currentBHom.GetComponent<BHomInfo>().cutting = true;
-                    if (currentBHom.GetComponent<BHomInfo>().believe)
-                        currentBHom.GetComponent<BHomInfo>().believe = false;
-                }
-            }
-            else
-            {
-                Transform tree = null;
-                if (currentBHom.GetComponent<BHomInfo>().hisTreeCut == null)
-                    tree = checkForATreeToCut(currentBHom.position);
-                if ((tree != null) || (currentBHom.GetComponent<BHomInfo>().hisTreeCut != null))
-                {
-                    if (currentBHom.GetComponent<BHomInfo>().hisTreeCut == null)
-                    {
-                        currentBHom.GetComponent<BHomInfo>().hisTreeCut = tree;
-                        //setCutterToTree(tree);
-                    }
-
-                    if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().hisTreeCut.GetChild(currentBHom.GetComponent<BHomInfo>().nCutter).position))
-                    {
-                        currentBHom.GetComponent<BHomInfo>().cutting = true;
-                        if (currentBHom.GetComponent<BHomInfo>().believe)
-                            currentBHom.GetComponent<BHomInfo>().believe = false;
-                    }
-                }
-                else noMoreTree = true;
-            }
+            currentBHom.GetComponent<BHomInfo>().cutting = true;
+            if (currentBHom.GetComponent<BHomInfo>().believe)
+                currentBHom.GetComponent<BHomInfo>().believe = false;
         }
     }
 
@@ -217,11 +186,13 @@ public class CkeckAll : MonoBehaviour {
         if (tree.GetComponent<Tree>().cutter1 == null)
         {
             tree.GetComponent<Tree>().cutter1 = currentBHom;
+            currentBHom.GetComponent<BHomInfo>().hisTreeCut = tree;
             currentBHom.GetComponent<BHomInfo>().nCutter = 1;
         }
         else if (tree.GetComponent<Tree>().cutter2 == null)
         {
             tree.GetComponent<Tree>().cutter2 = currentBHom;
+            currentBHom.GetComponent<BHomInfo>().hisTreeCut = tree;
             currentBHom.GetComponent<BHomInfo>().nCutter = 2;
         }
         //else do something
@@ -286,15 +257,15 @@ public class CkeckAll : MonoBehaviour {
         }
     }
 
-    private void killBHom()  //-----The current bhom chose and kill a bhom compare is religion-----
+    public void killBHom(Transform currentBHom)  //-----The current bhom chose and kill a bhom compare is religion-----
     {
         if (!currentBHom.GetComponent<BHomInfo>().isAMurder)
         {
             if (currentBHom.GetComponent<BHomInfo>().hisBHomKill == null)
             {
-                choseBHom(currentBHom.GetComponent<BHomInfo>().believe);
+                choseBHom(currentBHom.GetComponent<BHomInfo>().believe, currentBHom);
                 if (currentBHom.GetComponent<BHomInfo>().hisBHomKill == null)
-                    choseBHom(!currentBHom.GetComponent<BHomInfo>().believe);
+                    choseBHom(!currentBHom.GetComponent<BHomInfo>().believe, currentBHom);
             }
 
             if (!currentBHom.GetComponent<BHomInfo>().keeping && currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().hisBHomKill.position))
@@ -338,7 +309,7 @@ public class CkeckAll : MonoBehaviour {
         }
     }
 
-    private void choseBHom(bool believe)  //-----Chose a bhom who not killing a bhom and different of the paremeter (believe)-----
+    private void choseBHom(bool believe, Transform currentBHom)  //-----Chose a bhom who not killing a bhom and different of the paremeter (believe)-----
     {
         int i = 0;
         bool chosed = false;
@@ -363,7 +334,7 @@ public class CkeckAll : MonoBehaviour {
                 currentBHom.GetComponent<BHomInfo>().believe = true;
     }
 
-    private bool wouldWait(int value, int believeAddValue)  //-----Manage the waiting before do an action-----
+    public bool wouldWait(int value, int believeAddValue, Transform currentBHom)  //-----Manage the waiting before do an action-----
     {
         int waitingTime;
         if (currentBHom.GetComponent<BHomInfo>().believe)

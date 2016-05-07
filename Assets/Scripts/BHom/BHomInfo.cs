@@ -31,7 +31,7 @@ public class BHomInfo : MonoBehaviour {
     public bool mToHouse = true; //-Move to house-
 
     public bool cutting, cutter;  //---Actions---
-    public bool keeping;
+    public bool keeping, kepper;
     public bool willKeeping;
     public bool victim;
     public bool praying;
@@ -48,7 +48,7 @@ public class BHomInfo : MonoBehaviour {
     public bool readyToReproduction;
     public bool isAChild;
 
-    public int actionToDo = 0; // 0 : nothing, 1 : move house <-> tree, 2 : reproduction, 3 : kill, 4 ...
+    public int actionToDo = 0; // 0 : nothing, 1 : move house <-> tree, 2 : cutTree, 3 : kill, 4 reproduction
 
     void Start()
     {
@@ -214,6 +214,7 @@ public class BHomInfo : MonoBehaviour {
         hisBHomKill = null;
         keeping = false;
         isAMurder = false;
+        actionToDo = 1;
     }
 
 

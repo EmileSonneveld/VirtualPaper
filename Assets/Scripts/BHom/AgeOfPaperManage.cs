@@ -1,16 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class AgeOfPaperManage : MonoBehaviour {
 
-    public Transform listHouseTra;
-    public Transform listTreeTra;
-    public Transform listBHomTra;
+    public Transform listHouse;
+    public Transform listTree;
+    public Transform listBHom;
 
-    public List<Transform> listHouse;
+    /*public List<Transform> listHouse;
     public List<Transform> listTree;
-    public List<Transform> listBHom;
+    public List<Transform> listBHom;*/
 
     private float timer = 0;
 
@@ -22,14 +22,14 @@ public class AgeOfPaperManage : MonoBehaviour {
 
     void Start ()
     {
-        listHouse = instanceList(listHouseTra);
+        /*listHouse = instanceList(listHouseTra);
         listTree = instanceList(listTreeTra);
-        listBHom = instanceList(listBHomTra);
+        listBHom = instanceList(listBHomTra);*/
 
         ckeckAll = transform.GetComponent<CkeckAll>();
     }
 
-    private List<Transform> instanceList (Transform listTrans)
+    /*private List<Transform> instanceList (Transform listTrans)
     {
         if (listTrans.childCount > 0)
         {
@@ -39,10 +39,23 @@ public class AgeOfPaperManage : MonoBehaviour {
 
             return list;
         } else return null;
+    }*/
+
+    /*public void AddHouseToList()
+    {
+        listHouse.Add(listHouseTra.GetChild(listHouseTra.childCount - 1));
     }
+
+    public void AddTreeToList()
+    {
+        listTree.Add(listTreeTra.GetChild(listTreeTra.childCount - 1));
+    }*/
 
     void Update()
     {
+        if (Input.GetKeyDown("a"))
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
         if (timer < 1.0f)  //---Every 1 segonde
             timer += Time.deltaTime;
         else
@@ -53,11 +66,17 @@ public class AgeOfPaperManage : MonoBehaviour {
 
             for (numberOfCurrentBHom = 0; numberOfCurrentBHom < nBHom; numberOfCurrentBHom++)
             {
-                currentBHomInfo = listBHom[numberOfCurrentBHom].GetComponent<BHomInfo>();
+                currentBHomInfo = listBHom.GetChild(numberOfCurrentBHom).GetComponent<BHomInfo>();
                 switch (currentBHomInfo.actionToDo)
                 {
                     case 1:
-                            ckeckAll.setMoveHouseaTree(listBHom[numberOfCurrentBHom]);
+                        ckeckAll.setMoveHouseaTree(listBHom.GetChild(numberOfCurrentBHom));
+                        break;
+                    case 2:
+                        ckeckAll.cutTree(listBHom.GetChild(numberOfCurrentBHom));
+                        break;
+                    case 3:
+                        ckeckAll.killBHom(listBHom.GetChild(numberOfCurrentBHom));
                         break;
                     default:
 
@@ -70,23 +89,30 @@ public class AgeOfPaperManage : MonoBehaviour {
 
     private void UpDateVar()  //-----Up date variable if they are different of the reality-----
     {
-        if (listHouseTra.childCount != nHouse)
-            nHouse = listHouseTra.childCount;
-        if (listTreeTra.childCount != nTree)
-            nTree = listTreeTra.childCount;
-        if (listBHomTra.childCount != nBHom)
-            nBHom = listBHomTra.childCount;
+        if (listHouse.childCount != nHouse)
+            nHouse = listHouse.childCount;
+        if (listTree.childCount != nTree)
+            nTree = listTree.childCount;
+        if (listBHom.childCount != nBHom)
+            nBHom = listBHom.childCount;
     }
 
-    public Transform AssignToBHom(List<Transform> listOfElements, int nByElement)
+    public Transform AssignToBHom(Transform listOfElements, int nByElement, int nElements)
     {
-        if ((Mathf.FloorToInt((numberOfCurrentBHom + 1) / nByElement)) <= nHouse)
-            return listOfElements[Mathf.FloorToInt((numberOfCurrentBHom + 1) / nByElement)];
+        if ((Mathf.FloorToInt((numberOfCurrentBHom) / nByElement)) < nElements)
+        {
+            if (currentBHomInfo.hisTreeCut != null)
+                currentBHomInfo.hisTreeCut = null;
+
+            if (currentBHomInfo.hisBHomKill != null)
+                currentBHomInfo.hisBHomKill = null;
+
+            return listOfElements.GetChild(Mathf.FloorToInt((numberOfCurrentBHom) / nByElement));
+        }
         else
         {
             //---Call bip bip---
-            //---Call Function preparation of cut---
-
+            AssignTreeOrBHom(nByElement);
 
             return null;
         }
@@ -96,15 +122,26 @@ public class AgeOfPaperManage : MonoBehaviour {
     {
         if (nByElement == 2) //---if this is a tree---
         {
-            if (listTree.Count > 0)
+            if (listTree.childCount > 0)                
             {
-                currentBHomInfo.cutter = true;
-                ckeckAll.setCutterToTree(listTree[nTree], listBHom[numberOfCurrentBHom]);
+                ckeckAll.setCutterToTree(listTree.GetChild(nTree - 1), listBHom.GetChild(numberOfCurrentBHom));
+                if (currentBHomInfo.hisTreeCut != null)
+                    if (ckeckAll.wouldWait(5, 5, listBHom.GetChild(numberOfCurrentBHom)))
+                    {
+                        currentBHomInfo.cutter = true;
+                        currentBHomInfo.actionToDo = 2;
+                    }
             }
         }
         else if (nByElement == 3)
         {
-            
+            if (listBHom.childCount > 1)
+                if (ckeckAll.wouldWait(5, 5, listBHom.GetChild(numberOfCurrentBHom)))
+                {
+                    currentBHomInfo.kepper = true;
+                    currentBHomInfo.actionToDo = 3;
+                    //ckeckAll.killBHom(listBHom[numberOfCurrentBHom]);
+                }
         }
     }
 

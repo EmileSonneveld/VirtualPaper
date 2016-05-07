@@ -19,7 +19,7 @@ public class Tree2House : MonoBehaviour {
         animating = value;
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if (animating)
         {
@@ -50,14 +50,19 @@ public class Tree2House : MonoBehaviour {
         newHouse.GetComponent<House>().SetAnimation(true);
 
         newHouse.GetComponent<House>().p1 = transform.GetComponent<Tree>().cutter1;
+        transform.GetComponent<Tree>().cutter1.GetComponent<BHomInfo>().actionToDo = 1;
         transform.GetComponent<Tree>().cutter1.GetComponent<BHomInfo>().cutting = false;
+        transform.GetComponent<Tree>().cutter1.GetComponent<BHomInfo>().cutter = false;
         transform.GetComponent<Tree>().cutter1.GetComponent<BHomInfo>().hisHouse = newHouse.transform;
         transform.GetComponent<Tree>().cutter1.GetComponent<BHomInfo>().hisTreeCut = null;
 
         if (transform.GetComponent<Tree>().cutter2 != null)
         {
+            
             newHouse.GetComponent<House>().p2 = transform.GetComponent<Tree>().cutter2;
+            transform.GetComponent<Tree>().cutter2.GetComponent<BHomInfo>().actionToDo = 1;
             transform.GetComponent<Tree>().cutter2.GetComponent<BHomInfo>().cutting = false;
+            transform.GetComponent<Tree>().cutter2.GetComponent<BHomInfo>().cutter = false;
             transform.GetComponent<Tree>().cutter2.GetComponent<BHomInfo>().hisHouse = newHouse.transform;
             transform.GetComponent<Tree>().cutter2.GetComponent<BHomInfo>().hisTreeCut = null;
         }
