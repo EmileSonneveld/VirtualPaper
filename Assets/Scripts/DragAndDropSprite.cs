@@ -73,7 +73,9 @@ public class DragAndDropSprite : MonoBehaviour {
 		newObject.transform.rotation = Quaternion.Euler(0, newObject.transform.rotation.eulerAngles.y, newObject.transform.rotation.eulerAngles.z);
 		newObject.transform.parent = m_ObjectList;
         newObject.transform.GetComponent<placeByGod>().setPlaceByGod(true);
-        newObject.transform.GetComponent<Tree2House>().house = house;
+		if (gameObject.name.Contains ("Tree")) {
+			newObject.transform.GetComponent<Tree2House> ().house = house;
+		}
 
 		//destroy pickup placeholder object
 		Destroy(transform.gameObject);

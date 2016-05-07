@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using System.Collections;
 
 public class GazeInput : MonoBehaviour {
@@ -15,6 +16,11 @@ public class GazeInput : MonoBehaviour {
 	private bool m_PickedUpObject = false;		//true as soon as object is picked up
 	private bool m_HitDropZone = false;	//true while object is picked up and cursor has hit a surface where it can be dropped
 	private DragAndDropSprite m_HitObjectDADS;
+	private string m_HitObjectName;
+
+	[Header("Drop Events")]
+	public UnityEvent TreeDropped;
+	public UnityEvent HouseDropped;
 
 	// Use this for initialization
 	void Start () {
@@ -50,7 +56,8 @@ public class GazeInput : MonoBehaviour {
 
 				//if hit pickup, stor ref to Drag And Drop script
 				if (m_Hit.transform.gameObject.tag == "Pickup") {
-					m_HitObjectDADS = m_Hit.transform.gameObject.GetComponent<DragAndDropSprite>();		
+					m_HitObjectDADS = m_Hit.transform.gameObject.GetComponent<DragAndDropSprite>();	
+					m_HitObjectName = m_Hit.transform.gameObject.name;
 					m_PickedUpObject = true;
 				}
 			}
@@ -81,6 +88,17 @@ public class GazeInput : MonoBehaviour {
 							m_HitObjectDADS.Drop ();
 							m_HitDropZone = false;
 							AkSoundEngine.PostEvent ("UIDrop", gameObject);
+
+							Debug.Log (m_HitObjectName);
+
+							if(m_HitObjectName.Contains("Tree")){
+								TreeDropped.Invoke();
+								Debug.Log("dropped tree");
+							}
+							if(m_HitObjectName.Contains("Maison")){
+								HouseDropped.Invoke();
+								Debug.Log("dropped house");
+							}
 						}
 					}
 				}

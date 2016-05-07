@@ -23,10 +23,15 @@ public class ClockController : MonoBehaviour {
 
 	[Header("Text References")]
 	public Text _PopulationText;
-	public Text _HousingText;
+
 	public Image _HouseIcon;
-	public Text _TreesText;
+	public Text _NHousingText;
+	public Text _HousingText;
+
 	public Image _TreeIcon;
+	public Text _NTreesText;
+	public Text _TreesText;
+
 	public Text _Date;
 	public Text _Time;
 
