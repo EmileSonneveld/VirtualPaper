@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 472708}
   - 114: {fileID: 11424954}
   - 114: {fileID: 11437500}
+  - 114: {fileID: 11490756}
   m_Layer: 0
   m_Name: God
   m_TagString: God
@@ -62,6 +63,26 @@ MonoBehaviour:
   listBHom: {fileID: 0}
   prefabBHom: {fileID: 165956, guid: 2eb7e26fbb2e07b40bb910443bb23aed, type: 2}
   noMoreTree: 0
+--- !u!114 &11490756
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 130210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aff05433fb39f124e9c1db3e9285cdbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listHouseTra: {fileID: 0}
+  listTreeTra: {fileID: 0}
+  listBHomTra: {fileID: 0}
+  listHouse: []
+  listTree: []
+  listBHom: []
+  nHouse: 0
+  nTree: 0
+  nBHom: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

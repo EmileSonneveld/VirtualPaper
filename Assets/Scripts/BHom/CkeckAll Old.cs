@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CkeckAll : MonoBehaviour {
+public class CkeckAllOld : MonoBehaviour {
 
     public Transform listHouse;
     public Transform listTree;
@@ -16,14 +16,9 @@ public class CkeckAll : MonoBehaviour {
 
     public bool noMoreTree;
 
-    private AgeOfPaperManage ageOfPaperManage;
+    
 	
-    void Start()
-    {
-        ageOfPaperManage = transform.GetComponent<AgeOfPaperManage>();
-    }
-
-	/*void Update ()
+	void Update ()
     {
         if (timer < 1.0f)  //---Every 1 segonde
             timer += Time.deltaTime;
@@ -32,13 +27,28 @@ public class CkeckAll : MonoBehaviour {
             timer = 0;
 
             //---Call funtion
-            foreachBHom();
+            //foreachBHom();
         }
-	}*/
+	}
+
+    void ingoreColl()
+    {
+        /*for (int i = 0; i < listBHom.childCount; i++)
+            for (int j = 0; j < listBHom.childCount; j++)
+                if (listBHom.GetChild(i) != listBHom.GetChild(j))
+                    Physics.IgnoreCollision(listBHom.GetChild(i).GetChild(0).GetComponent<Collider>(), listBHom.GetChild(j).GetChild(0).GetComponent<Collider>(), true);*/
+    }
 
     void foreachBHom ()  //-----For each BHom in the scene-----
     {
+        nBHom = listBHom.childCount;
+        for (int i = 0; i < listBHom.childCount; i++)
+        {
+           
+            currentBHom = listBHom.GetChild(i);
 
+            check();
+        }
     }
 
     void check() //-----Check if the current BHom can have a house and assign this house-----
@@ -131,27 +141,16 @@ public class CkeckAll : MonoBehaviour {
         } while ((currentCheckHouse < nHouse) && (!findHouse));
     }
 
-    private void DoNothing()
-    {
-
-    }
-
-    public void setMoveHouseaTree(Transform currentBHom)  //-----Define the destination and set the movement-----
+    private void setMoveHouseaTree()  //-----Define the destination and set the movement-----
     {
         if (currentBHom.GetComponent<BHomInfo>().mToHouse)
         {
             if (currentBHom.GetComponent<BHomInfo>().hisHouse != null)
-            {
                 if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().hisHouse.GetChild(0).position))
                 {
                     currentBHom.GetComponent<BHomInfo>().mToHouse = false;
                     currentBHom.GetComponent<BHomInfo>().mToTree = true;
                 }
-            }
-            else
-            {
-                currentBHom.GetComponent<BHomInfo>().hisHouse = ageOfPaperManage.AssignToBHom(ageOfPaperManage.listHouse, 2);
-            }
         }
         else if (currentBHom.GetComponent<BHomInfo>().mToTree)
         {
@@ -163,11 +162,7 @@ public class CkeckAll : MonoBehaviour {
                     currentBHom.GetComponent<BHomInfo>().mToTree = false;
                     currentBHom.GetComponent<BHomInfo>().setNFood(currentBHom.GetComponent<BHomInfo>().getNFood() + 1);
                 }
-            }
-            else
-            {
-                currentBHom.GetComponent<BHomInfo>().hisTreeEat = ageOfPaperManage.AssignToBHom(ageOfPaperManage.listTree, 3);
-            }
+            } else currentBHom.GetComponent<BHomInfo>().mToTree = false;
         }
     }
 
@@ -177,7 +172,7 @@ public class CkeckAll : MonoBehaviour {
         {
             if ((currentBHom.GetComponent<BHomInfo>().hisTreeEat != null) && ((currentBHom.GetComponent<BHomInfo>().hisTreeEat.GetComponent<Tree>().cutter1 == null) || (currentBHom.GetComponent<BHomInfo>().hisTreeEat.GetComponent<Tree>().cutter2 == null)))
             {
-                //setCutterToTree(currentBHom.GetComponent<BHomInfo>().hisTreeEat);
+                setCutterToTree(currentBHom.GetComponent<BHomInfo>().hisTreeEat);
                 currentBHom.GetComponent<BHomInfo>().hisTreeCut = currentBHom.GetComponent<BHomInfo>().hisTreeEat;
 
                 if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().hisTreeCut.GetChild(currentBHom.GetComponent<BHomInfo>().nCutter).position))
@@ -197,7 +192,7 @@ public class CkeckAll : MonoBehaviour {
                     if (currentBHom.GetComponent<BHomInfo>().hisTreeCut == null)
                     {
                         currentBHom.GetComponent<BHomInfo>().hisTreeCut = tree;
-                        //setCutterToTree(tree);
+                        setCutterToTree(tree);
                     }
 
                     if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().hisTreeCut.GetChild(currentBHom.GetComponent<BHomInfo>().nCutter).position))
@@ -212,7 +207,7 @@ public class CkeckAll : MonoBehaviour {
         }
     }
 
-    public void setCutterToTree(Transform tree, Transform currentBHom)  //-----Set the cutters of a tree-----
+    private void setCutterToTree(Transform tree)  //-----Set the cutters of a tree-----
     {
         if (tree.GetComponent<Tree>().cutter1 == null)
         {
@@ -224,7 +219,6 @@ public class CkeckAll : MonoBehaviour {
             tree.GetComponent<Tree>().cutter2 = currentBHom;
             currentBHom.GetComponent<BHomInfo>().nCutter = 2;
         }
-        //else do something
     }
 
     private Transform checkForATreeToCut(Vector3 pos) //-----Check for the closest tree to cut-----
@@ -416,7 +410,7 @@ public class CkeckAll : MonoBehaviour {
                 }
             }
         }
-        //else setMoveHouseaTree();
+        else setMoveHouseaTree();
     }
 
     private void reproduction(Transform orther)  //-----make the reproduction-----
