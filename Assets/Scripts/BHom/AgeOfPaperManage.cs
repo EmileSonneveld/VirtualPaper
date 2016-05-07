@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class AgeOfPaperManage : MonoBehaviour {
 
@@ -29,7 +29,7 @@ public class AgeOfPaperManage : MonoBehaviour {
         ckeckAll = transform.GetComponent<CkeckAll>();
     }
 
-    private List<Transform> instanceList (Transform listTrans)
+    /*private List<Transform> instanceList (Transform listTrans)
     {
         if (listTrans.childCount > 0)
         {
@@ -39,7 +39,7 @@ public class AgeOfPaperManage : MonoBehaviour {
 
             return list;
         } else return null;
-    }
+    }*/
 
     /*public void AddHouseToList()
     {
@@ -53,6 +53,9 @@ public class AgeOfPaperManage : MonoBehaviour {
 
     void Update()
     {
+        if (Input.GetKeyDown("a"))
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
         if (timer < 1.0f)  //---Every 1 segonde
             timer += Time.deltaTime;
         else
