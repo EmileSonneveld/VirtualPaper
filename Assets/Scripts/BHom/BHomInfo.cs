@@ -227,6 +227,7 @@ public class BHomInfo : MonoBehaviour {
         keeping = false;
         isAMurder = false;
         actionToDo = 1;
+        GameObject.FindGameObjectWithTag("God").GetComponent<AgeOfPaperManage>().alrAMuder = false;
     }
 
 

@@ -14,6 +14,7 @@ public class AgeOfPaperManage : MonoBehaviour {
 
     private float timer = 0;
     public float refrechTime = 1;
+    public bool alrAMuder;
 
     public int nHouse, nTree, nBHom, numberOfCurrentBHom;
 
@@ -165,15 +166,17 @@ public class AgeOfPaperManage : MonoBehaviour {
         }
         else if (nByElement == 3)
         {
-            if (currentBHomInfo.hisTreeEat == null)
-            {
-                if (listBHom.childCount > 1 && currentBHomInfo.hisBHomKill == null)
-                    if (ckeckAll.wouldWait(5, 5, listBHom.GetChild(numberOfCurrentBHom)))
-                    {
-                        currentBHomInfo.kepper = true;
-                        currentBHomInfo.actionToDo = 3;
-                    }
-            }
+            if (!alrAMuder)
+                if (currentBHomInfo.hisTreeEat == null)
+                {
+                    if (listBHom.childCount > 1 && currentBHomInfo.hisBHomKill == null)
+                        if (ckeckAll.wouldWait(5, 5, listBHom.GetChild(numberOfCurrentBHom)))
+                        {
+                            currentBHomInfo.kepper = true;
+                            currentBHomInfo.actionToDo = 3;
+                            alrAMuder = true;
+                        }
+                }
         }
     }
 
