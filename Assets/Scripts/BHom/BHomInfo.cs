@@ -71,7 +71,7 @@ public class BHomInfo : MonoBehaviour {
 
     public bool arriveToDestnation(Vector3 destination) //-----Set and Check if the player is in destination-----
     {
-        if (Vector3.Distance(transform.position, destination) < 0.08)
+        if (Vector3.Distance(transform.position, destination) < 0.05)
         {
             if (isMoving)
                 isMoving = false;

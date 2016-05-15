@@ -170,12 +170,8 @@ public class AgeOfPaperManage : MonoBehaviour {
                 if (listBHom.childCount > 1 && currentBHomInfo.hisBHomKill == null)
                     if (ckeckAll.wouldWait(5, 5, listBHom.GetChild(numberOfCurrentBHom)))
                     {
-                        /*ckeckAll.killBHom(listBHom.GetChild(numberOfCurrentBHom));
-                        if (currentBHomInfo.hisBHomKill != null)*/
-                        {
-                            currentBHomInfo.kepper = true;
-                            currentBHomInfo.actionToDo = 3;
-                        }
+                        currentBHomInfo.kepper = true;
+                        currentBHomInfo.actionToDo = 3;
                     }
             }
         }

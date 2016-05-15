@@ -78,6 +78,7 @@ MonoBehaviour:
   listHouse: {fileID: 0}
   listTree: {fileID: 0}
   listBHom: {fileID: 0}
+  refrechTime: 0.3
   nHouse: 0
   nTree: 0
   nBHom: 0

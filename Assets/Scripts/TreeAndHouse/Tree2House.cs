@@ -53,6 +53,8 @@ public class Tree2House : MonoBehaviour {
         transform.GetComponent<Tree>().cutter1.GetComponent<BHomInfo>().actionToDo = 1;
         transform.GetComponent<Tree>().cutter1.GetComponent<BHomInfo>().cutting = false;
         transform.GetComponent<Tree>().cutter1.GetComponent<BHomInfo>().cutter = false;
+        transform.GetComponent<Tree>().cutter1.GetChild(0).GetComponent<Animator>().Play("brun_neutre");
+        transform.GetComponent<Tree>().cutter1.GetChild(0).GetChild(0).GetComponent<Animator>().Play("brun_neutre");
         transform.GetComponent<Tree>().cutter1.GetComponent<BHomInfo>().hisHouse = newHouse.transform;
         transform.GetComponent<Tree>().cutter1.GetComponent<BHomInfo>().hisTreeCut = null;
 
@@ -63,6 +65,8 @@ public class Tree2House : MonoBehaviour {
             transform.GetComponent<Tree>().cutter2.GetComponent<BHomInfo>().actionToDo = 1;
             transform.GetComponent<Tree>().cutter2.GetComponent<BHomInfo>().cutting = false;
             transform.GetComponent<Tree>().cutter2.GetComponent<BHomInfo>().cutter = false;
+            transform.GetComponent<Tree>().cutter2.GetChild(0).GetComponent<Animator>().Play("brun_neutre");
+            transform.GetComponent<Tree>().cutter2.GetChild(0).GetChild(0).GetComponent<Animator>().Play("brun_neutre");
             transform.GetComponent<Tree>().cutter2.GetComponent<BHomInfo>().hisHouse = newHouse.transform;
             transform.GetComponent<Tree>().cutter2.GetComponent<BHomInfo>().hisTreeCut = null;
         }

@@ -111,7 +111,7 @@ public class CkeckAll : MonoBehaviour {
             {
                 currentBHom.GetComponent<BHomInfo>().hisHouse = listHouse.GetChild(currentCheckHouse);
                 listHouse.GetChild(currentCheckHouse).GetComponent<House>().p1 = currentBHom;
-                isPlacedByGod(listHouse.GetChild(currentCheckHouse));
+                isPlacedByGod(listHouse.GetChild(currentCheckHouse), currentBHom);
 
                 findHouse = true;
             }
@@ -119,7 +119,7 @@ public class CkeckAll : MonoBehaviour {
             {
                 currentBHom.GetComponent<BHomInfo>().hisHouse = listHouse.GetChild(currentCheckHouse);
                 listHouse.GetChild(currentCheckHouse).GetComponent<House>().p2 = currentBHom;
-                isPlacedByGod(listHouse.GetChild(currentCheckHouse));
+                isPlacedByGod(listHouse.GetChild(currentCheckHouse), currentBHom);
                 findHouse = true;
             }
             else
@@ -174,7 +174,7 @@ public class CkeckAll : MonoBehaviour {
             {
                 ageOfPaperManage.AssignToBHom(ageOfPaperManage.listTree, 3, ageOfPaperManage.nTree);
             }
-        }
+        } else currentBHom.GetComponent<BHomInfo>().mToHouse = true;
     }
 
     public void cutTree(Transform currentBHom)  //-----Start to chose a tree and began to cut it-----
@@ -240,7 +240,7 @@ public class CkeckAll : MonoBehaviour {
                         listTree.GetChild(i).GetComponent<Tree>().p1 = currentBHom;
                         currentBHom.GetComponent<BHomInfo>().hisTreeEat = listTree.GetChild(i);
                         currentBHom.GetComponent<BHomInfo>().hisBHomKill = null;
-                        isPlacedByGod(listTree.GetChild(i));
+                        isPlacedByGod(listTree.GetChild(i), currentBHom);
                     }
                     else if (listTree.GetChild(i).GetComponent<Tree>().p2 == null)
                     {
@@ -248,7 +248,7 @@ public class CkeckAll : MonoBehaviour {
                         listTree.GetChild(i).GetComponent<Tree>().p2 = currentBHom;
                         currentBHom.GetComponent<BHomInfo>().hisTreeEat = listTree.GetChild(i);
                         currentBHom.GetComponent<BHomInfo>().hisBHomKill = null;
-                        isPlacedByGod(listTree.GetChild(i));
+                        isPlacedByGod(listTree.GetChild(i), currentBHom);
                     }
                     else if (listTree.GetChild(i).GetComponent<Tree>().p3 == null)
                     {
@@ -256,7 +256,7 @@ public class CkeckAll : MonoBehaviour {
                         listTree.GetChild(i).GetComponent<Tree>().p3 = currentBHom;
                         currentBHom.GetComponent<BHomInfo>().hisTreeEat = listTree.GetChild(i);
                         currentBHom.GetComponent<BHomInfo>().hisBHomKill = null;
-                        isPlacedByGod(listTree.GetChild(i));
+                        isPlacedByGod(listTree.GetChild(i), currentBHom);
                     }
                 }
             }
@@ -334,7 +334,7 @@ public class CkeckAll : MonoBehaviour {
         } while ((i < listBHom.childCount) && !chosed);
     }
 
-    private void isPlacedByGod(Transform elem)  //-----Check if the element (tree or house) where the bhom are just assign is placed by god-----
+    private void isPlacedByGod(Transform elem, Transform currentBHom)  //-----Check if the element (tree or house) where the bhom are just assign is placed by god-----
     {
         if (elem.GetComponent<placeByGod>().getPlaceByGod())
             if (!currentBHom.GetComponent<BHomInfo>().believe)
@@ -429,8 +429,9 @@ public class CkeckAll : MonoBehaviour {
 
     public void IsAChild(Transform currentBHom)
     {
+        float additionner = (0.02f / 10) * ageOfPaperManage.refrechTime;
         if (currentBHom.localScale.x < 0.02)
-            currentBHom.localScale = new Vector3(currentBHom.localScale.x + 0.002f, currentBHom.localScale.y + 0.002f, currentBHom.localScale.z + 0.002f);
+            currentBHom.localScale = new Vector3(currentBHom.localScale.x + additionner, currentBHom.localScale.y + additionner, currentBHom.localScale.z + additionner);
         else
         {
             currentBHom.GetComponent<BHomInfo>().setIsAChild(false);
