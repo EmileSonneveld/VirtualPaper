@@ -8,7 +8,8 @@ public class BHomInfo : MonoBehaviour {
     public Transform AnchorThrow;
     public Transform Sacrefice;
 
-    private NavMeshAgent navMeshA;
+    [HideInInspector]
+    public NavMeshAgent navMeshA;
     private Animator animFront;
     private Animator animBack;
 
@@ -48,7 +49,7 @@ public class BHomInfo : MonoBehaviour {
     public bool readyToReproduction;
     public bool isAChild;
 
-    public int actionToDo = 0; // 0 : nothing, 1 : move house <-> tree, 2 : cutTree, 3 : kill, 4 reproduction
+    public int actionToDo = 0; // 0 : nothing, 1 : move house <-> tree, 2 : cutTree, 3 : kill, 4 reproduction, 5 : grow up
 
     void Start()
     {
@@ -84,6 +85,17 @@ public class BHomInfo : MonoBehaviour {
         {
             if (!isMoving)
                 isMoving = true;
+
+            if (!navMeshA.enabled)
+            {
+                navMeshA.enabled = true;
+                if (getPraying())
+                    setPraying(false);
+            }
+
+            if (getPraying())
+                setPraying(false);
+
             navMeshA.SetDestination(destination);
 
             return false;

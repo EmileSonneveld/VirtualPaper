@@ -13,6 +13,7 @@ public class AgeOfPaperManage : MonoBehaviour {
     public List<Transform> listBHom;*/
 
     private float timer = 0;
+    public float refrechTime = 1;
 
     public int nHouse, nTree, nBHom, numberOfCurrentBHom;
 
@@ -56,7 +57,7 @@ public class AgeOfPaperManage : MonoBehaviour {
         if (Input.GetKeyDown("a"))
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
-        if (timer < 1.0f)  //---Every 1 segonde
+        if (timer < refrechTime)  //---Every 1 segonde
             timer += Time.deltaTime;
         else
         {
@@ -78,6 +79,12 @@ public class AgeOfPaperManage : MonoBehaviour {
                     case 3:
                         ckeckAll.killBHom(listBHom.GetChild(numberOfCurrentBHom));
                         break;
+                    case 4:
+                        ckeckAll.checkReproductionCondition(listBHom.GetChild(numberOfCurrentBHom));
+                        break;
+                    case 5:
+                        ckeckAll.IsAChild(listBHom.GetChild(numberOfCurrentBHom));
+                        break;
                     default:
 
                         break;
@@ -97,51 +104,80 @@ public class AgeOfPaperManage : MonoBehaviour {
             nBHom = listBHom.childCount;
     }
 
-    public Transform AssignToBHom(Transform listOfElements, int nByElement, int nElements)
+    public void AssignToBHom(Transform listOfElements, int nByElement, int nElements)
     {
-        if ((Mathf.FloorToInt((numberOfCurrentBHom) / nByElement)) < nElements)
+        if (checkAssignment(nByElement))
         {
             if (currentBHomInfo.hisTreeCut != null)
+            {
+                if (currentBHomInfo.hisTreeCut.GetComponent<Tree>().cutter1 == listBHom.GetChild(numberOfCurrentBHom))
+                    currentBHomInfo.hisTreeCut.GetComponent<Tree>().cutter1 = null;
+                else if (currentBHomInfo.hisTreeCut.GetComponent<Tree>().cutter2 == listBHom.GetChild(numberOfCurrentBHom))
+                    currentBHomInfo.hisTreeCut.GetComponent<Tree>().cutter2 = null;
                 currentBHomInfo.hisTreeCut = null;
+            }
 
             if (currentBHomInfo.hisBHomKill != null)
+            {
+                currentBHomInfo.hisBHomKill.GetComponent<BHomInfo>().hisBHomMurder = null;
                 currentBHomInfo.hisBHomKill = null;
-
-            return listOfElements.GetChild(Mathf.FloorToInt((numberOfCurrentBHom) / nByElement));
+            }
+                
+            if (!listBHom.GetChild(numberOfCurrentBHom).GetComponent<NavMeshAgent>().enabled)
+                listBHom.GetChild(numberOfCurrentBHom).GetComponent<NavMeshAgent>().enabled = true;
         }
         else
         {
             //---Call bip bip---
             AssignTreeOrBHom(nByElement);
-
-            return null;
         }
     }
 
-    private void AssignTreeOrBHom(int nByElement)
+    private bool checkAssignment(int nByElement)
+    {
+        bool check = false;
+        if (nByElement == 2)
+            check = ckeckAll.checkHouse(listBHom.GetChild(numberOfCurrentBHom));
+        else if (nByElement == 3)
+            check = ckeckAll.checkForATreeToEat(listBHom.GetChild(numberOfCurrentBHom));
+        return check;
+    }
+
+    private void AssignTreeOrBHom(int nByElement) //-----Assign tree to cut or bhom to kill-----
     {
         if (nByElement == 2) //---if this is a tree---
         {
-            if (listTree.childCount > 0)                
+            if (currentBHomInfo.hisHouse == null)
             {
-                ckeckAll.setCutterToTree(listTree.GetChild(nTree - 1), listBHom.GetChild(numberOfCurrentBHom));
-                if (currentBHomInfo.hisTreeCut != null)
+                if (listTree.childCount > 0 && currentBHomInfo.hisTreeCut == null)
+                {                                    
                     if (ckeckAll.wouldWait(5, 5, listBHom.GetChild(numberOfCurrentBHom)))
                     {
-                        currentBHomInfo.cutter = true;
-                        currentBHomInfo.actionToDo = 2;
+                        ckeckAll.setCutterToTree(listTree.GetChild(nTree - 1), listBHom.GetChild(numberOfCurrentBHom));
+                        if (currentBHomInfo.hisTreeCut != null)
+                        {
+                            currentBHomInfo.cutter = true;
+                            currentBHomInfo.actionToDo = 2;
+                        }
                     }
+                }
             }
         }
         else if (nByElement == 3)
         {
-            if (listBHom.childCount > 1)
-                if (ckeckAll.wouldWait(5, 5, listBHom.GetChild(numberOfCurrentBHom)))
-                {
-                    currentBHomInfo.kepper = true;
-                    currentBHomInfo.actionToDo = 3;
-                    //ckeckAll.killBHom(listBHom[numberOfCurrentBHom]);
-                }
+            if (currentBHomInfo.hisTreeEat == null)
+            {
+                if (listBHom.childCount > 1 && currentBHomInfo.hisBHomKill == null)
+                    if (ckeckAll.wouldWait(5, 5, listBHom.GetChild(numberOfCurrentBHom)))
+                    {
+                        /*ckeckAll.killBHom(listBHom.GetChild(numberOfCurrentBHom));
+                        if (currentBHomInfo.hisBHomKill != null)*/
+                        {
+                            currentBHomInfo.kepper = true;
+                            currentBHomInfo.actionToDo = 3;
+                        }
+                    }
+            }
         }
     }
 

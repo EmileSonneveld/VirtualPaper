@@ -8,6 +8,8 @@ public class CkeckAll : MonoBehaviour {
     public Transform listBHom;
     public GameObject prefabBHom;
 
+    public int numberOfFoodBeforeReproduction;
+
     private float timer;
 
     private int nBHom;
@@ -52,17 +54,17 @@ public class CkeckAll : MonoBehaviour {
                     if (currentBHom.GetComponent<BHomInfo>().hisHouse == null)
                     {
                         //if (wouldWait(10))
-                        checkHouse();
+                        //checkHouse();
                     }
                     else
                     {
                         if (currentBHom.GetComponent<BHomInfo>().hisTreeEat != null)
                         {
-                            checkReproductionCondition(/*And else set the setMoveHouseaTree() function*/);
+                            //checkReproductionCondition(/*And else set the setMoveHouseaTree() function*/);
                         }
                         else if (!noMoreTree)
                         {
-                            checkForATreeToEat();
+                           // checkForATreeToEat();
                             if (currentBHom.GetComponent<BHomInfo>().hisTreeEat == null)
                             {
                                 if ((currentBHom.GetComponent<BHomInfo>().hisBHomKill == null) /*&& (wouldWait(20, 5))*/)
@@ -97,7 +99,7 @@ public class CkeckAll : MonoBehaviour {
         }
     }
 
-    private void checkHouse()  //-----Check and Set the first house in the list-----
+    public bool checkHouse(Transform currentBHom)  //-----Check and Set the first house in the list-----
     {
         int currentCheckHouse = 0;
         int nHouse = listHouse.childCount;
@@ -129,6 +131,8 @@ public class CkeckAll : MonoBehaviour {
             currentCheckHouse++;
 
         } while ((currentCheckHouse < nHouse) && (!findHouse));
+        return findHouse;
+
     }
 
     private void DoNothing()
@@ -145,12 +149,14 @@ public class CkeckAll : MonoBehaviour {
                 if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().hisHouse.GetChild(0).position))
                 {
                     currentBHom.GetComponent<BHomInfo>().mToHouse = false;
-                    currentBHom.GetComponent<BHomInfo>().mToTree = true;
+                    if (currentBHom.GetComponent<BHomInfo>().nFood < numberOfFoodBeforeReproduction)
+                        currentBHom.GetComponent<BHomInfo>().mToTree = true;
+                    else currentBHom.GetComponent<BHomInfo>().actionToDo = 4;
                 }
             }
             else
             {
-                currentBHom.GetComponent<BHomInfo>().hisHouse = ageOfPaperManage.AssignToBHom(ageOfPaperManage.listHouse, 2, ageOfPaperManage.nHouse);
+                ageOfPaperManage.AssignToBHom(ageOfPaperManage.listHouse, 2, ageOfPaperManage.nHouse);
             }
         }
         else if (currentBHom.GetComponent<BHomInfo>().mToTree)
@@ -166,7 +172,7 @@ public class CkeckAll : MonoBehaviour {
             }
             else
             {
-                currentBHom.GetComponent<BHomInfo>().hisTreeEat = ageOfPaperManage.AssignToBHom(ageOfPaperManage.listTree, 3, ageOfPaperManage.nTree);
+                ageOfPaperManage.AssignToBHom(ageOfPaperManage.listTree, 3, ageOfPaperManage.nTree);
             }
         }
     }
@@ -218,7 +224,7 @@ public class CkeckAll : MonoBehaviour {
         else return null;
     }
 
-    private void checkForATreeToEat()  //-----Check for the first in the list to eat-----
+    public bool checkForATreeToEat(Transform currentBHom)  //-----Check for the first in the list to eat-----
     {
         bool alrTree = false;
         int nTree = listTree.childCount;
@@ -255,6 +261,7 @@ public class CkeckAll : MonoBehaviour {
                 }
             }
         }
+        return alrTree;
     }
 
     public void killBHom(Transform currentBHom)  //-----The current bhom chose and kill a bhom compare is religion-----
@@ -336,14 +343,19 @@ public class CkeckAll : MonoBehaviour {
 
     public bool wouldWait(int value, int believeAddValue, Transform currentBHom)  //-----Manage the waiting before do an action-----
     {
-        int waitingTime;
+        float waitingTime;
         if (currentBHom.GetComponent<BHomInfo>().believe)
         {
             waitingTime = value + believeAddValue;
-            currentBHom.GetComponent<BHomInfo>().setPraying(true);
-            currentBHom.GetComponent<NavMeshAgent>().enabled = false;
+            if (!currentBHom.GetComponent<BHomInfo>().getPraying())
+            {
+                currentBHom.GetComponent<BHomInfo>().setPraying(true);
+                currentBHom.GetComponent<NavMeshAgent>().enabled = false;
+            }
         }
         else waitingTime = value;
+
+        waitingTime /= ageOfPaperManage.refrechTime;
 
         if (currentBHom.GetComponent<BHomInfo>().isMoving)
             currentBHom.GetComponent<BHomInfo>().isMoving = false;
@@ -363,26 +375,26 @@ public class CkeckAll : MonoBehaviour {
         }            
     }
 
-    private void checkReproductionCondition()  //-----Check all condition before reproduction-----
+    public void checkReproductionCondition(Transform currentBHom)  //-----Check all condition before reproduction-----
     {
-        if (currentBHom.GetComponent<BHomInfo>().getNFood() > 14)
+        if (currentBHom.GetComponent<BHomInfo>().getNFood() >= numberOfFoodBeforeReproduction)
         {
             if ((currentBHom.GetComponent<BHomInfo>().hisHouse.GetComponent<House>().p1 != null) && (currentBHom.GetComponent<BHomInfo>().hisHouse.GetComponent<House>().p2 != null))
             {
                 if (currentBHom.GetComponent<BHomInfo>().hisHouse.GetComponent<House>().p1 == currentBHom)
                 {
                     Debug.Log("perso 1 is done");
-                    if (currentBHom.GetComponent<BHomInfo>().hisHouse.GetComponent<House>().p2.GetComponent<BHomInfo>().getNFood() > 14)
+                    if (currentBHom.GetComponent<BHomInfo>().hisHouse.GetComponent<House>().p2.GetComponent<BHomInfo>().getNFood() >= numberOfFoodBeforeReproduction)
                     {
-                        reproduction(currentBHom.GetComponent<BHomInfo>().hisHouse.GetComponent<House>().p2);
+                        reproduction(currentBHom, currentBHom.GetComponent<BHomInfo>().hisHouse.GetComponent<House>().p2);
                     }
                 }
                 else if (currentBHom.GetComponent<BHomInfo>().hisHouse.GetComponent<House>().p2 == currentBHom)
                 {
                     Debug.Log("perso 2 is done");
-                    if (currentBHom.GetComponent<BHomInfo>().hisHouse.GetComponent<House>().p1.GetComponent<BHomInfo>().getNFood() > 14)
+                    if (currentBHom.GetComponent<BHomInfo>().hisHouse.GetComponent<House>().p1.GetComponent<BHomInfo>().getNFood() >= numberOfFoodBeforeReproduction)
                     {
-                        reproduction(currentBHom.GetComponent<BHomInfo>().hisHouse.GetComponent<House>().p1);
+                        reproduction(currentBHom, currentBHom.GetComponent<BHomInfo>().hisHouse.GetComponent<House>().p1);
                     }
                 }
             }
@@ -390,9 +402,9 @@ public class CkeckAll : MonoBehaviour {
         //else setMoveHouseaTree();
     }
 
-    private void reproduction(Transform orther)  //-----make the reproduction-----
+    private void reproduction(Transform currentBHom, Transform orther)  //-----make the reproduction-----
     {
-        if (currentBHom.GetComponent<BHomInfo>().arriveToDestnation(currentBHom.GetComponent<BHomInfo>().hisHouse.GetChild(0).position))
+        //if (orther.GetComponent<BHomInfo>().arriveToDestnation(orther.GetComponent<BHomInfo>().hisHouse.GetChild(0).position))
         {
             currentBHom.GetComponent<NavMeshAgent>().enabled = false;
             if (!currentBHom.GetComponent<BHomInfo>().getReadyToReproduction())
@@ -403,12 +415,28 @@ public class CkeckAll : MonoBehaviour {
                 orther.GetComponent<BHomInfo>().setNFood(0);
                 if (orther.GetComponent<BHomInfo>().getReadyToReproduction())
                     orther.GetComponent<BHomInfo>().setReadyToReproduction(false);
+                orther.GetComponent<BHomInfo>().actionToDo = 1;
+                currentBHom.GetComponent<BHomInfo>().actionToDo = 1;
 
                 GameObject newBHom = Instantiate(prefabBHom, currentBHom.GetComponent<BHomInfo>().hisHouse.GetChild(0).position, currentBHom.GetComponent<BHomInfo>().hisHouse.rotation) as GameObject;
                 newBHom.transform.parent = currentBHom.transform.parent;
-                newBHom.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
-                newBHom.GetComponent<BHomInfo>().setIsAChild(true);                
+                newBHom.transform.localScale = new Vector3(0.002f, 0.002f, 0.002f);
+                newBHom.GetComponent<BHomInfo>().setIsAChild(true);
+                newBHom.GetComponent<BHomInfo>().actionToDo = 5;
             }
         }
     }
+
+    public void IsAChild(Transform currentBHom)
+    {
+        if (currentBHom.localScale.x < 0.02)
+            currentBHom.localScale = new Vector3(currentBHom.localScale.x + 0.002f, currentBHom.localScale.y + 0.002f, currentBHom.localScale.z + 0.002f);
+        else
+        {
+            currentBHom.GetComponent<BHomInfo>().setIsAChild(false);
+            currentBHom.GetComponent<NavMeshAgent>().enabled = true;
+            currentBHom.GetComponent<BHomInfo>().actionToDo = 1;
+        }
+    }
+    
 }
