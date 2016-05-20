@@ -51,7 +51,7 @@ public class BHomInfo : MonoBehaviour {
 
     public int actionToDo = 0; // 0 : nothing, 1 : move house <-> tree, 2 : cutTree, 3 : kill, 4 reproduction, 5 : grow up
 
-    void Start()
+    void Awake()
     {
         navMeshA = transform.GetComponent<NavMeshAgent>();
         animFront = transform.GetChild(0).GetComponent<Animator>();
@@ -214,11 +214,12 @@ public class BHomInfo : MonoBehaviour {
         //resetVarAfterKill();
     }
 
-    public void KillByThrow()  //-----Set Anim of the throw-----
+    public void KillByThrow()  //-----Set Anim of the throw and attach the victim to the AnchorThrow-----
     {
         animFront.Play("brun_jetter");
         animBack.Play("brun_jetter");
-        //resetVarAfterKill();
+        hisBHomKill.parent = transform.parent.parent;
+        AnchorThrow.GetComponent<ThrowAnimation>().bhom = hisBHomKill;
     }
 
     public void resetVarAfterKill()  //-----Reset variable after BHom have made a murder-----

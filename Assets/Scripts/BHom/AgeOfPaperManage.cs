@@ -66,7 +66,7 @@ public class AgeOfPaperManage : MonoBehaviour {
 
             UpDateVar();
 
-            for (numberOfCurrentBHom = 0; numberOfCurrentBHom < nBHom; numberOfCurrentBHom++)
+            for (numberOfCurrentBHom = 0; numberOfCurrentBHom < listBHom.childCount; numberOfCurrentBHom++)
             {
                 currentBHomInfo = listBHom.GetChild(numberOfCurrentBHom).GetComponent<BHomInfo>();
                 switch (currentBHomInfo.actionToDo)

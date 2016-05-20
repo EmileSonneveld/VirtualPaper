@@ -177,7 +177,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 468920, guid: a103e01c77aa46d4d89aeed041102720, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a103e01c77aa46d4d89aeed041102720, type: 2}
@@ -950,11 +950,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 498032, guid: 07007fe9fda53d54886f4865286e03b1, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07007fe9fda53d54886f4865286e03b1, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &313453542 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 498032, guid: 07007fe9fda53d54886f4865286e03b1, type: 2}
+  m_PrefabInternal: {fileID: 311534285}
 --- !u!1 &326338417
 GameObject:
   m_ObjectHideFlags: 0
@@ -2381,6 +2385,10 @@ Transform:
   - {fileID: 622279740}
   m_Father: {fileID: 678168753}
   m_RootOrder: 3
+--- !u!4 &864392164 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 468920, guid: a103e01c77aa46d4d89aeed041102720, type: 2}
+  m_PrefabInternal: {fileID: 7883436}
 --- !u!1 &864457113
 GameObject:
   m_ObjectHideFlags: 0
@@ -5915,6 +5923,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 11487966, guid: 2eb7e26fbb2e07b40bb910443bb23aed, type: 2}
+      propertyPath: pencil
+      value: 
+      objectReference: {fileID: 127578967}
+    - target: {fileID: 11487966, guid: 2eb7e26fbb2e07b40bb910443bb23aed, type: 2}
+      propertyPath: defaultPencilposition
+      value: 
+      objectReference: {fileID: 1885700310}
     - target: {fileID: 11468502, guid: 2eb7e26fbb2e07b40bb910443bb23aed, type: 2}
       propertyPath: hisTree
       value: 
@@ -5935,30 +5951,18 @@ Prefab:
       propertyPath: listTree
       value: 
       objectReference: {fileID: 15693012}
-    - target: {fileID: 11487966, guid: 2eb7e26fbb2e07b40bb910443bb23aed, type: 2}
-      propertyPath: pencil
-      value: 
-      objectReference: {fileID: 127578967}
-    - target: {fileID: 11487966, guid: 2eb7e26fbb2e07b40bb910443bb23aed, type: 2}
-      propertyPath: defaultPencilposition
-      value: 
-      objectReference: {fileID: 1885700310}
     - target: {fileID: 165956, guid: 2eb7e26fbb2e07b40bb910443bb23aed, type: 2}
       propertyPath: m_Name
       value: BHom (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 442710, guid: 2eb7e26fbb2e07b40bb910443bb23aed, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 442710, guid: 2eb7e26fbb2e07b40bb910443bb23aed, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 442710, guid: 2eb7e26fbb2e07b40bb910443bb23aed, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.02
-      objectReference: {fileID: 0}
+    - target: {fileID: 11419408, guid: 2eb7e26fbb2e07b40bb910443bb23aed, type: 2}
+      propertyPath: AnchorThrow
+      value: 
+      objectReference: {fileID: 313453542}
+    - target: {fileID: 11419408, guid: 2eb7e26fbb2e07b40bb910443bb23aed, type: 2}
+      propertyPath: Sacrefice
+      value: 
+      objectReference: {fileID: 864392164}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2eb7e26fbb2e07b40bb910443bb23aed, type: 2}
   m_IsPrefabParent: 0
